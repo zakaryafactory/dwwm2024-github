@@ -1,0 +1,30 @@
+h1{
+    color:red
+}
+ul{
+    color: #010111;
+    padding: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5ef;
+    color: #110202;
+    text-align: center;
+}
+img {
+    max-width: 20%;
+    height: auto;
+}
+p{
+    background-color: rgb(31, 223, 14);
+    border: 10px solid rgb(15, 14, 14);
+}
+form{
+    padding: 2%;
+}
+ul{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
