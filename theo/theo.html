@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div w3-include-html="navigation.html"></div>
+        <div w3-include-html="/navigation.html"></div>
     </header>
     <h1>Theo Grasset</h1>
     <img src="/images/avatarTheo.png" alt="image" height="300">
@@ -23,6 +25,7 @@
             <li>Date : 2025 TP DWWM</li>
         </ul>
     </section>
+
     <section>
         <h2>Contact</h2>
     <form>
@@ -46,6 +49,7 @@
         <textarea id="message" name="message"></textarea>
         <button type="submit"> Envoyer</button>
     </section>
+    
     <section>
         <h1>liste d'image</h1>
         <ul>
@@ -58,7 +62,7 @@
         </ul>
     </section>
     </form>
-    
+
     <script>
         w3.includeHTML();
     </script>
