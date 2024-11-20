@@ -32,13 +32,30 @@
         <p>je vie a mende</p>
         <p>j'ai la voiture</p>
         <p>et il fais pas beaux </p>
-        <h2>titre de sous page</h2>
-        <p>blablabla</p>
             <ul>
               <li>2022 : Bac Pro Systèmes Numériques Option C</li>
               <li>2020 : CAP REEP/ÉLEC</li>
               <li>2018 : Diplôme National du Brevet</li>
-              
+            </ul>
+              <h1>CONTACT</h1>
+            <form action="/submit" method="post">  <!-- questionnaire -->
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
+        
+                <label for="prénom">prénom :</label><br>
+                <input type="text" id="prénom" name="prénom" required><br><br>
+                
+                <label for="date">date :</label><br>
+                <input type="text" id="date" name="date" required><br><br>
+                
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Envoyer">
+            </form>  
      </section>
    </body>
 </html>
