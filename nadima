@@ -18,21 +18,21 @@
 <br>
 <input type="date">
 <br>
-<form action="/submit" method="post">  <!-- questionnaire -->
-    <label for="nom">Nom :</label><br>
-    <input type="text" id="nom" name="nom" required><br><br>
 
-    <label for="prénom">prénom :</label><br>
-    <input type="text" id="prénom" name="prénom" required><br><br>
-    
-    <label for="date">date :</label><br>
-    <input type="text" id="date" name="date" required><br><br>
-    
-    <label for="email">Email :</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <label for="message">Message :</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+<form action="/submit" method="post">
+    <section>
+    <h2>contact</h2>
+<div>
+    <label for="nom">nom</label>
+    <input type="text" id="nom" name="nom"/>    
+</div>
+<br>
+<div><label for="message">message</label>
+    <textarea name="message" placeholder="message" id="message"></textarea>
+    </div>
+    <br>
+<button>envoyer</button>
+</form>
 
 
 </body>
