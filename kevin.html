@@ -38,22 +38,25 @@
               <li>2018 : Diplôme National du Brevet</li>
             </ul>
               <h1>CONTACT</h1>
-            <form action="/submit" method="post">  <!-- questionnaire -->
+            <form >
+               <div action="/submit" method="post">  <!-- questionnaire -->
                 <label for="nom">Nom :</label><br>
-                <input type="text" id="nom" name="nom" required><br><br>
-        
+                <input type="text" id="nom" name="nom" required><br><br> <!--type = atribut-->
+               </div>
+               <div>
                 <label for="prénom">prénom :</label><br>
                 <input type="text" id="prénom" name="prénom" required><br><br>
-                
+               </div>
                 <label for="date">date :</label><br>
                 <input type="text" id="date" name="date" required><br><br>
-                
+                <div>
                 <label for="email">Email :</label><br>
                 <input type="email" id="email" name="email" required><br><br>
-                
+                </div>
+                 <div>
                 <label for="message">Message :</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                
+                </div>
                 <input type="submit" value="Envoyer">
             </form>  
      </section>
