@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: fantasy;
     background-color: rgb(213, 198, 216);
     margin: 3;
     padding: 12px 5px 12px 5px
@@ -13,4 +13,8 @@ h1 {
 h2 {
     color: blueviolet;
     font-size: 34px
+}
+
+header {
+    font-size: 15px;
 }
