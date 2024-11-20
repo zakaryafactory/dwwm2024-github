@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
+    <header>
+        <div w3-include-html="navigation.html"></div>
+    </header>
     <h1>Theo Grasset</h1>
     <img src="/images/avatarTheo.png" alt="image" height="300">
     <p>bonjour, j'ai 23ans je suis passionné de foot, basket et informatique. J'ai un bac STMG option mercatique et un BTS MCO
@@ -22,11 +26,17 @@
     <section>
         <h2>Contact</h2>
     <form>
+        <label for="prenom">Prénom</label>
+        <br>
         <input type="text" name="prenom" placeholder="Prénom">
         <br>
         <br>
+        <label for="message">Nom</label>
+        <br>
         <input type="text" name="nom" placeholder="Nom">
         <br>
+        <br>
+        <label for="mail">Adresse email</label>
         <br>
         <input type="text" name="mail" placeholder="Adresse email">
         <br>
@@ -36,6 +46,21 @@
         <textarea id="message" name="message"></textarea>
         <button type="submit"> Envoyer</button>
     </section>
+    <section>
+        <h1>liste d'image</h1>
+        <ul>
+            <li><img src="/images/avatarTheo.png" alt="image" height="50"></li>
+            <li><img src="/images/avatarTheo.png" alt="image" height="50"></li>
+            <li><img src="/images/avatarTheo.png" alt="image" height="50"></li>
+            <li><img src="/images/avatarTheo.png" alt="image" height="50"></li>
+            <li><img src="/images/avatarTheo.png" alt="image" height="50"></li>
+            <li><img src="/images/avatarTheo.png" alt="image" height="50"></li>
+        </ul>
+    </section>
     </form>
+    
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 </html>
