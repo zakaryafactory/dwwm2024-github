@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eddi presentation</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+
+<header>
+    <div w3-include-html="navigation.html"></div>
+</header>
+
 <body>
     <h1>"Eddi"</h1>
     <p><strong>Introduction</strong></p>
     <P>Nom: Jacquet</P> 
     <p>Prenom: Eddi</p>  
     <p>Fonction: Stagiaire</p>
-    <p><img src="images/avatarEddi.png" alt="image" heigt="120" width="120">
+    <p><img src="/images/avatarEddi.png" alt="image" heigt="120" width="120">
     </p>
     <p>J'ai choisi cette formation afin de me réorienter professionnellement vers un métier qui me correspond mieux.
         Obtenir une qualification reconnue sera un atout dans ce milieu professionnel
@@ -46,8 +52,24 @@
     </div>
     <div>
          <button type="submit">Valider</button>
-    </div>
+        </div>
+
+<section><h2>Photos</h2>
+        <div>   
+            <lu>
+                <li><img src="/images/avatarEddi.png" alt="image" heigt="60" width="60"></li>
+                <li><img src="/images/avatarEddi.png" alt="image" heigt="60" width="60"></li>
+                <li><img src="/images/avatarEddi.png" alt="image" heigt="60" width="60"></li>
+            </lu>
+        
+
+        </div>
     </form>
 </section>
+
+<script>
+    w3.includeHTML();
+</script>
+
 </body>
 </html>
