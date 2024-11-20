@@ -1,20 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JB</title>
 </head>
+
 <body>
+
+<header>
     <h2 id="h2">CHARBONNIER Jean-Baptiste</h2>
-        <img src="/images/avatarJeanBaptiste.png" height="128" width="128" alt="avatar_JB">
-        <p>Je m'appelle Jean-Baptiste et j'aime bien les hyènes. Parce que la hyène c'est un animal dont on parle jamais alors que c'est un animal qui peut être très important. Parce que moi je trouve que être ami avec une hyène souvent c'est plus important qu'être ami avec, avec des vrais amis. C'est... Elle vous protège. Si y'avait du danger et ben " Et ben moi, et... je suis ami avec une hyène " Alors la évidement !</p>
-    <h2>Mon Experience</h2>
-        <ul>
-            <li>2018 - 2024 : Community Manager Streamer Twitch</li>
-            <li>2018 - 2024 : Création d'émotes et Asset graphiques pour streamers Twitch </li>
-            <li>01/05/2018 - 01/10/2018 : Chef de Salle | L'Auberge du voyageur | Lavaudieu 43100</li>
-            <li>01/07/2009 - 01/04/2016 : Chef de Salle/Sommelier | La table de Thierry | Saint Chely d'Apcher 48200</li>
-        </ul>
-    </body>
+</header>
+
+<main>
+
+    <section>
+    <img src="/images/avatarJeanBaptiste.png" height="128" width="128" alt="avatar_JB">
+    <p>Je m'appelle Jean-Baptiste et j'aime bien les hyènes. Parce que la hyène c'est un animal dont on parle jamais alors que c'est un animal qui peut être très important. Parce que moi je trouve que être ami avec une hyène souvent c'est plus important qu'être ami avec, avec des vrais amis. C'est... Elle vous protège. Si y'avait du danger et ben " Et ben moi, et... je suis ami avec une hyène " Alors la évidement !</p>
+        </section>
+    <section>
+        <h2>Mon Experience</h2>
+            <ul>
+                <li>2018 - 2024 : Community Manager Streamers Twitch</li>
+                <li>2018 - 2024 : Création d'émotes et Asset graphiques pour Streamers Twitch </li>
+                <li>01/05/2018 - 01/10/2018 : Chef de Salle | L'Auberge du voyageur | Lavaudieu 43100</li>
+                <li>01/07/2009 - 01/04/2016 : Chef de Salle/Sommelier | La table de Thierry | Saint Chely d'Apcher 48200</li>
+            </ul>
+    </section>
+
+</main>
+
+<footer>
+
+    <br>
+    <br>
+
+    <section>
+        <form action="sendForm.html" method="post">
+            <legend>Contact :</legend>
+            <br>
+            <div>
+                <label for="identifiant">Identifiant</label>
+                <input type="text" id="identifiant" placeholder="Votre Identifiant" name="identifiant" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Mot De Passe</label>
+                <input type="password" id="password" placeholder="Votre Mot De Passe" name="password" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Votre@Email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="commentaire"></label>
+                <textarea name="commentaire" id="commentaire" rows="4" cols="40" placeholder="Écrivez votre commentaire"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer"> <input type="reset">
+            </div>
+        </form>
+    </section>
+
+</footer>
+
+</body>
+
 </html>
