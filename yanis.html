@@ -4,15 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Yanis le jazzman</title>
-    </head>
+            
+            <script src="https://www.w3schools.com/lib/w3.js"></script>
+    
+        </head>
 <body>
+    
     <header>
         <section>
             <h1><center>Yanis Anciaux</center></h1><br>
                 <center><img src="images/avatarYanis.png" width="170" height="170" alt="mon avatar"><br></center>
                 <center><p>jai 20 ans j'aime lire et faire de la musique</p></center>
+        
         </section>
+        
+        <section>
+            <h3>navigation</h3>
+            <div w3-include-html="navigation.html"></div>
+        </section>
+    
     </header>
+    
     <main>
             <h2>Mon experience:</h2>
         <ul>
@@ -20,6 +32,7 @@
             <li>2023/2024 : creation d'un espace de jeu dans mon village</li>
         </ul>
     </main>
+    
     <footer>
         <section>
             <h3>contactez moi:</h3>
@@ -41,7 +54,21 @@
                 </div>
             </form>
         </section>
+        
+        <section>
+            <ul>
+                <li><img src="images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
+                <li><img src="images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
+                <li><img src="images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
+                <li><img src="images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
+                <li><img src="images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
+            </ul>
+        </section>
     </footer>
+    
+    <script>
+        w3.includeHTML();
+    </script>
 
 </body>
 </html>
