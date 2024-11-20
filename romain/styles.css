@@ -1,0 +1,21 @@
+h1{
+    color: red;
+    font-family: cursive;
+    margin: 10px;
+    padding: 10px;
+}
+
+header{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: azure;
+}
+
+.poli{
+    font-family: cursive;
+    color: blueviolet;
+    margin: 50px;
+}
