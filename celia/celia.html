@@ -7,62 +7,75 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     
 <header>
-    <div w3-include-html="/navigation.html"></div>
+    <div w3-include-html="../navigation.html"></div>
 </header>
+    
 
-<h1>Celia Sansano</h1>
-
-<section>
-    <img src="/images/avatarCelia.png" width="200" height="200">
-    <p>Je suis originaire du Gard et je suis actuelelment en lozere, pour suivre une formation Developpeur web</p>
+<section id="presentation">
+    <div>
+        <img src="../images/avatarCelia.png" width="200" height="200">
+    </div>
+    <div>
+        <h1>Celia Sansano</h1>
+        <p> Je suis originaire du Gard et je suis actuelelment en lozere, pour suivre une formation de Developpeur web</p>
+    </div>
 </section>  
 
-<section>
-    <h2>Mon experience</h2>
-    <ul>
-        <li>2023: San isidro</li>
-        <li>2024: Lozere</li>
-        <Li>2025: who knows?</Li>
-    </ul>
+<section id="exgal">
+    <section  id="experience">
+        <div>
+            <h2>Expérience</h2>
+        </div>
+        <div>
+            <ul class="bubble" style="text-align: center;">
+                <li>2023: San isidro</li>
+                <li>2024: Lozere</li>
+                <li>2025: who knows?</li>
+                <li>2026: who knows?</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section id="Photo">
+        <h3>Galerie</h3>
+        <ul class="galerie">
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+            <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
+        </ul>
+    </section>
 </section>
 
 <section>
-    <p>Contact</p>
-
-<form>
-    <div>
-        <label for="nom">Nom : </label><input type="text" name="nom">
-    </div>
-    <div>
-        <label for="prenom">Prenom : </label><input type="text" name="prenom">
-    </div>
-    <div>
-        <label for="telephone">Telephone : </label><input type="text" name="telephone">
-    </div>
-</form>
-
-<br>
-
+    <h4>Mes coordonnées</h4>
+    <form>
+        <div>
+            <label for="nom">Nom : </label><input type="text" name="nom">
+        </div>
+        <div>
+           <label for="prenom">Prenom : </label><input type="text" name="prenom">
+        </div>
+        <div>
+            <label for="telephone">Telephone : </label><input type="text" name="telephone">
+        </div>
+    </form>
+    <br>
     <label for="story">Tell me your story:</label><br>
     <textarea id="story" name="story" rows="5"></textarea><br>
 <button>Envoyer</button>
 <br>
 </section>
 
-<section>
-<ul>
-    <li><img src="/images/avatarCelia.png" width="100" height="100"></li>
-    <li><img src="/images/avatarCelia.png" width="100" height="100"></li>
-    <li><img src="/images/avatarCelia.png" width="100" height="100"></li>
-    <li><img src="/images/avatarCelia.png" width="100" height="100"></li>
-    <li><img src="/images/avatarCelia.png" width="100" height="100"></li>
-</ul>
-</section>
+
 </body>
 
 <script>
