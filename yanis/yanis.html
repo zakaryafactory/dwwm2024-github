@@ -10,65 +10,61 @@
         </head>
 <body>
     
-    <header>
-        <section>
-            <h1><center>Yanis Anciaux</center></h1><br>
-                <center><img src="/images/avatarYanis.png" width="170" height="170" alt="mon avatar"><br></center>
-                <center><p>jai 20 ans j'aime lire et faire de la musique</p></center>
+    <header class="box">
         
-        </section>
-        
-        <section>
-            <h3>navigation</h3>
+        <section class="navigation">
             <div w3-include-html="/navigation.html"></div>
         </section>
-    
+        
+        <section class="box_2">
+            <h1><center>Yanis Anciaux</center></h1><br>
+                <center><img src="/images/avatarYanis.png" width="170" height="170" alt="mon avatar"><br></center>
+                <center><p>j'ai 20 ans j'aime lire et faire de la musique. <br>c'est tout.</p></center>
+        </section>
+        
     </header>
     
     <main>
             <h2>Mon experience:</h2>
         <ul>
-            <li>2022/2023 : beatmaker dans un studio a Nimes</li>
-            <li>2023/2024 : creation d'un espace de jeu dans mon village</li>
+            <LI>2021/2022: BAC STMG.</LI>
+            <li>2022/2023: beatmaker dans un studio a Nimes.</li>
+            <li>2023/2024: creation d'un espace de jeu dans mon village.</li>
         </ul>
+
     </main>
     
     <footer>
         <section>
-            <h3>contactez moi:</h3>
-            <form action="Nom" class="formulaire">
+            <h2>contactez moi:</h2>
+            <form action="formulaire" class="formulaire">
                 <div>
                     <label for="Nom"><h4>Nom:</h4></label>
-                        <input type="text" name="Nom"/>
+                        <input type="text" name="Nom" placeholder="gitmaster"/>
                 </div>
                 <div>
                     <label for="prenom"><h4>Prenom:</h4> </label>
-                        <input type="text" name="prenom"/>
+                        <input type="text" name="prenom" placeholder="pierre"/>
                 </div>
                 <div>
                     <label for="message"><h4>message:</h4> </label>
-                        <textarea name="message" rows="4" cols="30" id="message"></textarea>
+                        <textarea name="message" rows="4" cols="30" placeholder="bonjour, tu est mon idole je t'admire tellement."></textarea>
                 </div>
                 <div>
                     <button>envoyer</button>
                 </div>
             </form>
-        </section>
+        </section><br><br><br><br><br><br>
         
-        <section>
+        <section class="image_Saiko">
             <ul>
-                <li><img src="/images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
-                <li><img src="/images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
-                <li><img src="/images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
-                <li><img src="/images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
-                <li><img src="/images/avatarYanis.png" width="200" height="200" alt="avatarYanis"></li>
+                <li><center><img src="/images/saiko la best.jpg" width="200" alt="Saïko la goat de ce monde"></center></li>
+                <p>Ma chienne qui est magnifique juste pour vos beaux yeux.</p>
             </ul>
         </section>
     </footer>
-    
-    <script>
+        <script>
         w3.includeHTML();
-    </script>
-
+        </script>
 </body>
 </html>

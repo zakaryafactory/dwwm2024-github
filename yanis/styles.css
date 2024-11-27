@@ -1,0 +1,34 @@
+h1{ background: rgb(6, 171, 248);
+    font-size: x-large;width: 100%;height: 30px;padding: 0,5rem;margin: 0,5rem;}
+
+    body{font-family: sans-serif;padding: 0,5rem;background-color: blanchedalmond;}
+
+h3{background-color: rgb(0, 255, 85);font-size: large;padding: 0,5rem;width: 100%;}
+
+h2{background-color: rgb(255, 217, 0);font-size: large;padding: 0,5rem;width: 11%;}
+
+
+            img{border-radius: 10px}
+
+    .box2 {display: flex;align-items: center;justify-content: center;}
+
+    .box2 div {width: 100px;height: 100px;}
+
+        .navigation > * {border: 2px solid rgb(96 139 168);border-radius: 5px;padding: 1em;background-color: rgb(96 139 168 / 0.2);}
+
+        .navigation {border: 2px dotted rgb(96 139 168);padding: 1em;display: flex;}
+
+        .navigation{background-color: rgba(10, 147, 238, 0.5);}
+
+        .navigation{color: rgb(0, 0, 0);}
+
+    label{color: crimson;}
+
+p{color: rgb(225, 0, 255);}
+    
+    .image_Saiko>ul>p{color: darkcyan;}
+
+
+
+/* pseudo element + position-flex box */
+
