@@ -34,7 +34,7 @@ ul, ol {
     list-style: none;
     display: flex;
     flex-direction: row;
-    background-color: chocolate;
+    background-color: rgb(228, 110, 26);
 }
 
 li:last-child {
