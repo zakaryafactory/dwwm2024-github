@@ -1,0 +1,84 @@
+h1 {
+    color: red;
+    font-family: cursive;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: azure;
+}
+
+section {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-evenly
+}
+
+ol.expo {
+    flex-wrap: wrap;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ol.gallery li:last-child {
+    background-color: blueviolet;
+    margin: 50px;
+    justify-content: right;
+    float: right;
+}
+
+ol.gallery li {
+    margin: 10px;
+}
+
+.conte {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.expo, .expe {
+    flex: 1;            
+}
+
+div.expe {
+    background-color: gray;
+}
+
+div.expo {
+    background-color: lightblue; /* Vous pouvez ajouter une couleur différente pour l'expo */
+}
+
+.Descr{
+    display: flex;
+}
+
+img.Descr{
+    width: 33%;
+}
+
+section.presentation{
+    display: flex;
+    border: 3px solid red;
+}
+
+section.photos {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+section.contact{
+    border: 3px solid red; 
+}

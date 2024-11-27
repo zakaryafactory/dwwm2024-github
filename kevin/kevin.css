@@ -1,0 +1,71 @@
+h1{
+    color:rgb(255, 81, 0)
+}
+ul.gallery{
+    background-color: rgb(35, 138, 4);
+    color: #010111;
+    padding: 10px;
+    list-style: none;
+    margin: 11px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5ef;
+    color: #110202;
+    text-align: center;
+}
+img {
+    width: 30px;
+    height: auto;
+    border-radius: 8px; /* Coins arrondis des images */
+    margin: auto;
+    
+}
+
+p{
+    background-color: rgb(7, 7, 238);
+    border: 10px solid rgb(173, 10, 10);
+}
+form{
+    padding: 2%;
+}
+.poli{
+    font-family: cursive;
+    color: blueviolet;
+    margin: 40px;
+}
+
+section{
+    border:3px solid rgb(156, 22, 22)
+}
+
+ol.gallery {
+    flex-wrap: wrap;
+}
+ul{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+li:last-child {
+    background-color: blueviolet;
+    margin: 100;
+}
+lien{width: 100px;height: 100px;
+
+        .navigation > * {border: 2px solid rgb(96 139 168);border-radius: 5px;padding: 1em;background-color: rgb(96 139 168 / 0.2);}
+
+        .navigation {border: 2px dotted rgb(96 139 168);padding: 1em;display: flex;}
+
+        .navigation{background-color: rgba(7, 132, 216, 0.5);}
+
+        .navigation{color: rgb(0, 0, 0);}
+
+    label{color: crimson;}
+}
