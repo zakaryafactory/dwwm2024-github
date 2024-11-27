@@ -1,24 +1,26 @@
-h1{
+h1 {
     color: red;
     font-family: cursive;
     margin: 10px;
     padding: 10px;
 }
 
-header{
+header {
     background-color: aquamarine;
     font-family: 'Courier New', Courier, monospace;
 }
 
-body{
+body {
     background-color: azure;
 }
 
-section{
-    border:3px solid red
+section {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-evenly
 }
 
-ol.gallery {
+ol.expo {
     flex-wrap: wrap;
 }
 
@@ -28,7 +30,6 @@ ul, ol {
     list-style: none;
     display: flex;
     flex-direction: row;
-    background-color: rgb(228, 110, 26);
 }
 
 ol.gallery li:last-child {
@@ -36,20 +37,48 @@ ol.gallery li:last-child {
     margin: 50px;
     justify-content: right;
     float: right;
-  }
+}
 
 ol.gallery li {
     margin: 10px;
 }
 
-div.Descr {
+.conte {
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.expo, .expe {
+    flex: 1;            
+}
 
 div.expe {
     background-color: gray;
-    justify-content: center;
-    float: left;
-    -ms-flex-align: start;
+}
+
+div.expo {
+    background-color: lightblue; /* Vous pouvez ajouter une couleur différente pour l'expo */
+}
+
+.Descr{
+    display: flex;
+}
+
+img.Descr{
+    width: 33%;
+}
+
+section.presentation{
+    display: flex;
+    border: 3px solid red;
+}
+
+section.photos {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+section.contact{
+    border: 3px solid red; 
 }

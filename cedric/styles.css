@@ -1,0 +1,192 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.5rem;
+}
+
+
+
+section {
+    padding: 30px;
+}
+
+h1 {
+    color: black;
+    font-size: 4rem;
+
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+section#presentation {
+    display: flex;
+    align-items: center;
+}
+
+#presentation .image {
+    width: 33%;
+}
+#presentation .image img {
+    width: 100%;
+}
+
+#presentation .description {
+    padding: 1rem;
+}
+
+#details {
+    display: flex;
+    border: none;
+}
+
+section.experiences {
+    background-color: #eee;
+    border-radius: 50px;
+    border: none;
+}
+
+section.experiences ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section.experiences ul li {
+    background-color: turquoise;
+    color: black;
+    font-weight: bold;
+    padding: .5rem .8rem;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-bottom: .8rem;
+    margin-left: .5rem;
+    box-shadow: 5px 5px 7px -5px rgba(0,0,0,0.40)
+}
+
+
+ul.gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul.gallery li {
+    margin-left: 5px;
+    padding: 0;
+}
+
+ul.gallery li:last-child {
+    margin-right: auto;
+}
+
+
+#sectionContact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionCoordonnees {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+ul#sectionCoordonneesCoordonnees,
+ul#sectionCoordonneesSocial {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+ul#sectionCoordonneesCoordonnees li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: #ccc 1px solid;
+}
+
+#sectionCoordonnees ul li span {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    color: turquoise;
+}
+
+ul#sectionCoordonneesSocial {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+ul#sectionCoordonneesSocial li {
+    font-size: 2.5rem;
+}
+
+ul#sectionCoordonneesSocial a {
+    color: black;
+}
+ul#sectionCoordonneesSocial a:hover {
+    color: turquoise;
+}
+
+#sectionFormulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.formulaire {
+    background-color: #eee;
+    border-radius: 50px;
+    width: 98%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 9px -5px rgba(0,0,0,0.53);
+}
+
+.fieldGroup {
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.fieldGroup label {
+    display: block;
+    width: 33%;
+    font-weight: bold;
+}
+.fieldGroup input {
+    border-radius: 50px;
+    height: 40px;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.formulaire textarea { 
+    width: 100%;
+    height: 150px;
+}
+
+.formulaire button {
+    border-radius: 50px;
+    background-color: turquoise;
+    padding: .5rem 2rem;
+    font-size: 18px;
+}
+.formulaire button:hover {
+    background-color: black;
+    color: white;
+}
