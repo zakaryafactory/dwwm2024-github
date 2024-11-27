@@ -1,1 +1,66 @@
-{}
+h1{
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(68, 46, 20); 
+    background-color: rgb(167, 233, 187);
+    font-size: 22px;
+    padding: 2rem 2rem 2rem 2rem
+}
+html{
+    font-family: Arial;
+    padding-left: 2rem;
+}
+section{
+    border: solid 0.2rem black;
+    padding: 0.5rem ;
+}
+ul.galerie{
+    background-color: rgb(147, 147, 224);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ul.galerie li:last-child{ 
+    margin-right: auto;
+    background-color: black;
+}
+
+li{
+    margin: 12px;
+}
+#presentation{
+    padding: 1.5rem;
+    display: flex;
+}
+
+#experience{
+    background-color: rgb(243, 162, 209);
+    flex-direction: column;
+    width: 50%;
+}
+
+#exgal{
+    background-color: aqua;
+    display: flex;
+}
+
+.bubble{
+    background-color: blue;
+    flex-wrap: wrap;
+    padding: 0;
+    display: flex; 
+    list-style: none; 
+    justify-items: stretch;
+    justify-content: center;
+}
+
+.bubble li {
+    background-color: brown; 
+    display: flex;
+    border-radius: 16px;
+    
+}
