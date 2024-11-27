@@ -23,50 +23,39 @@
         <p>je vie a mende</p>
         <p>j'ai la voiture</p>
         <p>et il fais pas beaux </p>
-            <ul>
-              <li>2022 : Bac Pro Systèmes Numériques Option C</li>
-              <li>2020 : CAP REEP/ÉLEC</li>
-              <li>2018 : Diplôme National du Brevet</li>
-            </ul>
-               <h1>CONTACT</h1>
-            <form >
-               <div action="/submit" method="post">  <!-- questionnaire -->
-                <label for="nom">Nom :</label><br>
-                <input type="text" id="nom" name="nom" required><br><br> <!--type = atribut-->
-               </div>
-               <div>
-                <label for="prénom">prénom :</label><br>
-                <input type="text" id="prénom" name="prénom" required><br><br>
-               </div>
-                <label for="date">date :</label><br>
-                <input type="text" id="date" name="date" required><br><br>
-                <div>
-                <label for="email">Email :</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                </div>
-                 <div>
-                <label for="message">Message :</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                </div>
-                <input type="submit" value="Envoyer"><input type="reset">
-            </form>  
-            <h1>PHOTO</h1>
-            <nav>
-                <section>
-                    <ul class="gallery">
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>
-                        <li><img src="/images/avatarKevin.jpg" alt="image" height="50"></li>  
-                    </ul>
-                </section>
+    </section>
+        <section class="games">
+            <div class="gallery">
+                <p>expérience</p>
+                <div class="bubble">HTML</div>
+                <div class="bubble">HTML</div>
+                <div class="bubble">HTML</div>
+            </div>
+            <div class="gallery">
+                <p>Photo</p>
+                <div class="image-container"><img src="/images/avatarKevin.jpg" alt="Image 4"></div>
+                <div class="image-container"><img src="/images/avatarKevin.jpg" alt="Image 4"></div>
                 
+            </div>
+        </section>
+        <div class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <div class="coordinates">
+            <h2>Nos coordonnées</h2>
+            <p><strong>Téléphone:</strong> 0123 456 789</p>
+            <p><strong>Email:</strong> contact@exemple.com</p>
+            <p><strong>Adresse:</strong> 123 Rue de l'Exemple, Mende, France</p>
+        </div>
+    </div>
+         </div>
                 <script>
                     w3.includeHTML();
                 </script>
