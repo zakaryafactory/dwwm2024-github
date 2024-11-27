@@ -8,65 +8,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <header>
+    <section>
     <div w3-include-html="/navigation.html">
 
     </div></header>
+    </section> 
 <body>
-       <center>
-    <h1><em>bouboune guichard</em></h1>
-    <img src="/images/avatarGuichard.png" alt="avatar" height="300">
-      </center>
-    <section>
-        <center>
-        <p>Je m’appelle guichard. Paul. j'habite en France. En lozere  </p>
-        </center>
-    </section>
-    <section>
-        <center>
-        <h2>experiences</h2>
-        </center>
-    </section>
-    <section>
-        <table>
-            
-        <ul>
-            <li>date</li><input type="text">
-            <li>date</li><input type="text">
-            <h2>
-                <center>contact</center>
-            </h2>
-        </ul>
-<ol>
-    <form action="contact">noms</form>
-    <label for="name">
-        <input type="text"></label></li><br>
-
-        
-        <label for="name">prenom</label>
-            <input type="text"></label></li><br>
-            
-            
-    <label for="name">telephone</label>
-        <input type="text"></label></li><br>
-        
-    <div class="button">
-        <button type="submit">envoyer</button>
-        
+   
+    <section class="presentation">
+       <img src="/guichard avatar.png" alt="avatar" height="300">
+     <div>
+       <h1><em>bouboune guichard</em></h1>
+       <p>Je m’appelle guichard.j'habite en France. En lozere  </p>
     </div>
+    </section>
+    <div id="contact">
+<section class="experiences">
+        <h2>experiences</h2>
+        <ul class="expe">
+            <div class="bubble">2024 formation dev</div>
+            <div class="bubble">2024 formation dev</div>
+            <div class="bubble">2024 formation dev</div>
+            <div class="bubble">2024 formation dev</div>
+            <div class="bubble">2024 formation dev</div>
+            <div class="bubble">2024 formation dev</div>
+            <div class="bubble">2024 formation dev</div>
+        </ul>
+</section>
+<section>
+        
+            <ul class="gallery">
+            
+                <li><img src="/guichard avatar.png" alt="guichard"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="theo"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="kevin"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="eddi"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="nadima"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jb"width="100"></li>
+                
+            </ul>
+        </div>
+</section>
+        <section id="contact">
+        <h2>
+            <center>contact</center>
+        </h2>
+    <div id="contact">
+        <label for="text">noms</label>
+        <input type="text"></label></li><br>
+        <label for="text">prenom</label>
+        <input type="text"></label></li><br>
+        <label for="text">telephone</label>
+        <input type="text"></label></li><br>
+    </div>
+        
+    
     <div>
-        <ul>
-            <li>
-        <label for="noms">noms</label>
-        <input type="text" id="name" name="noms">
-            </li>
-            <li>
-                <label for="messqge">message</label>
+        <form action="formulaire">
+    </div>    
+            <div>
+                <label for="text">noms</label>
+                <input type="text" id="name" name="noms">
+            </div>
+            <div>
+                <label for="message">message</label>
                 <input type="message" id="name" name="message">
-            </li>
-            <li>
+            </div>
+            <div>
                 <label for="mail">mail</label>
                 <input type="mail" id="mail" name="mail">
-            </li>
+            </div>
             
             <div class="button">
                 <button type="submit">envoyer</button>
@@ -74,25 +99,10 @@
             </div> 
             <div>
                 <textarea name="message" id="messageArea"></textarea>
+            </form>   
             </div>
-            <section>
-                <ul>
-                
-                    <li><img src="/images/avatarGuichard.png" alt="guichard"width="100"></li>
-                    <li><img src="/images/avatarTheo.png" alt="theo"width="100"></li>
-                    <li><img src="/images/avatarKevin.jpg" alt="kevin"width="100"></li>
-                    <li><img src="/images/avatarEddi.png" alt="eddi"width="100"></li>
-                    <li><img src="/images/avatarNadima.png" alt="nadima"width="100"></li>
-                    <li><img src="/images/avatarJeanBaptiste.png" alt="jb"width="100"></li>
-                </ul>
-            </section>
-
-</ul>
-    </div>
-</ol>
-
-        </table>
-    </section>
+        </section>
+       
     <script>
         w3.includeHTML();
     </script>
