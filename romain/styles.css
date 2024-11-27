@@ -14,12 +14,6 @@ body{
     background-color: azure;
 }
 
-.poli{
-    font-family: cursive;
-    color: blueviolet;
-    margin: 50px;
-}
-
 section{
     border:3px solid red
 }
@@ -37,7 +31,25 @@ ul, ol {
     background-color: rgb(228, 110, 26);
 }
 
-li:last-child {
+ol.gallery li:last-child {
     background-color: blueviolet;
-    margin: 300;
+    margin: 50px;
+    justify-content: right;
+    float: right;
+  }
+
+ol.gallery li {
+    margin: 10px;
+}
+
+div.Descr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+div.expe {
+    background-color: gray;
+    justify-content: center;
+    float: left;
+    -ms-flex-align: start;
 }
