@@ -137,3 +137,13 @@ button {
 button:hover {
     background-color: #218838;
 }
+.garfield{
+      display: flex;
+    width: 50%;
+}
+.Pirate{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    justify-content: left;
+}
