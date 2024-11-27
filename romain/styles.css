@@ -19,3 +19,25 @@ body{
     color: blueviolet;
     margin: 50px;
 }
+
+section{
+    border:3px solid red
+}
+
+ol.gallery {
+    flex-wrap: wrap;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: chocolate;
+}
+
+li:last-child {
+    background-color: blueviolet;
+    margin: 300;
+}
