@@ -17,6 +17,7 @@ body {
 section {
     border: 3px solid red;
     display: flex;
+    justify-content: space-evenly
 }
 
 ol.expo {
@@ -44,15 +45,12 @@ ol.gallery li {
 
 .conte {
     display: flex;
-    justify-content: space-between;
-    width: 100%;              
-    height: 15vh;                 
-    margin: 25px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .expo, .expe {
-    flex: 1;                 
-    margin: 10px;            
+    flex: 1;            
 }
 
 div.expe {
@@ -61,4 +59,26 @@ div.expe {
 
 div.expo {
     background-color: lightblue; /* Vous pouvez ajouter une couleur différente pour l'expo */
+}
+
+.Descr{
+    display: flex;
+}
+
+img.Descr{
+    width: 33%;
+}
+
+section.presentation{
+    display: flex;
+    border: 3px solid red;
+}
+
+section.photos {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+section.contact{
+    border: 3px solid red; 
 }
