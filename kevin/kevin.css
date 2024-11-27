@@ -7,6 +7,10 @@ ul.gallery{
     padding: 10px;
     list-style: none;
     margin: 11px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
 }
 
 body {
@@ -16,19 +20,39 @@ body {
     text-align: center;
 }
 img {
-    max-width: 20%;
+    width: 20px;
     height: auto;
+    border-radius: 8px; /* Coins arrondis des images */
+    
 }
+
 p{
-    background-color: rgb(246, 246, 247);
+    background-color: rgb(7, 7, 238);
     border: 10px solid rgb(173, 10, 10);
 }
 form{
     padding: 2%;
+}
+.poli{
+    font-family: cursive;
+    color: blueviolet;
+    margin: 40px;
+}
+
+section{
+    border:3px solid rgb(156, 22, 22)
+}
+
+ol.gallery {
+    flex-wrap: wrap;
 }
 ul{
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
+}
+li:last-child {
+    background-color: blueviolet;
+    margin: 100;
 }
