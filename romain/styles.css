@@ -21,6 +21,11 @@ header {
     border-bottom: 5px solid black;
 }
 
+header ul, header li {
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+
 body {
     background-color: rgb(205, 173, 113);
     border: 3px solid black;
