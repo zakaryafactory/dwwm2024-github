@@ -28,7 +28,7 @@ img {
 }
 
 p{
-    background-color: rgb(7, 7, 238);
+    background-color: rgb(214, 106, 5);
     border: 10px solid rgb(173, 10, 10);
 }
 form{
@@ -57,15 +57,93 @@ li:last-child {
     background-color: blueviolet;
     margin: 100;
 }
-lien{width: 100px;height: 100px;
 
-        .navigation > * {border: 2px solid rgb(96 139 168);border-radius: 5px;padding: 1em;background-color: rgb(96 139 168 / 0.2);}
+.games {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
 
-        .navigation {border: 2px dotted rgb(96 139 168);padding: 1em;display: flex;}
+.game {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
 
-        .navigation{background-color: rgba(7, 132, 216, 0.5);}
-
-        .navigation{color: rgb(0, 0, 0);}
-
-    label{color: crimson;}
+footer {
+    background-color: #2f3542;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.image-container {
+    margin: 11px;
+}
+img {
+    width: 160px; /* Vous pouvez ajuster la taille des images ici */
+    height: auto;
+    border-radius: 8px; /* Coins arrondis des images */
+}
+.bubble {
+    background-color: #ffcc00; /* Jaune pour les bulles */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-form {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.coordinates {
+    background-color: #e7f3fe;
+    padding: 20px;
+    border-radius: 5px;
+}
+h2 {
+    color: #333;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+.garfield{
+      display: flex;
+    width: 50%;
+}
+.Pirate{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    justify-content: left;
 }

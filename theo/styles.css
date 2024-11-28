@@ -1,0 +1,117 @@
+h1{
+    color : red;
+    background-color:blueviolet;
+    font-size:24px;
+    width:150px;
+    height:50px;
+    padding: 2px 2px 2px 10px;
+    margin: 10px;
+    border-color: black; 
+    border: 10px;
+    border-style: dashed;
+    border-radius: 20px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+section{
+    border: 3px solid red;
+    padding: 30px;
+    display: flex;
+}
+
+ul.listeimage{
+    background-color: white;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    float: right;
+}
+
+ul li:last-child{
+    margin: ;
+}
+li{
+    margin: 0%;
+}
+.avatar{
+    height: 200px;
+    width: 33,33%;
+}
+section.first{
+    display: flex;
+    width: 100%;
+}
+.first-left{
+    width: 33%;
+    align-items: center;
+    padding-right: 10px;
+}
+
+
+
+
+
+section.second{
+    display: flex;
+    width: 100%;
+}
+section.exp{
+    width: 50%;
+    background-color: gray;
+}
+section.photo{
+    width: 50%;
+    background-color: white;
+    text-decoration: double;
+}
+h2{
+    color: black;
+}
+li{
+    list-style: none;
+    text-decoration: wavy;
+}
+.bubble{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 100px;
+    position: center;
+    font-size: 16px;
+    box-shadow: 0 4px 6px
+}
+button{
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+form{
+    margin: 3rem 0
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    height: 0 auto;
+    border-radius: 20rem;
+    padding: 4rem;
+    background-color: grey;
+}

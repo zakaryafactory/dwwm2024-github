@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,92 +7,105 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <div w3-include-html="/navigation.html">
-
-    </div></header>
 <body>
-       <center>
-    <h1><em>bouboune guichard</em></h1>
-    <img src="/images/avatarGuichard.png" alt="avatar" height="300">
-      </center>
-    <section>
-        <center>
-        <p>Je m’appelle guichard. Paul. j'habite en France. En lozere  </p>
-        </center>
+<header>
+    
+    <div w3-include-html="/navigation.html"></div>
+</header>
+    
+
+   
+    <section id="presentation">
+    <div class="images"><img src="/images/avatarGuichard.png" alt="avatar"></div> 
+    <div class="description">
+       <h1><em>bouboune guichard</em></h1>
+       <p>Je m’appelle guichard.j'habite a marvejols en lozere  </p>
+    </div>
     </section>
-    <section>
-        <center>
+
+    <div id="contact">
+<section class="experiences">
         <h2>experiences</h2>
-        </center>
-    </section>
-    <section>
-        <table>
-            
-        <ul>
-            <li>date</li><input type="text">
-            <li>date</li><input type="text">
-            <h2>
-                <center>contact</center>
-            </h2>
+        <ul class="expe">
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
+            <li> 2024 formation developpeur web</li>
         </ul>
-<ol>
-    <form action="contact">noms</form>
-    <label for="name">
-        <input type="text"></label></li><br>
+</section>
 
+<section>
         
-        <label for="name">prenom</label>
-            <input type="text"></label></li><br>
+        <ul class="gallery">
             
-            
-    <label for="name">telephone</label>
-        <input type="text"></label></li><br>
-        
-    <div class="button">
-        <button type="submit">envoyer</button>
-        
+                <li><img src="/guichard avatar.png" alt="guichard"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="theo"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="kevin"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="eddi"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="nadima"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="shain"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="romain"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="kenan"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="celia"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="yannis"width="100"></li>
+                <li><img src="/guichard avatar.png" alt="jean baptiste"width="100"></li>
+                
+                
+        </ul>
     </div>
-    <div>
+</section>
+
+
+<section id="contacts">
+
+        <h2>contacts</h2>
+
+    <div id="contacts">
         <ul>
-            <li>
-        <label for="noms">noms</label>
-        <input type="text" id="name" name="noms">
-            </li>
-            <li>
-                <label for="messqge">message</label>
-                <input type="message" id="name" name="message">
-            </li>
-            <li>
-                <label for="mail">mail</label>
-                <input type="mail" id="mail" name="mail">
-            </li>
-            
-            <div class="button">
-                <button type="submit">envoyer</button>
-                
-            </div> 
-            <div>
-                <textarea name="message" id="messageArea"></textarea>
-            </div>
-            <section>
-                <ul>
-                
-                    <li><img src="/images/avatarGuichard.png" alt="guichard"width="100"></li>
-                    <li><img src="/images/avatarTheo.png" alt="theo"width="100"></li>
-                    <li><img src="/images/avatarKevin.jpg" alt="kevin"width="100"></li>
-                    <li><img src="/images/avatarEddi.png" alt="eddi"width="100"></li>
-                    <li><img src="/images/avatarNadima.png" alt="nadima"width="100"></li>
-                    <li><img src="/images/avatarJeanBaptiste.png" alt="jb"width="100"></li>
-                </ul>
-            </section>
+            <li><span>telephone.</span> 0707070070</li>
+            <li><span>mail.</span> guichard.bouboune.dwwm48@gmail.com</li>
+            <li><span>adresse.</span> somewhereovertherainbow</li>
+        </ul>
 
-</ul>
+        <label for="text">noms</label>
+        <input type="text"></label></li><br>
+        <label for="text">prenom</label>
+        <input type="text"></label></li><br>
+        <label for="text">telephone</label>
+        <input type="text"></label></li><br>
     </div>
-</ol>
-
-        </table>
-    </section>
+        <ul id="sectionCoordonneesSocial">
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-x"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>    
+    
+    <div>
+        <form action="formulaire">
+    </div>   
+           <fieldset>
+            <div>
+                <label for="text">noms</label>
+                <input type="text" id="name" name="noms">
+            </div>
+            <div>
+                <label for="texte">message</label>
+                <input type="texte" id="name" name="message">
+            </div>
+            <div>
+                <label for="texte">mail</label>
+                <input type="texte" id="mail" name="mail">
+            </div>
+           
+           </fieldset>  
+</section>
+       
     <script>
         w3.includeHTML();
     </script>
