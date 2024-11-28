@@ -1,10 +1,4 @@
 
-header {
-    border: 1px lightgrey solid;
-    border-radius: 30px;
-    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
-}
 body {
     background-color: #f2e6ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,6 +10,7 @@ header {
     border: 1px solid lightgrey;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    text-align: center;
 }
 
 main {
@@ -90,4 +85,14 @@ footer form button {
 footer form button:hover {
     background-color: darkviolet;
 }
-
+ul li {
+    background-color: turquoise;
+    color: black;
+    font-weight: bold;
+    padding: .5rem .8rem;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-bottom: .8rem;
+    margin-left: .5rem;
+    box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.40)
+}
