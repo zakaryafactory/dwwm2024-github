@@ -4,7 +4,9 @@ html {
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+body{
+    width: 100%;
+}
 h1 {
     color: rgb(116, 47, 180);
     background-color: rgb(215, 180, 226);
@@ -16,7 +18,10 @@ h1 {
     padding: 70px 70px 70px 70px; 
     margin: 50px 50px 70px 50px;
 }
-
+#cc {
+    display: flex;
+    width: 95%;
+}
 
 .presentation {
     display: flex;             
