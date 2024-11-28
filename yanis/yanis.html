@@ -7,7 +7,7 @@
             
             <script src="https://www.w3schools.com/lib/w3.js"></script>
             <link rel="stylesheet" href="styles.css">
-        </head>
+    </head>
 <body>
     
     <header class="box">
@@ -17,26 +17,41 @@
         </section>
         
         <section class="box_2">
-            <h1><center>Yanis Anciaux</center></h1><br>
-                <center><img src="/images/avatarYanis.png" width="170" height="170" alt="mon avatar"><br></center>
-                <center><p>j'ai 20 ans j'aime lire et faire de la musique. <br>c'est tout.</p></center>
-        </section>
+            <h1>Yanis Anciaux</h1>
+                <div class="contenu">
+                    <img src="/images/avatarYanis.png" width="170" height="170" alt="mon avatar">
+                    <p>J'ai 20 ans, j'aime lire et faire de la musique.</p>
+                </div>
+        </section><br><br><br><br>
         
     </header>
     
-    <main>
+    <main class="exp">
+        <section class="expEttiquette">   
             <h2>Mon experience:</h2>
-        <ul>
-            <LI>2021/2022: BAC STMG.</LI>
-            <li>2022/2023: beatmaker dans un studio a Nimes.</li>
-            <li>2023/2024: creation d'un espace de jeu dans mon village.</li>
-        </ul>
+                <ul>
+                    <LI class="etiquette">bac STMG.</LI>
+                    <li class="etiquette">Travail dans un studio de musique.</li><br>
+                    <li class="etiquette">un jour à l'usine.</li>
+                    <li class="etiquette">un frére.</li><br>
+                    <li class="etiquette">benevolat dans mon village.</li>
+                    <li class="etiquette">une grand-mére.</li>
+                </ul>
+        </section>
+    
+    
 
-    </main>
+        <section>
+            <ul class="image_Saiko">
+                <li><center><img src="/images/saiko la best.jpg" width="200" alt="Saïko la goat de ce monde"></center></li>
+            </ul>
+                    <p><h5>Ma chienne qui est magnifique juste pour vos beaux yeux.</h5></p>
+        </section>
+    </main><br><br><br><br>
     
     <footer>
-        <section>
-            <h2>contactez moi:</h2>
+        <section class="contact">
+            <h4>contactez moi:</h4>
             <form action="formulaire" class="formulaire">
                 <div>
                     <label for="Nom"><h4>Nom:</h4></label>
@@ -48,23 +63,17 @@
                 </div>
                 <div>
                     <label for="message"><h4>message:</h4> </label>
-                        <textarea name="message" rows="4" cols="30" placeholder="bonjour, tu est mon idole je t'admire tellement."></textarea>
+                        <textarea name="message" rows="4" cols="30" placeholder="salut, tu est mon idole je t'admire tellement."></textarea>
                 </div>
                 <div>
                     <button>envoyer</button>
                 </div>
             </form>
-        </section><br><br><br><br><br><br>
-        
-        <section class="image_Saiko">
-            <ul>
-                <li><center><img src="/images/saiko la best.jpg" width="200" alt="Saïko la goat de ce monde"></center></li>
-                <p>Ma chienne qui est magnifique juste pour vos beaux yeux.</p>
-            </ul>
         </section>
     </footer>
+
         <script>
-        w3.includeHTML();
+            w3.includeHTML();
         </script>
 </body>
 </html>

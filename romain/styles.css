@@ -8,6 +8,10 @@ h1 {
 header {
     background-color: aquamarine;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -53,12 +57,8 @@ ol.gallery li {
     flex: 1;            
 }
 
-div.expe {
-    background-color: gray;
-}
-
 div.expo {
-    background-color: lightblue; /* Vous pouvez ajouter une couleur différente pour l'expo */
+    background-color: lightblue;
 }
 
 .Descr{
@@ -66,19 +66,38 @@ div.expo {
 }
 
 img.Descr{
-    width: 33%;
+    height: 30px;
 }
 
 section.presentation{
     display: flex;
     border: 3px solid red;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+section.skibidi{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+
 }
 
 section.photos {
+    display: flex;
     background-color: antiquewhite;
     text-align: center;
+    justify-content: flex-start;
 }
 
 section.contact{
     border: 3px solid red; 
+}
+
+.encar{
+    background-color: grey;
+    border-radius: 25px;
+    margin: 10px;
 }
