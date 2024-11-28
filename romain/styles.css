@@ -77,7 +77,7 @@ section.presentation{
     text-align: center;
 }
 
-section.skibidi{
+section.Part2{
     display: flex;
     background-color: cadetblue;
     justify-content: center;
@@ -93,7 +93,7 @@ section.photos {
 }
 
 section.contact{
-    border: 3px solid red; 
+    border: 3px solid red;
 }
 
 .encar{
