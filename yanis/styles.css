@@ -8,16 +8,16 @@ h4{font-size: x-large; font-style: oblique;}
 
 img{border-radius: 10px}
 
-.navigation > * {border: 2px solid rgb(96 139 168);border-radius: 5px;padding: 1em;background-color: rgb(96 139 168 / 0.2);}
+.navigation > * {border: 2px solid rgb(96 139 168);border-radius: 5px;padding: 1em;background-color: rgb(96 139 168 / 0.2)}
 .navigation {border: 2px dotted rgb(96 139 168);padding: 1em;display: flex;}
 .navigation{background-color: blanchedalmond;}
 .navigation{color: rgb(0, 0, 0);}
 
-label{color: crimson;}
+label{color: darkred;}
     
 li{margin: 10px;}
 
-.box_2 {padding: 1em;width: 100%;height: 200px;box-sizing: border-box;background-color: blanchedalmond;background-image: 
+.box_2 {border:solid black; padding: 1em;width: 100%;height: 200px;box-sizing: border-box;background-color: blanchedalmond;background-image: 
     linear-gradient(185deg, rgba(0, 0, 0, 0) 95%, #26ff00 95%),
     linear-gradient(85deg, rgba(0, 0, 0, 0) 95%, #26ff00 95%),
     linear-gradient(185deg, rgba(0, 0, 0, 0) 90%, #ffea00 90%),
@@ -33,28 +33,24 @@ li{margin: 10px;}
 .box_2 h1 {text-align: center;}
 .box_2 .contenu {display: flex;align-items: center; justify-content: center; gap: 20px; }
 .box_2 img {flex-shrink: 0;  border-radius: 50%;}
-.box_2 p {margin: 0;font-size: 1rem; font-size: larger;}
+.box_2 p {margin: 0px;font-size: 1rem; font-size: larger;}
 
 
 main{display: flex; list-style: none; justify-content: space-between;}
 .exp {width: 80%; margin: 0 auto; text-align: left;}
 .exp .image_Saiko {display: flex;align-items: center; gap: 20px; }
 .etiquette{display:inline-block; background-color: rgb(235, 215, 248); border-radius: 20px;padding: 5px 10px;margin: px 0;font-weight: bold; box-shadow: 5px 2px 5px black; font-size: medium;}
-.expEttiquette{text-align: center;padding: 1em ; border: 0px solid rgb(0, 0, 0); background-color: blanchedalmond;border-radius: 20px;}
+.expEttiquette{text-align: center;padding: 1em; background-color: blanchedalmond;}
 .etiquette{flex-direction: column;}
-.etiquette[data-length="large"] {order: -1;}
-.etiquette[data-length="small"] {order: 1;}
 
-.contact {max-width: 600px;margin: 20px auto;padding: 20px;background: #f1f1d1;border-radius: 50px;box-shadow:  4px 6px rgba(0, 0, 0, 0.1);border:solid black;}
-.contact h4, .contact h2 {margin-bottom: 10px;color: #444;text-align: center; border: 3px #444; }
+.contact {max-width: 600px;margin: 20px auto;padding: 20px;background: #f1f1d1;border-radius: 50px;box-shadow:  4px 6px rgba(0, 0, 0, 0.1);border:dotted black;}
+.contact h4, .contact h2 {margin-bottom: 10px;color: #444;text-align: center; border:  3px #444; }
 
 
 .formulaire div {margin-bottom: 15px;display: flex;flex-direction: column;align-items: flex-start;}
 .formulaire label h4 {margin: 0 0 5px;font-size: 16px; color: #555;}
-.formulaire input,
-.formulaire textarea {width: 100%;padding: 8px;border: 1px solid #ddd;border-radius: 10px;font-size: 14px;box-sizing: border-box;}
-.formulaire input:focus,
-.formulaire textarea:focus {border-color: #007bff;outline: none;box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);}
+.formulaire input,.formulaire textarea {width: 100%;padding: 8px;border: 1px solid #ddd;border-radius: 10px;font-size: 14px;box-sizing: border-box;}
+.formulaire input:focus,.formulaire textarea:focus {border-color: #007bff;outline: none;box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);display:}
 .formulaire button {padding: 10px 15px;background: #000000;color: #fff;border: none;border-radius: 20px; cursor: pointer;font-size: 16px;transition: background 0.3s ease;}
 .formulaire button:hover {background: #000000;transform:scale(1.1) ;}
 
@@ -69,5 +65,5 @@ main{display: flex; list-style: none; justify-content: space-between;}
 .resaux_sociaux img:hover {transform: scale(1.1);}
 
 .image_Saiko{list-style: none;}
-h5{display:flex; background-color: rgb(255, 255, 255); border-radius: 20px;padding: 5px 10px;margin: px 0;font-weight: bold; box-shadow: 5px 2px 5px rgb(0, 0, 0); color: #000000;}
+h5{display:flex; background-color: rgb(235, 215, 248); border-radius: 20px;padding: 5px 10px;margin: px 0;font-weight: bold; box-shadow: 5px 2px 5px rgb(0, 0, 0); color: #000000;}
 
