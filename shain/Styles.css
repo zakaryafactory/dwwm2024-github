@@ -1,5 +1,104 @@
-h1{
-background-color: chartreuse;
-    color: rebeccapurple;
-    font-size: 22px;
+body {
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer tous les éléments horizontalement */
+    min-height: 100vh; /* Assurer que la page couvre toute la hauteur de l'écran */
+    justify-content: space-between; /* Espacement entre les éléments */
+}
+
+/* Mise en forme du titre principal */
+h1 {
+    text-align: center;
+    color: rgb(197, 34, 175); 
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+
+/* Image Avatar */
+#kenan {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* S'assurer que l'image ne déborde pas */
+    height: auto;
+}
+
+/* Conteneur principal pour les sections (Flexbox) */
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux sections de se réorganiser en plusieurs lignes si nécessaire */
+    justify-content: center; /* Centrer les sections horizontalement */
+    gap: 20px; /* Espacement entre les sections */
+}
+
+/* Mise en forme des sections A, B, C */
+section {
+    width: 45%; /* Largeur des sections (ajuste selon ton besoin) */
+    padding: 20px;
+    border: 5px solid #ddd; /* Bordure légère */
+    background-size: cover; /* Pour que l'image couvre toute la section */
+    background-position: center; /* Centrer l'image de fond */
+    border-radius: 8px; /* Coins arrondis */
+    margin: 10px 0;
+    box-sizing: border-box; /* Inclure la padding dans la largeur totale */
+}
+
+/* Style de la section A */
+#A {
+    background-image: url("https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg");
+}
+
+/* Style de la section B */
+#B {
+    background-image: url("https://wallpapercat.com/w/full/3/8/3/797158-3840x2160-desktop-4k-pastel-colors-wallpaper-image.jpg");
+}
+
+/* Style de la section C */
+#C {
+    background-image: url("https://htmlcolorcodes.com/assets/images/colors/light-green-color-solid-background-1920x1080.png");
+}
+
+/* Mise en forme de la section D (Contact) */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+footer h3 {
+    color: blueviolet;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer form input,
+footer form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer form button {
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Ajout de styles au survol du bouton */
+footer form button:hover {
+    background-color: darkviolet;
 }
