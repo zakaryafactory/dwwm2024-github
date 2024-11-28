@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +7,69 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>   
+<body>
 <header>
-    <a href="/brenda/brenda.html">Brenda</a>
-        <a href="/cedric/cedric.html">Cédric</a>
-        <a href="/celia/celia.html">Célia</a>
-        <a href="/eddi/eddi.html">Eddi</a>
-        <a href="/guichard/guichard.html">Guichard</a>
-        <a href="/jeanBaptiste/jeanBaptiste.html">JB</a>
-        <a href="/kenan/kenan.html">Kenan</a>
-        <a href="/kevin/kevin.html">Kévin</a>
-        <a href="/nadima/nadima">Nadima</a>
-        <a href="/romain/romain.html">Romain</a>
-        <a href="/theo/theo.html">Théo</a>
-        <a href="/yanis/yanis.html">Yanis</a>
-        <a href="/shain/shain.html">Shain</a>
-    </ul>
+    <nav>
+        <div class="nav-container">
+        <ul>
+            <li><a href="#introduction">Informations personnelles</a></li>
+            <li><a href="#experience">Compétences</a></li>
+            <li><a href="#projects">Projets récents</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="formateurs">
+                <a href="/brenda/brenda.html">Brenda</a>
+                <a href="/cedric/cedric.html">Cédric</a>
+            </div>
+            <div class="links">
+                <a href="/celia/celia.html">Célia</a>
+                <a href="/eddi/eddi.html">Eddi</a>
+                <a href="/guichard/guichard.html">Guichard</a>
+                <a href="/jeanBaptiste/jeanBaptiste.html">JB</a>
+                <a href="/kenan/kenan.html">Kenan</a>
+                <a href="/kevin/kevin.html">Kévin</a>
+                <a href="/nadima/nadima">Nadima</a>
+                <a href="/romain/romain.html">Romain</a>
+                <a href="/theo/theo.html">Théo</a>
+                <a href="/yanis/yanis.html">Yanis</a>
+                <a href="/shain/shain.html">Shain</a>
+            </div>
+        </div>
+    </nav>
 </header>
+
 <main>
     <div class="section-container">
-    <section id="introduction">
-        <h1>Fabre Kenan, 24 ans, Permis B</h1>
-        <p>Amateur en informatique, j'aime la randonnée en nature, cuisiner et les jeux vidéos.</p>
-        <img src="/images/avatarKenan.png" alt="Avatar de Kenan" width="350">
-    </section>
+        <section id="introduction">
+            <h1>Fabre Kenan, 24 ans, Permis B</h1>
+            <p>Amateur en informatique, j'aime la randonnée en nature, cuisiner et les jeux vidéos.</p>
+            <img src="/images/avatarKenan.png" alt="Avatar de Kenan" width="350">
+        </section>
+
         <section id="experience">
             <h2>Mon Expérience</h2>
             <ul>
-                <li>
-                    01/06/2022 : Usine Pierre Fabre Avène
-                </li>
-                <li>
-                    01/07/2021 : Hôtel de plein air
-                   
-                </li>
-                <li>
-                    01/09/2020 : Stage informatique
+                <li>01/06/2022 : Usine Pierre Fabre Avène</li>
+                <li>01/07/2021 : Hôtel de plein air</li>
+                <li>01/09/2020 : Stage informatique</li>
             </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projets récents</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>kenan.html</h3>
+                    <p>Première page html</p>
+                </div>
+                <div class="project">
+                    <h3>style.css</h3>
+                    <p>Mon premier code en css</p>
+                </div>
+            </div>
         </section>
     </div>
 </main>
+
 <footer>
     <section id="contact">
         <h3>Contact</h3>
@@ -65,6 +88,7 @@
         </form>
     </section>
 </footer>
+
 <script>
     w3.includeHTML();
 </script>
