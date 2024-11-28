@@ -138,12 +138,37 @@ button:hover {
     background-color: #218838;
 }
 .garfield{
-      display: flex;
+    display: flex;
     width: 50%;
+}
+
+.garfield .odi { 
+    background-color: #218838;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-left: red solid 5px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
 }
 .Pirate{
     display: flex;
     flex-direction: row-reverse;
     width: 50%;
     justify-content: left;
+}
+.Pirate .jack {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-left: red solid 5px;
+}
+.pearl {
+    display: flex;
+    flex-wrap: wrap;
+}
+#boite {
+    display: flex;
 }
