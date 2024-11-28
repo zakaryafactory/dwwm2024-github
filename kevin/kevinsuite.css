@@ -1,8 +1,8 @@
 header div nav {
-    border: 1px lightgrey solid;
+    border: 1px rgb(172, 6, 6) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 body {
@@ -22,10 +22,10 @@ body {
     width: 45%;
     display: flex;
     flex-direction: column;
-    border: 1px lightgrey solid;
+    border: 1px rgb(196, 9, 9) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 #coordonnees-avatar #coordonnees div {
@@ -47,7 +47,7 @@ body {
     padding-inline-start: 0;
     margin: 1rem 0;
     padding: 1rem 0 0;
-    border-top: 1px lightgrey solid;
+    border-top: 1px rgb(214, 10, 10) solid;
 }
 
 #coordonnees-avatar #coordonnees li {
@@ -81,10 +81,10 @@ body {
     flex-direction: column;
     width: 45%;
     padding: 2rem;
-    border: 1px lightgrey solid;
+    border: 1px rgb(165, 7, 7) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 #details {
@@ -95,10 +95,10 @@ body {
 #details .content-desc {
     margin-top: 1rem;
     padding: 0 2rem;
-    border: 1px lightgrey solid;
+    border: 1px rgb(155, 1, 1) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 #details .experiences li,
@@ -140,10 +140,10 @@ body {
     margin-top: 1rem;
     width: 50%;
     padding: 0 2rem;
-    border: 1px lightgrey solid;
+    border: 1px rgb(175, 8, 8) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 #divers .autre {
@@ -157,19 +157,19 @@ body {
 
 #divers .autre section {
     padding: 0 2rem;
-    border: 1px lightgrey solid;
+    border: 1px rgb(230, 27, 27) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 #form {
     margin-top: 1rem;
     padding: 0 2rem;
-    border: 1px lightgrey solid;
+    border: 1px rgb(224, 3, 3) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d6c8c8;
 }
 
 .contact {
@@ -223,10 +223,19 @@ body {
 .reducible {
     width: 200px;
     height: 200px;
-    background-color: #4CAF50; /* Un joli vert */
+    background-color: #0f749c; /* Un joli vert */
     transition: transform 0.3s ease; /* Animation douce */
 }
 
 .reducible:hover {
     transform: scale(0.8); /* Rétrécit l'élément à 80% de sa taille */
+}
+
+@media (max-width: 600px) {/*responsive*/
+    body {
+        background-color: #e0e0e0; /* Fond gris clair sur les écrans plus petits */
+    }
+    header, footer {
+        padding: 0.5em 0;
+    }
 }
