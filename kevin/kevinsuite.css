@@ -6,7 +6,7 @@ header div nav {
 }
 
 body {
-    background-color: #f2e6ff;
+    background-color: #e2dbe9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1.5rem;
 }
@@ -218,4 +218,15 @@ body {
 .image img {
     width: 10px; /* Vous pouvez ajuster la taille des images ici */
     height: 10%;
+}
+
+.reducible {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50; /* Un joli vert */
+    transition: transform 0.3s ease; /* Animation douce */
+}
+
+.reducible:hover {
+    transform: scale(0.8); /* Rétrécit l'élément à 80% de sa taille */
 }
