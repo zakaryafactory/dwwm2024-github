@@ -8,6 +8,10 @@ h1 {
 header {
     background-color: aquamarine;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -66,17 +70,21 @@ div.expo {
 }
 
 img.Descr{
-    width: 33%;
+    height: 30px;
 }
 
 section.presentation{
     display: flex;
     border: 3px solid red;
+    padding: 10px;
+    text-align: center;
 }
 
 section.photos {
     background-color: antiquewhite;
     text-align: center;
+    flex:10
+    0 100 100px
 }
 
 section.contact{
