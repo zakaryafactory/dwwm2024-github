@@ -11,6 +11,9 @@ header {
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
@@ -44,6 +47,18 @@ header .links a {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
 }
 
+header .formateurs a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(90, 174, 196);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+}
+
+
 main {
     flex: 1;
     padding: 20px;
@@ -75,7 +90,7 @@ main {
 
 #projects {
     flex: 1 1 45%;
-    background-color: rgb(247, 216, 189);
+    background-color: rgb(151, 110, 190);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -89,7 +104,7 @@ main {
 
 .project {
     flex: 1;
-    background-color: #fff;
+    background-color: #fcfcfc;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
