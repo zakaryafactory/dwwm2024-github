@@ -10,6 +10,7 @@
 </head>
 <body>
     
+
 <header>
     <div w3-include-html="../navigation.html"></div>
 </header>
@@ -17,13 +18,14 @@
 
 <section id="presentation">
     <div>
-        <img src="../images/avatarCelia.png" width="200" height="200">
+        <img src="../images/avatarCelia.png" width="200" height="200" alt="avatarcelia">
     </div>
     <div>
         <h1>Celia Sansano</h1>
         <p> Je suis originaire du Gard et je suis actuelelment en lozere, pour suivre une formation de Developpeur web</p>
     </div>
 </section>  
+
 
 <section id="exgal">
     <section  id="experience">
@@ -41,7 +43,8 @@
     </div>
     </section>
 
-    <section id="Photo">
+
+    <section id="photo">
         <h3>Galerie</h3>
         <ul class="galerie">
             <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
@@ -55,24 +58,39 @@
     </section>
 </section>
 
-<section>
-    <h4>Mes coordonnées</h4>
-    <form>
+<section id="contact">
+    <section id="mail">
         <div>
-            <label for="nom">Nom : </label><input type="text" name="nom">
+            <h4> Mes Coordonnées</h4>
+                <ul>
+                    <li>Tel: 00000000</li>
+                    <li>Mail: gfggfhgf@h</li>
+                    <li>Adresse: jjhhjhlkjl</li>
+                </ul>
         </div>
-        <div>
-           <label for="prenom">Prenom : </label><input type="text" name="prenom">
-        </div>
-        <div>
-            <label for="telephone">Telephone : </label><input type="text" name="telephone">
-        </div>
-    </form>
-    <br>
-    <label for="story">Tell me your story:</label><br>
-    <textarea id="story" name="story" rows="5"></textarea><br>
-<button>Envoyer</button>
-<br>
+    </section>
+    <section class="sectionformulaire">
+        <h4>Formulaire de contact</h4>
+        <form>
+            <div class="etiquette">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom">
+            </div>
+            <div class="etiquette">
+                 <label for="prenom">Prenom</label>
+                 <input type="text" name="prenom">
+            </div>
+            <div class="etiquette">
+                <label for="telephone">Telephone</label>
+                <input type="text" name="telephone">
+            </div>
+        </form>
+        <br>
+        <label for="story">What about you:</label><br>
+        <textarea id="story" name="story" rows="5"></textarea><br>
+        <button>Envoyer</button>
+        <br>
+    </section>
 </section>
 
 
