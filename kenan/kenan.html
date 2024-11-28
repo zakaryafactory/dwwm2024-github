@@ -1,74 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV Kenan</title>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+<header>
+    <nav>
+        <div class="nav-container">
+        <ul>
+            <li><a href="#introduction">Informations personnelles</a></li>
+            <li><a href="#experience">Compétences</a></li>
+            <li><a href="#projects">Projets récents</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="formateurs">
+                <a href="/brenda/brenda.html">Brenda</a>
+                <a href="/cedric/cedric.html">Cédric</a>
+            </div>
+            <div class="links">
+                <a href="/celia/celia.html">Célia</a>
+                <a href="/eddi/eddi.html">Eddi</a>
+                <a href="/guichard/guichard.html">Guichard</a>
+                <a href="/jeanBaptiste/jeanBaptiste.html">JB</a>
+                <a href="/kenan/kenan.html">Kenan</a>
+                <a href="/kevin/kevin.html">Kévin</a>
+                <a href="/nadima/nadima">Nadima</a>
+                <a href="/romain/romain.html">Romain</a>
+                <a href="/theo/theo.html">Théo</a>
+                <a href="/yanis/yanis.html">Yanis</a>
+                <a href="/shain/shain.html">Shain</a>
+            </div>
+        </div>
+    </nav>
+</header>
 
-<body>   
-<header> <div w3-include-html="/navigation.html"></div> </header>
- <main>
-   <h1>Fabre Kenan, 24 ans, Permis B.</h1> <br>
-   <p id="p1">Amateur en informatique, mes hobbies sont les jeux vidéos, la randonnée et le vélo.</p>
-    
-    <br>
-    <section id="A">
-        <h2>Mon Expérience</h2>
-        <ul>
-            <li>01/06/2022 : Usine Pierre Fabre Avène</li>
-            <img src="https://shizen.io/wp-content/uploads/2023/10/usine-du-futur-cropped.png" alt="river" width="170px"> <br>
-            <li>01/07/2021 : Hôtel de plein air 1</li>
-            <img src="https://www.domainelabergerie.fr/ressources/medias/1048-editeur_page_bloc_element-espace-aquatique-du-camping-5-etoiles-domaine-de-la-bergerie-dans-le-sud-de-la-france-1800x725.jpg" alt="hotel" width="160" height="90">
-            <li>01/09/2020 : Stage informatique</li> <br>
-            <img src="https://www.francetravail.fr/files/live/sites/PE/files/secteurs-metiers/Domotique-web-telecom/sorienter-vers-linformatique850.jpg" alt="informatique" width="170">
-        </ul>
-    </section>
-    <section id="B">
-        <h2>Défaults</h2>
-        <ul>
-            <li> fainéant</li>
-        </ul>
-        <img src="https://www.rapid-cadeau.com/img/cms/faineant.jpg" alt="lazy guy" width="200">
+<main>
+    <div class="section-container">
+        <section id="introduction">
+            <h1>Fabre Kenan, 24 ans, Permis B</h1>
+            <p>Amateur en informatique, j'aime la randonnée en nature, cuisiner et les jeux vidéos.</p>
+            <img src="/images/avatarKenan.png" alt="Avatar de Kenan" width="350">
+        </section>
 
-    </section>
-    <section id="C">
-        <h2>Qualités</h2>
-        <ul>
-            <li>Ambitieux</li>
-        </ul>
-        <img src="https://img-ccmbg-1.lefigaro.fr/uPkklKL1vo3feJ0PflUNoM7ISYc=/1500x/smart/dc912005574740b1aaccc70d61ce692e/ccmcms-figaroemploi/39481169.jpg" width="200">
-    </section>
+        <section id="experience">
+            <h2>Mon Expérience</h2>
+            <ul>
+                <li>01/06/2022 : Usine Pierre Fabre Avène</li>
+                <li>01/07/2021 : Hôtel de plein air</li>
+                <li>01/09/2020 : Stage informatique</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projets récents</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>kenan.html</h3>
+                    <p>Première page html</p>
+                </div>
+                <div class="project">
+                    <h3>style.css</h3>
+                    <p>Mon premier code en css</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
-    <br>
-<footer>
-        <section id="D">
-    <h3>Contact</h3>
-        <p>Mail:kenan.fabre.dwwm48@gmail.com</p>
-        <p>Téléphone : 0606060606</p>
 
-        <h3>Vos Contacts</h3>
+<footer>
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>Mail: kenan.fabre.dwwm48@gmail.com</p>
+        <p>Téléphone : 0606060606</p>
         <form action="/submit" method="post">
             <label for="name">Nom :</label>
             <input type="text" id="name" name="name" placeholder="Nom" required>
-            
             <label for="email">E-mail :</label>
-            <input type="email" id="email" name="email" placeholder="Mail" required>
-            
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
             <label for="phone">Téléphone :</label>
-            <input type="tel" id="phone" name="phone" placeholder="N° de téléphone" required>
-            
-            <label for="message">Votre message :</label>
-            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
-            
+            <input type="tel" id="phone" name="phone" placeholder="Téléphone" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
             <button type="submit">Envoyer</button>
         </form>
-    <script>
-            w3.includeHTML();
-    </script>
-    </SECTION>
+    </section>
 </footer>
+
+<script>
+    w3.includeHTML();
+</script>
 </body>
 </html>
