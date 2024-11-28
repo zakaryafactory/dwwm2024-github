@@ -1,0 +1,217 @@
+header div nav {
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #f2e6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.5rem;
+}
+
+#coordonnees-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#coordonnees-avatar #coordonnees {
+    margin: 1rem 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+#coordonnees-avatar #coordonnees div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+#coordonnees-avatar #coordonnees .text-bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#coordonnees-avatar #coordonnees #social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    margin: 1rem 0;
+    padding: 1rem 0 0;
+    border-top: 1px lightgrey solid;
+}
+
+#coordonnees-avatar #coordonnees li {
+    list-style: none;
+}
+
+#coordonnees-avatar #coordonnees .fa-brands {
+    font-size: 30px;
+}
+
+#coordonnees-avatar .image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#coordonnees-avatar .image img {
+    width: 50%;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.description .content-desc {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+}
+
+#details .content-desc {
+    margin-top: 1rem;
+    padding: 0 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+#details .experiences li,
+#details .gallery li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+#details .experiences li span,
+#divers .competences p span,
+#divers .autre p span {
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+#details .gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#details .gallery li {
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+#details .gallery li img {
+    width: 90%;
+}
+
+#divers {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#divers .competences {
+    margin-top: 1rem;
+    width: 50%;
+    padding: 0 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+#divers .autre {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 50%;
+    padding: 0 2rem;
+    gap: 0.5rem;
+}
+
+#divers .autre section {
+    padding: 0 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+#form {
+    margin-top: 1rem;
+    padding: 0 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+.formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.fieldGroup {
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldGroup label {
+    display: block;
+    width: 33%;
+    font-weight: bold;
+}
+
+.fieldGroup input {
+    border-radius: 50px;
+    height: 40px;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.formulaire textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.formulaire button {
+    border-radius: 50px;
+    background-color: lightgrey;
+    padding: .5rem 2rem;
+    font-size: 18px;
+}
+
+.formulaire button:hover {
+    background-color: #6900d1;
+    color: white;
+}
