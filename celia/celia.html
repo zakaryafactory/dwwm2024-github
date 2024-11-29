@@ -10,6 +10,7 @@
 </head>
 <body>
     
+
 <header>
     <div w3-include-html="../navigation.html"></div>
 </header>
@@ -17,13 +18,18 @@
 
 <section id="presentation">
     <div>
-        <img src="../images/avatarCelia.png" width="200" height="200">
+        <img src="../images/avatarCelia.png" width="200" height="200" alt="avatarcelia">
     </div>
     <div>
         <h1>Celia Sansano</h1>
-        <p> Je suis originaire du Gard et je suis actuelelment en lozere, pour suivre une formation de Developpeur web</p>
+        <p>Formée à la sécurité routière, Je fais preuve d’une vigilance constante.
+            Je sais m’adapter aux différentes situations et faire preuve de sang froid.
+            J’ai appris à gérer les situations de risques.
+            Je suis rigoureuse dans les procédures, le suivi de progression et le respect des horaires.
+            J’ai une excellente faculté d’analyse et un esprit logique.</p>
     </div>
 </section>  
+
 
 <section id="exgal">
     <section  id="experience">
@@ -32,16 +38,20 @@
         </div>
         <div>
             <ul class="bubble" style="text-align: center;">
-                <li>2023: San isidro</li>
-                <li>2024: Lozere</li>
-                <li>2025: who knows?</li>
-                <li>2026: who knows?</li>
+                <li>BEPECASER, Diplôme d'état niveau IV
+                    Août 2005 - Juin 2006 </li>
+                <li>Niveau Bac STI génie électrotechnique</li>
+                <li>Juin 2002 - Sept. 2002 McDonald's Alès </li>
+                <li>Mar. 2003 - Fev. 2004 Last minute.com </li>
+                <li>Sept. 2003 - Fev. 2004 Darty Alès</li>
+                <li>Sept. 2006 - Sept. 2018 Auto-école Casses </li>
             </ul>
         </div>
     </div>
     </section>
 
-    <section id="Photo">
+
+    <section id="photo">
         <h3>Galerie</h3>
         <ul class="galerie">
             <li><img src="../images/avatarCelia.png" width="50" height="50"></li>
@@ -55,24 +65,39 @@
     </section>
 </section>
 
-<section>
-    <h4>Mes coordonnées</h4>
-    <form>
+<section id="contact">
+    <section id="mail">
         <div>
-            <label for="nom">Nom : </label><input type="text" name="nom">
+            <h4> Mes Coordonnées</h4>
+                <ul>
+                    <li>Tel: 00000000</li>
+                    <li>Mail: gfggfhgf@h</li>
+                    <li>Adresse: jjhhjhlkjl</li>
+                </ul>
         </div>
-        <div>
-           <label for="prenom">Prenom : </label><input type="text" name="prenom">
-        </div>
-        <div>
-            <label for="telephone">Telephone : </label><input type="text" name="telephone">
-        </div>
-    </form>
-    <br>
-    <label for="story">Tell me your story:</label><br>
-    <textarea id="story" name="story" rows="5"></textarea><br>
-<button>Envoyer</button>
-<br>
+    </section>
+    <section class="sectionformulaire">
+        <h4>Formulaire de contact</h4>
+        <form>
+            <div class="etiquette">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom">
+            </div>
+            <div class="etiquette">
+                <label for="prenom">Prenom</label>
+                <input type="text" name="prenom">
+            </div>
+            <div class="etiquette">
+                <label for="telephone">Telephone</label>
+                <input type="text" name="telephone">
+            </div>
+        </form>
+        <br>
+        <label for="story">What about you:</label><br>
+        <textarea id="story" name="story" rows="5"></textarea><br>
+        <button>Envoyer</button>
+        <br>
+    </section>
 </section>
 
 

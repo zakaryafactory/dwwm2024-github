@@ -1,19 +1,40 @@
+header div nav ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: rgb(224, 135, 135);
+}
+header div nav ul li{
+    margin: 0.3rem;
+    background-color: aquamarine;
+}
+
 h1{
     text-align: center;
-    border-radius: 20px;
-    color: rgb(68, 46, 20); 
-    background-color: rgb(167, 233, 187);
-    font-size: 22px;
-    padding: 2rem 2rem 2rem 2rem
+    background-color: rgb(97, 90, 114);
+    width: 75%;
+    font-size: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+    box-shadow: 0.5rem 0.5rem rgb(143, 212, 212);
+    border-radius: 1rem;
 }
+
 html{
-    font-family: Arial;
+    font-family: fantasy;
     padding-left: 2rem;
 }
+
 section{
     border: solid 0.2rem black;
     padding: 0.5rem ;
 }
+
+#photo{
+    background-color: bisque;
+    width: 50%;
+}
+
 ul.galerie{
     background-color: rgb(147, 147, 224);
     padding: 0;
@@ -29,38 +50,76 @@ ul.galerie li:last-child{
     background-color: black;
 }
 
-li{
-    margin: 12px;
+#mail li{
+    margin: 1rem;
+    background-color: blueviolet;
+    
 }
+
 #presentation{
     padding: 1.5rem;
     display: flex;
+    background-color: aquamarine;
 }
 
 #experience{
-    background-color: rgb(243, 162, 209);
+    background-color: rgb(211, 197, 205);
     flex-direction: column;
     width: 50%;
+    border-radius: 2rem;
+    margin: 0;
 }
 
 #exgal{
     background-color: aqua;
     display: flex;
+    gap: 0.5rem;
 }
 
 .bubble{
-    background-color: blue;
+    background-color: rgb(140, 140, 207);
     flex-wrap: wrap;
     padding: 0;
     display: flex; 
     list-style: none; 
-    justify-items: stretch;
-    justify-content: center;
+    
 }
 
 .bubble li {
-    background-color: brown; 
+    background-color: rgb(212, 113, 113); 
     display: flex;
-    border-radius: 16px;
-    
+}
+
+#contact{
+    display: flex;
+    background-color: rgb(223, 203, 173);
+    gap: 5px
+}
+#form{
+    background-color: rgb(229, 235, 153);
+    width: 50%;
+
+}
+#mail{
+    background-color: rgb(140, 194, 238);
+    width: 50%;
+}
+.sectionformulaire{
+    background-color: blueviolet;
+    padding: 2;
+    width: 50%;
+}
+.etiquette{
+    background-color: rgb(240, 153, 153);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.etiquette input{
+    background-color: aqua;
+    border-radius: 0.5rem;
+}
+.etiquette label{
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
 }

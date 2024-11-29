@@ -5,42 +5,47 @@ h1 {
     padding: 10px;
 }
 
+article{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 header {
-    background-color: aquamarine;
+    background-color: paleturquoise;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     display: flex;
+    list-style: circle;
     flex-direction: column;
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+header ul, header li {
+    background-color: aquamarine;
+    border-radius: 15px;
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(205, 173, 113);
+    border: 3px solid black;
 }
 
 section {
-    border: 3px solid red;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly    
 }
 
 ol.expo {
     flex-wrap: wrap;
 }
 
-ul, ol {
+ol {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-}
-
-ol.gallery li:last-child {
-    background-color: blueviolet;
-    margin: 50px;
-    justify-content: right;
-    float: right;
 }
 
 ol.gallery li {
@@ -71,7 +76,6 @@ img.Descr{
 
 section.presentation{
     display: flex;
-    border: 3px solid red;
     background-color: lightblue;
     padding: 10px;
     text-align: center;
@@ -79,8 +83,8 @@ section.presentation{
 
 section.Part2{
     display: flex;
-    background-color: cadetblue;
-    justify-content: center;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
     align-items: center;
 
 }
@@ -90,14 +94,30 @@ section.photos {
     background-color: antiquewhite;
     text-align: center;
     justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
 }
 
 section.contact{
-    border: 3px solid red;
+    text-align: center;
+    background-color: lightblue
 }
 
 .encar{
-    background-color: grey;
+    background-color: rgb(165, 151, 151);
     border-radius: 25px;
     margin: 10px;
+}
+
+.Conta{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.pnom{
+    background-color: antiquewhite;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
 }
