@@ -161,13 +161,3 @@ ul li {
     box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.40);
     list-style: none;
 }
-
-@media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-    }
-
-    #experience, #projects {
-        flex: 1 1 100%;
-    }
-}

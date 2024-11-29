@@ -51,7 +51,7 @@ ul.galerie li:last-child{
 }
 
 #mail li{
-    margin: 12px;
+    margin: 1rem;
     background-color: blueviolet;
     
 }
@@ -82,19 +82,18 @@ ul.galerie li:last-child{
     padding: 0;
     display: flex; 
     list-style: none; 
-    justify-content: center;
+    
 }
 
 .bubble li {
     background-color: rgb(212, 113, 113); 
     display: flex;
-    border-radius: 16px;
 }
 
 #contact{
     display: flex;
     background-color: rgb(223, 203, 173);
-    gap:5px
+    gap: 5px
 }
 #form{
     background-color: rgb(229, 235, 153);
