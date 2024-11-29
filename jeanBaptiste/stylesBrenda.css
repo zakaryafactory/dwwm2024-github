@@ -2,11 +2,10 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 1.5rem;
+    background-color: #33003350 ;
 }
 
-section {
-    border: 6px  red
-}
+
 
 ul.photos {
     margin: 0px; 
@@ -30,25 +29,16 @@ ul.photos li:last-child {
 
 #presentation {
     display: flex;
-    margin: 0px; margin-bottom: 4rem;
-    padding: 0px;
-}
-
-#presentation.left {
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-#presentation .right {
+#avatar {
+    width: 50%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#presentation h1 {
-    padding: 10px;
-    color: rgb(0, 0, 0) ;
-    font-size: 45px;
+    justify-content: center;
+    align-items: center;
 }
 
 #presentation p {
@@ -67,7 +57,7 @@ ul.photos li:last-child {
 
 #experience {
     width: 50%;
-    background-color: #e5e2e2;
+    background-color: #C179B9;
     border-radius: 40px;
 }
 
@@ -94,7 +84,7 @@ ul.photos li:last-child {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #be00be;
+    background-color: #2F242C;
     box-shadow: 7px 7px 9px -7px rgba(0, 0, 0, 0.40);
     color: whitesmoke;
     font-weight: bold;
@@ -124,64 +114,64 @@ ul.photos li:last-child {
 }
 
 #coordonees {
-    width:  50%;
-    box-sizing: border-box;
+    margin: 1rem 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border: 1px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #e4dfdf;
 }
 
-#coordonees h2 {
-    padding: 30px;
-    font-size: 2rem;
-    font-weight: bolder;
+h3 {
+    display: flex;
+    font-size: 1.17em;
+    padding-left: 2.3rem;
 }
 
 #coordonees ul {
-    flex-wrap: wrap;
-    margin-right: 25px;
-    list-style: none;
-    font-size: 1.4rem;
-    font-weight:bold;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.3rem; 
 }
 
 #coordonees .listeCoordonees {
     flex-wrap: wrap;
-    margin-right: 25px;
+    margin: 0;
     list-style: none;
-    font-size: 1.4rem;
-    font-weight:bold;
-    width: 80%;
+    font-size: 1rem;
 }
 
 #coordonees .listeCoordonees li{
-    border-bottom:#be00be 1px solid;
-    padding-bottom: .3rem;
-    margin-bottom: .3rem;
-
+    padding: 0;
+    margin: 0;
 }
 
 #coordonees ul li span {
-    font-size: .8rem;
-    font-style: oblique;
-    font-weight: normal;
-    color:#be00be ;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#2F242C ;
 }
 
 #coordonees .logosCoordonees{
-    margin-top: 1.4rem;
     flex-direction: row;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    gap: 1rem;
+    align-content: center;
+    border-top: 1px #2F242C solid;
+    max-width: 100%;
 }
 
 #coordonees .logosCoordonees li {
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    margin: .5rem 0 0 0;
+    padding: .5rem 0 0 0;
 }
 
 #formulaire {
@@ -208,7 +198,7 @@ ul.photos li:last-child {
 #formulaire .form {
     border-radius: 35px;
     padding: 1rem 0;
-    background-color: #e5e2e2;
+    background-color: #C179B9;
     box-shadow: 7px 7px 9px -7px rgba(0, 0, 0, 0.40);
     font-weight: bolder;
     display: flex;
@@ -223,7 +213,7 @@ ul.photos li:last-child {
     border-radius: 40px;
     height: 30px;
     width: 300px;
-    border-color: #e5e2e2 1px solid;
+    border-color: #C179B9 1px solid;
 }
 
 .formSaisie {
@@ -252,7 +242,6 @@ nav ul{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 nav ul li {
@@ -263,7 +252,7 @@ nav ul li {
     padding: .4rem;
     width: 80px;
     border-radius: .4rem;
-    background-color: #be00be;
+    background-color: #2F242C;
     box-shadow: 7px 7px 9px -7px rgba(0, 0, 0, 0.40);
     font-weight: bolder;
 }
