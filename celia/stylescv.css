@@ -1,7 +1,103 @@
+body{
+    background-image: url("/celia/fond-technologie.avif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.moi{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    border-radius: 0.5rem 2rem 0.5rem 2rem;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 1.5rem;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 .apropos{
-    background-color: blue;
-    
+    border-radius: 20%;
+    flex-wrap: wrap;
+    padding: 1rem 0.2rem 2rem 1rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
 }
+.gauche{
+    border-radius: 12%;
+    width: 25%;
+
+}
+
 .formation{
-background-color: blueviolet;
+    align-content: center;
+    padding: 1rem 0.2rem 2rem 0rem;
+    border-radius: 20%;
+    flex-wrap: wrap;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
 }
+
+.experience{
+    align-content: center;
+    border-radius: 20%;
+    flex-wrap: wrap;
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+    padding: 1rem 0.2rem 2rem 0rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+}
+
+.colonnedroite{
+    width: 75%;
+    border-radius: 10%;
+    align-content: space-around;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-weight: 100;
+    font-size: small;
+    gap: 5px;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-weight: 400;
+    margin: 10%;
+    flex-wrap: wrap;
+}
+
+.coordonnees{
+    border-radius: 20%;
+    border: 1px lightgrey solid;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    margin: 0 0.1rem 0 0;
+    border-radius: 30px;
+    box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+    margin: 1rem 0.1rem 1rem 0.1rem;
+}
+
+.coordonnees ul{
+    flex-wrap: wrap;
+}
+
