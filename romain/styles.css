@@ -26,8 +26,21 @@ header {
 }
 
 header ul, header li {
-    background-color: aquamarine;
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
     border-radius: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+
+header li {
+    background-color: palegoldenrod;
+    padding: 10px;
+    color: black;
+    border: 3px solid black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -49,7 +62,7 @@ ol {
     padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 ol.gallery li {
@@ -60,6 +73,20 @@ ol.gallery li {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.cadreblanc{
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: solid 3px black;
+}
+
+.tete {    
+    background-color: rgb(165, 151, 151);
+    border-radius: 25px;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .expo, .expe {
@@ -83,6 +110,7 @@ section.presentation{
     background-color: lightblue;
     padding: 10px;
     text-align: center;
+    flex-direction: center;
 }
 
 section.Part2{
@@ -126,14 +154,12 @@ h2{
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* Petits écrans (max 600px) */
 @media (max-width: 600px) {
     body {
     background-color: lightblue;
     }
     }
     
-    /* Grands écrans (min 1200px) */
     @media (min-width: 1200px) {
     body {
     background-color: lightgreen;
