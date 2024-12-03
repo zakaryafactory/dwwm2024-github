@@ -240,7 +240,7 @@ body {
         padding: 0.5em 0;
     }
     nav ul{
-        font-size: 10px; /* Taille de police adaptée */
+        font-size: 14px; /* Taille de police adaptée */
         flex-wrap: wrap;
         display: flex;
         padding: 1rem 1rem;
@@ -250,12 +250,18 @@ body {
         align-items: center;
         max-width: 550px;
     }
-    nav ul li{list-style: none;}
+    nav ul li{
+        list-style: none;
+        margin-right: 2px;
+    }
     #coordonnees-avatar {
         flex-direction: column-reverse;
     }
     .description .content-desc {
+        flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0;
     }
     .contact {
         display: flex;
@@ -266,7 +272,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 0rem;
+        gap: 1rem;
     }
     #coordonnees-avatar {
         display: flex;
@@ -275,13 +281,30 @@ body {
         justify-content: space-between;
     }
     #divers .autre section {
-        padding: 0 2rem;
         border: 1px rgb(230, 27, 27) solid;
         border-radius: 30px;
         box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
         background-color: #d6c8c8;
     }
-    
+    #divers{
+        display: flex ;
+        flex-direction: column;
+    }
+    #coordonnees-avatar #coordonnees{
+        width: 100%;
+    }
+    #divers .autre {
+        width: 100%;
+        padding:0%
+    }
+    #divers .competences{
+        width: 100%;
+        padding:0.5rem;
+    }
+    .fieldGroup {
+        flex-wrap: wrap;
+    }
+
 }
 
 #coordonnees span{
