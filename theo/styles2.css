@@ -17,11 +17,11 @@ section.class{
     width: 100%;
 }
 section{
-    padding: 30px;
+    padding: 32px;
     display: flex;
-    border-radius: 200px;
+    border-radius: 100px;
     background-color: aliceblue;
-    margin: 20px;
+    margin: 10px;
 }
 section.photo{
     width: 70%;
@@ -46,33 +46,33 @@ section.second{
     background-color: rgb(247, 196, 205);
     margin: 10px;
 }
-section.exp{
+#exp{
     border-radius: 200px;
     border: 1px lightgrey solid;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
 }
 
-form{
-    margin: 0,5rem 0;
-    padding:
-    display: flex;
+#form{
     flex-direction: column;
-    row-gap: 2rem;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-    margin: auto;
-    height: 0 auto;
-    border-radius: 20rem;
-    padding : 4rem;
-    background-color: grey;
-    border: solid;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
 }
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 div{
     display: flex;
     flex-direction: column;
 }
 
-nav ul{
+.nav2 nav ul{
     display:flex;
     background-color: blanchedalmond;
     border-radius: 20px;
@@ -83,10 +83,10 @@ nav ul{
     font-size: medium;
     justify-content: space-evenly;
 }
-nav ul{
+.nav2 nav ul{
     list-style: none;
 }
-nav ul li{
+.nav2 nav ul li{
     display:inline-block;
     background-color: rgb(228, 206, 243);
     border-radius: 20px;
@@ -94,4 +94,60 @@ nav ul li{
     font-weight: bold;
     box-shadow: 5px 2px 5px black;
     font-size: medium;
+}
+
+@media (max-width: 767px){ /*version mobile*/
+    body{
+        font-size: 10px;
+    }
+    nav ul{
+        font-size: 10px; /* Taille de police adaptée */
+        flex-wrap: wrap;
+        display: flex;
+        padding: 0,5rem 0,5rem;
+        margin: 0,5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 550px;
+    }
+    section.first{
+        font-size: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 550px;
+        flex-direction: column;
+    }
+    nav ul li{list-style: none;}
+    section.second{
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    form{
+        font-size: 10px;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+}
+
+#Navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 10px 0;
+    text-align: center;
+}
+#Navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    }
+    #Navigation a:hover {
+    text-decoration: underline;
+    }
+html{
+    scroll-behavior: smooth;
 }
