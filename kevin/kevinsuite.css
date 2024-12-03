@@ -14,6 +14,7 @@ body {
 #coordonnees-avatar {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -67,7 +68,7 @@ body {
 }
 
 #coordonnees-avatar .image img {
-    width: 30%;
+    width: 70%;
 }
 
 .description {
@@ -79,7 +80,7 @@ body {
 .description .content-desc {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width:45%;
     padding: 2rem;
     border: 1px rgb(165, 7, 7) solid;
     border-radius: 30px;
@@ -216,7 +217,7 @@ body {
     color: white;
 }
 .image img {
-    width: 10px; /* Vous pouvez ajuster la taille des images ici */
+    width: 20px; /* Vous pouvez ajuster la taille des images ici */
     height: 10%;
 }
 
@@ -231,14 +232,96 @@ body {
     transform: scale(0.8); /* Rétrécit l'élément à 80% de sa taille */
 }
 
-@media (max-width: 600px) {/*responsive*/
+@media (max-width: 600px) {/*responsive mobile*/
     body {
         background-color: #e0e0e0; /* Fond gris clair sur les écrans plus petits */
     }
     header, footer {
         padding: 0.5em 0;
     }
+    nav ul{
+        font-size: 10px; /* Taille de police adaptée */
+        flex-wrap: wrap;
+        display: flex;
+        padding: 1rem 1rem;
+        margin: 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 550px;
+    }
+    nav ul li{list-style: none;}
+    #coordonnees-avatar {
+        flex-direction: column-reverse;
+    }
+    .description .content-desc {
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0rem;
+    }
+    #coordonnees-avatar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #divers .autre section {
+        padding: 0 2rem;
+        border: 1px rgb(230, 27, 27) solid;
+        border-radius: 30px;
+        box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+        background-color: #d6c8c8;
+    }
+    
 }
+
 #coordonnees span{
     word-break: break-all;
+}
+nav ul{
+    display: flex;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {  /*responsive tablette */
+    body {
+        font-size: 16px; /* Taille de police adaptée */
+        line-height: 1.5; /* Espacement entre les lignes */
+        padding: 10px; /* Ajout d'un peu de padding */
+    }
+
+    header {
+        text-align: center; /* Centre le texte dans l'en-tête */
+    }
+
+    nav {
+        display: flex; /* Utilise Flexbox pour le menu */
+        flex-direction: column; /* Aligne les éléments verticalement */
+    }
+    nav ul li{list-style: none;}
+    .container {
+        width: 90%; /* Largeur de la conteneur pour s'adapter à l'écran */
+        margin: 0 auto; /* Centre le conteneur */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
+        border: 1px solid #ccc; /* Ajoute une bordure légère */
+        border-radius: 5px; /* Arrondit les coins */
+        padding: 15px; /* Ajoute du padding à l'intérieur des cartes */
+    }
 }
