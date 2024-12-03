@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth
+}
+
 h1 {
     color: red;
     font-family: cursive;
@@ -121,3 +125,17 @@ section.contact{
 h2{
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* Petits écrans (max 600px) */
+@media (max-width: 600px) {
+    body {
+    background-color: lightblue;
+    }
+    }
+    
+    /* Grands écrans (min 1200px) */
+    @media (min-width: 1200px) {
+    body {
+    background-color: lightgreen;
+    }
+    }
