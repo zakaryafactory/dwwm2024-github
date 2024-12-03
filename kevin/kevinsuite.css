@@ -6,7 +6,7 @@ header div nav {
 }
 
 body {
-    background-color: #17bd1f;
+    background-color: #797575;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1.5rem;
 }
@@ -14,9 +14,9 @@ body {
 #coordonnees-avatar {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-
 #coordonnees-avatar #coordonnees {
     margin: 1rem 0;
     width: 45%;
@@ -27,18 +27,23 @@ body {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
-
 #coordonnees-avatar #coordonnees div {
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
 }
-
 #coordonnees-avatar #coordonnees .text-bold {
     font-weight: bold;
     text-decoration: underline;
 }
-
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.titre{
+    color: #020407;
+}
 #coordonnees-avatar #coordonnees #social {
     display: flex;
     justify-content: space-evenly;
@@ -49,15 +54,12 @@ body {
     padding: 1rem 0 0;
     border-top: 1px rgb(214, 10, 10) solid;
 }
-
 #coordonnees-avatar #coordonnees li {
     list-style: none;
 }
-
 #coordonnees-avatar #coordonnees .fa-brands {
     font-size: 30px;
 }
-
 #coordonnees-avatar .image {
     width: 45%;
     display: flex;
@@ -65,33 +67,28 @@ body {
     align-items: center;
     margin-bottom: 1rem;
 }
-
 #coordonnees-avatar .image img {
-    width: 30%;
+    width: 70%;
 }
-
 .description {
     display: flex;
     justify-content: center;
     gap: 5rem;
 }
-
 .description .content-desc {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width:45%;
     padding: 2rem;
     border: 1px rgb(165, 7, 7) solid;
     border-radius: 30px;
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
-
 #details {
     display: flex;
     flex-direction: column;
 }
-
 #details .content-desc {
     margin-top: 1rem;
     padding: 0 2rem;
@@ -100,13 +97,11 @@ body {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
-
 #details .experiences li,
 #details .gallery li {
     list-style: none;
     margin: 5px 0;
 }
-
 #details .experiences li span,
 #divers .competences p span,
 #divers .autre p span {
@@ -114,28 +109,50 @@ body {
     text-decoration: underline;
 
 }
-
 #details .gallery {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
-
 #details .gallery li {
     width: 30%;
     flex-wrap: wrap;
 }
-
 #details .gallery li img {
     width: 40%;
 }
-
 #divers {
     width: 100%;
     display: flex;
     gap: 0.5rem;
 }
-
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #f01b1b;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer .services .service{
+    margin-right: 30px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+}
 #divers .competences {
     margin-top: 1rem;
     width: 50%;
@@ -145,7 +162,6 @@ body {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
-
 #divers .autre {
     display: flex;
     flex-direction: column;
@@ -154,7 +170,6 @@ body {
     padding: 0 2rem;
     gap: 0.5rem;
 }
-
 #divers .autre section {
     padding: 0 2rem;
     border: 1px rgb(230, 27, 27) solid;
@@ -162,7 +177,6 @@ body {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
-
 #form {
     margin-top: 1rem;
     padding: 0 2rem;
@@ -171,13 +185,11 @@ body {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
-
 .contact {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-
 .fieldGroup {
     margin-bottom: .5rem;
     padding: .5rem 1rem;
@@ -185,60 +197,159 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 .fieldGroup label {
     display: block;
     width: 33%;
     font-weight: bold;
 }
-
 .fieldGroup input {
     border-radius: 50px;
     height: 40px;
     border: 1px solid black;
     flex-grow: 1;
 }
-
 .contact textarea {
     width: 100%;
     height: 150px;
 }
-
 .contact button {
     border-radius: 50px;
     background-color: lightgrey;
     padding: .5rem 2rem;
     font-size: 18px;
 }
-
 .contact button:hover {
     background-color: #6900d1;
     color: white;
 }
 .image img {
-    width: 10px; /* Vous pouvez ajuster la taille des images ici */
+    width: 20px; /* Vous pouvez ajuster la taille des images ici */
     height: 10%;
 }
-
 .reducible {
     width: 200px;
     height: 200px;
     background-color: #0f749c; /* Un joli vert */
     transition: transform 0.3s ease; /* Animation douce */
 }
-
 .reducible:hover {
     transform: scale(0.8); /* Rétrécit l'élément à 80% de sa taille */
 }
-
-@media (max-width: 600px) {/*responsive*/
+@media (max-width: 600px) {/*responsive mobile*/
     body {
         background-color: #e0e0e0; /* Fond gris clair sur les écrans plus petits */
     }
     header, footer {
         padding: 0.5em 0;
     }
+    nav ul{
+        font-size: 14px; /* Taille de police adaptée */
+        flex-wrap: wrap;
+        display: flex;
+        padding: 1rem 1rem;
+        margin: 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 550px;
+         background-color: #e0e0e0;
+    }
+    nav ul li{
+        list-style: none;
+        margin-right: 2px;
+    }
+    #coordonnees-avatar {
+        flex-direction: column-reverse;
+    }
+    .description .content-desc {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #coordonnees-avatar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #divers .autre section {
+        border: 1px rgb(230, 27, 27) solid;
+        border-radius: 30px;
+        box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+        background-color: #d6c8c8;
+    }
+    #divers{
+        display: flex ;
+        flex-direction: column;
+    }
+    #coordonnees-avatar #coordonnees{
+        width: 100%;
+    }
+    #divers .autre {
+        width: 100%;
+        padding:0%
+    }
+    #divers .competences{
+        width: 100%;
+        padding:0.5rem;
+    }
+    .fieldGroup {
+        flex-wrap: wrap;
+    }
+
 }
 #coordonnees span{
     word-break: break-all;
+}
+nav ul{
+    display: flex;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+@media only screen and (min-width:601px) and (max-width: 768px) {  /*responsive tablette */
+    body {
+        font-size: 16px; /* Taille de police adaptée */
+        line-height: 1.5; /* Espacement entre les lignes */
+        padding: 10px; /* Ajout d'un peu de padding */
+    }
+
+    header {
+        text-align: center; /* Centre le texte dans l'en-tête */
+    }
+
+    nav {
+        display: flex; /* Utilise Flexbox pour le menu */
+        flex-direction: column; /* Aligne les éléments verticalement */
+    }
+    nav ul li{list-style: none;}
+    .container {
+        width: 90%; /* Largeur de la conteneur pour s'adapter à l'écran */
+        margin: 0 auto; /* Centre le conteneur */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
+        border: 1px solid #ccc; /* Ajoute une bordure légère */
+        border-radius: 5px; /* Arrondit les coins */
+        padding: 15px; /* Ajoute du padding à l'intérieur des cartes */
+    }
+}
+html {
+    scroll-behavior: smooth;
 }
