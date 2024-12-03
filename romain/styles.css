@@ -173,24 +173,74 @@ h2{
 
 @media (max-width: 600px) {
     body {
-    background-color: lightblue;
-    }
-    h1 {
-    color: blueviolet;
+        background-color: lightblue; 
+        padding: 10px;
     }
 
-    .project{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-around;
+    h1 {
+        color: blueviolet;
+        font-size: 1.5em; 
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
         align-items: center;
     }
+
+    nav ul li {
+        margin-bottom: 10px;
     }
-    
-    @media (min-width: 1200px) {
-    body {
-    background-color: lightgreen
+
+    section.presentation {
+        flex-direction: column; 
+        text-align: center;
     }
+
+    .cadreblanc {
+        padding: 15px;
+        margin: 15px auto;
+        width: 90%; 
     }
+
+    section.photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ol.expo {
+        flex-direction: column;
+    }
+
+    ol.expo li {
+        margin: 5px 0;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+
+    .contact .cadreblanc {
+        width: 100%;
+    }
+}
