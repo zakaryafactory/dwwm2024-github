@@ -10,7 +10,7 @@
 <body>
 <header>
     
-    <div w3-include-html="/navigation.html"></div>
+    <div class="navigation" w3-include-html="/navigation.html"></div>
 </header>
     
    
@@ -38,8 +38,8 @@
                 <li> 2024 formation developpeur web</li>
             </ul>
     </div>
-    <div class="experiences">
-            
+    <div class="gallery contacts">
+        <section class="gallcontact"></section>
             <ul class="gallery">
                 
                     <li><img src="/guichard/guichard avatar.png" alt="guichard"width="100"></li>
@@ -56,52 +56,52 @@
                     
                     
             </ul>
+            <div class="flex" id="contacts">
+                
+                <div id="contacts">
+                    <h2>CONTACTS</h2>
+                    <ul>
+                        <li><span>telephone.</span> 0707070070</li>
+                        <li><span>mail.</span> guichard.bouboune.dwwm48@gmail.com</li>
+                        <li><span>adresse.</span> somewhereovertherainbow</li>
+                    </ul>
+        </section>
+                    </div>
+                      
+                
+  
+            </div>
     </div>
 </section>
 
-<section class="flex" id="contacts">
-    <div id="contacts">
-        <h2>contacts</h2>
-        <ul>
-            <li><span>telephone.</span> 0707070070</li>
-            <li><span>mail.</span> guichard.bouboune.dwwm48@gmail.com</li>
-            <li><span>adresse.</span> somewhereovertherainbow</li>
-        </ul>
-        <ul id="sectionCoordonneesSocial">
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-x"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>    
-    </div>
-    <div>  
-        <form action="formulaire">
-            <div>
-                <label for="text">noms</label>
-                <input type="text"></label></li><br>
-            </div>
-            <div>
-                <label for="text">prenom</label>
-                <input type="text"></label></li><br>
-            </div>                
-            <div>
-                <label for="text">telephone</label>
-                <input type="text"></label></li><br>
-            </div>
-            <div>
-                <label for="text">noms</label>
-                <input type="text" id="name" name="noms">
-            </div>
-            <div>
-                <label for="texte">message</label>
-                <input type="texte" id="name" name="message">
-            </div>
-            <div>
-                <label for="texte">mail</label>
-                <input type="text" id="mail" name="mail">
-            </div>
-        </form>
-    </div>    
-</section>
+                <div class="formulaire">  
+                    <form action="formulaire">
+                        <div class="field">
+                            <label for="text">noms</label>
+                            <input type="text"></label></li><br>
+                        </div>
+                        <div class="field">
+                            <label for="text">prenom</label>
+                            <input type="text"></label></li><br>
+                        </div>                
+                        <div class="field">
+                            <label for="text">telephone</label>
+                            <input type="text"></label></li><br>
+                        </div>
+                        <div class="field">
+                            <label for="text">noms</label>
+                            <input type="text" id="name" name="noms">
+                        </div>
+                        <div class="field" >
+                            <label for="texte">message</label>
+                            <input type="texte" id="name" name="message">
+                        </div>
+                        <div class="field">
+                            <label for="texte">mail</label>
+                            <input type="text" id="mail" name="mail">
+                        </div>
+                    </form>
+                </div>  
        
     <script>
         w3.includeHTML();
