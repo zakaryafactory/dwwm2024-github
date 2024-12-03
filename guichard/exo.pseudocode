@@ -1,0 +1,34 @@
+exo.pseudocode
+ releveActiviteGRET
+
+ variable:
+ liste des employe <- tableau ["zoe";"bob", "rene","alban","luc"]
+ NomEmploye: chaine
+ heure: rest
+ DateFaf: DateFafChois: entier
+
+ debut 
+
+lireClavier ["qui etes vous", NomEmploye];
+index <- index0 
+trouve <-"""
+tant que (ListeEmploye[index])
+index <-index+1
+si (NomEnCours <- ListeEmploye)alors
+
+fin 
+sifinfaire
+si (trouve="ok")alors
+
+ tant que (choix <>0)
+ ecrireEcran ["1 - saisir mes heures, 0- quitter l'application];
+LireClavier("quel jour etes vous intervenu? format jj/mm/aaaa",DtaFaf);
+LireClavier(combien d'heures avez vous faites?",Heure";)
+    si (heure>10)alors 
+        EcrireEcran("votre saisie est incorrect")
+        sinon
+        EcrireEcran("votre releve de "heure" h du "datefaf" de l'employe"),NomEmploye", a bien ete enregistre";
+        finfaire
+        sinon
+        afficher "vous n'etes pas connu des employer du GRET"
+        fin si
