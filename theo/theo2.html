@@ -9,20 +9,30 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+    <nav id="Navigation">
+        <a href="#first">Présentation</a>
+        <a href="#exp">Expérience</a>
+        <a href="#coordonnees">Coordonnees</a>
+        <a href="#form">Contact</a>
+    </nav>
+    <br>
+    <br>
     <header>
-        <div w3-include-html="/navigation.html"></div>
+        <div class="nav2" w3-include-html="/navigation.html"></div>
     </header> 
-    <section class="first">
-      <div class="first-left"><img src="/images/avatarTheo.png" alt="image" class="avatar" height="150"></div>
-      <div class="first-right">
+    <br>
+    <br>
+    <section id="first">
+    <div class="first-left"><img src="/images/avatarTheo.png" alt="image" class="avatar" height="150"></div>
+    <div class="first-right">
         <h1>Theo Grasset</h1>
         <p class="para">bonjour, j'ai 23ans je suis passionné de foot, basket et informatique. J'ai un bac STMG option mercatique et un BTS MCO
         j'ai travaillé pendant 1an en tant que AED au lycée Emile Peytavin à Mende.
-      </p></div>
+    </p></div>
     </section>
 </section>
 <section class="second">
-    <section class="exp">
+    <section id="exp">
         <div> <h2>Experience</h2>
         <ul>
             <div class="bubble"><li>Date : 2020 Bac STMG</li></div>
@@ -49,7 +59,6 @@
             <li><img src="/images/avatarTheo.png" alt="image" height="90"></li>
             <li><img src="/images/avatarTheo.png" alt="image" height="90"></li>
             <li><img src="/images/avatarTheo.png" alt="image" height="90"></li>
-           
         </ul>
     </div>
     </section>
@@ -57,24 +66,14 @@
 
     <section>
         <h2>Formulaire de contact</h2>
-    <form>
+    <form id="form">
         <label for="prenom">Prénom</label>
-        <br>
         <input type="text" name="prenom" placeholder="Prénom">
-        <br>
-        <br>
         <label for="message">Nom</label>
-        <br>
         <input type="text" name="nom" placeholder="Nom">
-        <br>
-        <br>
         <label for="mail">Adresse email</label>
-        <br>
         <input type="text" name="mail" placeholder="Adresse email">
-        <br>
-        <br>
         <label for="message">Message</label>
-        <br>
         <textarea id="message" name="message"></textarea>
         <button type="submit" class="button"> Envoyer</button>
     </section>
