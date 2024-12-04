@@ -68,7 +68,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 #coordonnees-avatar .image img {
-    width: 70%;
+    width: 50%;
 }
 .description {
     display: flex;
@@ -350,6 +350,62 @@ nav ul{
         padding: 15px; /* Ajoute du padding à l'intérieur des cartes */
     }
 }
-html {
+html { /*scroler au ralanti   */
     scroll-behavior: smooth;
 }
+p {
+    animation-duration: 3s; /*durée de l'animation */
+    animation-name: slide-in; /*fait référence à l’animation qui doit être appliquée */
+  }
+  @keyframes slide-in { /* d'animation de l'image */
+    from {   /*c’est l’état initial */
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {    /*c’est l’état final*/
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.image {
+    width: 10px;
+    height: 10px;
+    animation: moveImage 2s infinite alternate;
+}
+
+@keyframes moveImage { /* mouvement de l'image*/
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+.bubble-btn {
+    background-color: #535552;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 16px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .bubble-btn:hover { /*spécifier l'apparence d'un élément */
+    animation: bubble 0.4s ease-out;
+  }
+  
+  @keyframes bubble {  /* scale permet de modifier la taille d'un élément*/
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
