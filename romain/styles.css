@@ -257,3 +257,183 @@ h2{
         width: 100%;
     }
 }
+
+/* Interface écran géant :skull: */
+
+@media screen {
+    
+h1 {
+    color: red;
+    font-family: cursive;
+    margin: 10px;
+    padding: 10px;
+}
+
+article{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: paleturquoise;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: circle;
+    flex-direction: column;
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+header ul, header li {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+
+header li {
+    background-color: palegoldenrod;
+    padding: 10px;
+    color: black;
+    border: 3px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(205, 173, 113);
+    border: 3px solid black;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly    
+}
+
+ol.expo {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ol.gallery li {
+    margin: 10px;
+}
+
+.conte {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cadreblanc{
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: solid 3px black;
+}
+
+.tete {    
+    background-color: rgb(165, 151, 151);
+    border-radius: 25px;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.expo, .expe {
+    flex: 1;            
+}
+
+div.expo {
+    background-color: lightblue;
+}
+
+.Descr{
+    display: flex;
+}
+
+img.Descr{
+    height: 30px;
+}
+
+section.presentation{
+    display: flex;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    flex-direction: center;
+}
+
+section.ancrage, nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.Part2{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dessus{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+section.photos {
+    display: flex;
+    background-color: antiquewhite;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+section.contact{
+    text-align: center;
+    background-color: lightblue
+}
+
+.encar{
+    background-color: rgb(165, 151, 151);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.Conta{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.pnom{
+    background-color: antiquewhite;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+}
+    
+}
