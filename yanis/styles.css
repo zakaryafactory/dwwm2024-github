@@ -4,9 +4,34 @@ h1 {
     font-size: x-large;
     width: 100%;
     height: 30px;
-    padding: 0, 5rem;
-    margin: 0, 5rem;
+    padding: 0 5rem;
+    margin: 0 5rem;
+    animation-name: Title;
+    animation-direction: normal;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes Title {
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+    16.67% { 
+        margin-left: 0%;
+        width: 100%;
+    }
+    83.33% { 
+        margin-left: 0%;
+        width: 100%;
+    }
+    100% {
+        margin-left: 100%;
+        width: 300%;
+    }
+}
+
+
 
 body {
     font-family: sans-serif;
@@ -40,18 +65,19 @@ h4 {
     box-sizing: border-box;
     background-color: blanchedalmond;
     background-image: linear-gradient(185deg, rgba(0, 0, 0, 0) 95%, #26ff00 95%),
-    linear-gradient(85deg, rgba(0, 0, 0, 0) 95%, #26ff00 95%),
-    linear-gradient(185deg, rgba(0, 0, 0, 0) 90%, #ffea00 90%),
-    linear-gradient(85deg, rgba(0, 0, 0, 0) 92%, #ffea00 92%),
-    linear-gradient(185deg, rgba(0, 0, 0, 0) 85%, #ff6f00 85%),
-    linear-gradient(85deg, rgba(0, 0, 0, 0) 89%, #ff6f00 89%),
-    linear-gradient(185deg, rgba(0, 0, 0, 0) 80%, #ff0022 80%),
-    linear-gradient(85deg, rgba(0, 0, 0, 0) 86%, #ff0022 86%),
-    linear-gradient(185deg, rgba(0, 0, 0, 0) 75%, #c300ff 75%),
-    linear-gradient(85deg, rgba(0, 0, 0, 0) 83%, #c300ff 83%),
-    linear-gradient(185deg, rgba(0, 0, 0, 0) 70%, #00ddff 70%),
-    linear-gradient(85deg, rgba(0, 0, 0, 0) 80%, #00dafc 80%);
+                    linear-gradient(85deg, rgba(0, 0, 0, 0) 95%, #26ff00 95%),
+                    linear-gradient(185deg, rgba(0, 0, 0, 0) 90%, #ffea00 90%),
+                    linear-gradient(85deg, rgba(0, 0, 0, 0) 92%, #ffea00 92%),
+                    linear-gradient(185deg, rgba(0, 0, 0, 0) 85%, #ff6f00 85%),
+                    linear-gradient(85deg, rgba(0, 0, 0, 0) 89%, #ff6f00 89%),
+                    linear-gradient(185deg, rgba(0, 0, 0, 0) 80%, #ff0022 80%),
+                    linear-gradient(85deg, rgba(0, 0, 0, 0) 86%, #ff0022 86%),
+                    linear-gradient(185deg, rgba(0, 0, 0, 0) 75%, #c300ff 75%),
+                    linear-gradient(85deg, rgba(0, 0, 0, 0) 83%, #c300ff 83%),
+                    linear-gradient(185deg, rgba(0, 0, 0, 0) 70%, #00ddff 70%),
+                    linear-gradient(85deg, rgba(0, 0, 0, 0) 80%, #00dafc 80%);
 }
+
 .box_2 h1 {
     text-align: center;
 }
@@ -70,6 +96,18 @@ h4 {
     font-size: 1rem;
     font-size: larger;
 }
+.avatar{
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+}
+
 
 /* experience */
 
@@ -92,7 +130,6 @@ main {
     background-color: #f1f1d1;
     border-radius: 20px;
     padding: 5px 10px;
-    margin: px 0;
     font-weight: bold;
     box-shadow: 5px 2px 5px black;
     font-size: medium;
@@ -105,6 +142,7 @@ main {
 .etiquette {
     flex-direction: column;
 }
+
 
 /* contact */
 
@@ -223,6 +261,50 @@ img {
     left: 300px;
 }
 
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+:root {
+    --bounce-duration: 2s;      
+    --delay-between: 0.5s;     
+    --cycle-duration: calc((var(--bounce-duration) + var(--delay-between)) * ); 
+}
+
+
+.bg1 {
+    animation: bounce var(--bounce-duration) infinite;
+    animation-delay: 0s; 
+}
+
+.bg2 {
+    animation: bounce var(--bounce-duration) infinite;
+    animation-delay: calc(var(--delay-between) * 1);
+}
+
+.bg3 {
+    animation: bounce var(--bounce-duration) infinite;
+    animation-delay: calc(var(--delay-between) * 2); 
+}
+
+.bg4 {
+    animation: bounce var(--bounce-duration) infinite;
+    animation-delay: calc(var(--delay-between) * 3); 
+}
+
+.bg5 {
+    animation: bounce var(--bounce-duration) infinite;
+    animation-delay: calc(var(--delay-between) * 4); 
+}
+
+
 /* navigation */
 .navigation > * {
     display: flex;
@@ -254,7 +336,6 @@ nav ul {
     background-color: blanchedalmond;
     border-radius: 20px;
     padding: 5px 10px;
-    margin: px 0;
     font-weight: bold;
     box-shadow: 5px 2px 5px black;
     font-size: medium;
@@ -273,6 +354,43 @@ nav ul li {
     font-size: medium;
 }
 
+#form{
+    flex-direction: column;
+    margin-top: 4rem;
+    margin: 6rem;
+    padding: 2rem;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #ffffff;
+    align-items: center;
+}
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#Navigation {
+    position:absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(128, 198, 245);
+    padding: 10px 0;
+    text-align: center;
+}
+#Navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    }
+    #Navigation a:hover {
+    text-decoration: underline;
+    }
+html{
+    scroll-behavior: smooth;
+}
 /* texte experience */
 
 .txtEXP {
@@ -947,7 +1065,27 @@ h4 {
         font-size: 13px;
         text-align: center;
     }
-    
+    #Navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(128, 198, 245);
+        padding: 10px 0;
+        text-align: center;
+    }
+    #Navigation a {
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+        font-size: 18px;
+        }
+        #Navigation a:hover {
+        text-decoration: underline;
+        }
+    html{
+        scroll-behavior: smooth;
+    }
     /* texte experience */
     
     .txtEXP {
