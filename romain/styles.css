@@ -44,8 +44,8 @@
 
 /* --- Application des Animations --- */
 
-.cadreblanc {
-    animation: fadeIn 1s ease-in-out;
+* {
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover, a:hover {
@@ -54,11 +54,7 @@ button:hover, a:hover {
 
 img:hover {
     animation: bounce 0.8s;
-    cursor: pointer;
-}
-
-* {
-    transition: all 0.3s ease-in-out;
+    cursor: cell;
 }
 
 html{
@@ -141,6 +137,7 @@ ol.gallery li {
     background-color: aliceblue;
     border-radius: 20px;
     border: solid 3px black;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .tete {    
