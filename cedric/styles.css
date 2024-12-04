@@ -7,45 +7,94 @@ section {
     padding: 30px;
 }
 
-h1 {
+.headingH1 {
     color: black;
     font-size: 4rem;
 
 }
 
-h2 {
+.headingH2 {
     font-size: 3rem;
 }
 
-section#presentation {
+.presentation {
     display: flex;
     align-items: center;
 }
 
-#presentation .image {
-    width: 33%;
+.presentation__image {
+    width: 30%;
 }
 
-#presentation .image img {
+.presentation__image img {
     width: 100%;
+    animation: blob 1s linear infinite;
 }
+@keyframes blob {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+ }
 
-#presentation .description {
+.presentation__description {
+    width: 70%;
     padding: 1rem;
 }
 
-#details {
+.presentation__titre {
+    margin-bottom: 0;
+}
+
+.presentation__separator {
+    width: 100%;
+    height: 5px;
+}
+.presentation__separator span {
+    display: block;
+    background-color: turquoise;
+    width: 10%;
+    height: 100%;
+    animation: moveRightToLeft 1.5s ease infinite;
+    transition: transform .8s ease;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    25% {
+        transform: translateX(450%) rotate(10deg);
+    }  
+    75% {
+        transform: translateX(900%) rotate(-10deg);
+    }  
+    100% {
+        transform: translateX(0) rotate(0);
+    }
+ }
+
+.details {
     display: flex;
+    flex-wrap: wrap;
     border: none;
 }
 
-section.experiences {
+
+.experiences {
+    box-sizing: border-box;
+    width: 50%;
     background-color: #eee;
     border-radius: 50px;
     border: none;
 }
 
-section.experiences ul {
+.experiences__liste {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -54,7 +103,7 @@ section.experiences ul {
     flex-wrap: wrap;
 }
 
-section.experiences ul li {
+.experiences__item {
     background-color: turquoise;
     color: black;
     font-weight: bold;
@@ -63,11 +112,20 @@ section.experiences ul li {
     font-size: 16px;
     margin-bottom: .8rem;
     margin-left: .5rem;
-    box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.40)
+    box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.40);
+    transition: background-color .8s ease, color .8s ease;
+}
+.experiences__item:hover {
+    background-color: black;
+    color: #fff;
 }
 
+.photos {
+    box-sizing: border-box;     
+    width: 50%;
+}
 
-ul.gallery {
+.photos__gallery {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -76,34 +134,34 @@ ul.gallery {
     flex-wrap: wrap;
 }
 
-ul.gallery li {
+.photos__item {
     margin-left: 5px;
     padding: 0;
 }
 
-ul.gallery li:last-child {
+.photos__item:last-child {
     margin-right: auto;
 }
 
 
-#sectionContact {
+.contact {
     display: flex;
     flex-wrap: wrap;
 }
 
-#sectionCoordonnees {
+.coordonnees {
     width: 50%;
     box-sizing: border-box;
 }
 
-ul#sectionCoordonneesCoordonnees,
-ul#sectionCoordonneesSocial {
+.coordonnees__liste,
+.coordonnees__social-liste {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul#sectionCoordonneesCoordonnees li {
+.coordonnees__item {
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: .5rem;
@@ -111,33 +169,49 @@ ul#sectionCoordonneesCoordonnees li {
     border-bottom: #ccc 1px solid;
 }
 
-#sectionCoordonnees ul li span {
+.coordonnees__label {
     font-size: 1rem;
     font-weight: normal;
     font-style: italic;
     color: turquoise;
 }
 
-ul#sectionCoordonneesSocial {
+.coordonnees__social-liste {
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
 }
 
-ul#sectionCoordonneesSocial li {
+.coordonnees__social-item {
     font-size: 2.5rem;
 }
 
-ul#sectionCoordonneesSocial a {
+.coordonnees__social-item:hover {
+    animation: pulse 1s infinite;
+}
+
+.coordonnees__social-link {
     color: black;
 }
 
-ul#sectionCoordonneesSocial a:hover {
+.coordonnees__social-link:hover {
     color: turquoise;
 }
 
-#sectionFormulaire {
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.formulaire {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +220,7 @@ ul#sectionCoordonneesSocial a:hover {
     box-sizing: border-box;
 }
 
-.formulaire {
+.formulaire__form {
     background-color: #eee;
     border-radius: 50px;
     width: 98%;
@@ -157,7 +231,7 @@ ul#sectionCoordonneesSocial a:hover {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
 }
 
-.fieldGroup {
+.formulaire__field-group {
     margin-bottom: .5rem;
     padding: .5rem 1rem;
     width: 100%;
@@ -165,32 +239,92 @@ ul#sectionCoordonneesSocial a:hover {
     justify-content: space-between;
 }
 
-.fieldGroup label {
+.formulaire__label {
     display: block;
     width: 33%;
     font-weight: bold;
 }
 
-.fieldGroup input {
+.formulaire__input {
     border-radius: 50px;
     height: 40px;
-    border: 1px solid black;
+    border: 2px solid black;
     flex-grow: 1;
+    transition: border-color .8s ease;
+}
+.formulaire__input:hover,
+.formulaire__input:focus, 
+.formulaire__input:active,
+.formulaire__textarea {
+    border-color: turquoise !important;
 }
 
-.formulaire textarea {
+.formulaire__textarea {
     width: 100%;
     height: 150px;
 }
 
-.formulaire button {
+.formulaire__button {
+    width: 30%;
+    height: 50px;
     border-radius: 50px;
     background-color: turquoise;
     padding: .5rem 2rem;
     font-size: 18px;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
-.formulaire button:hover {
+.formulaire__button:hover {
+    width: 35%;
+    height: 60px;
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    .headingH1 {
+        font-size: 3rem;
+    }
+    
+    .headingH2 {
+        font-size: 2.5rem;
+    }
+
+    .experiences,
+    .photos,
+    .coordonnees,
+    .formulaire {
+        width: 100%;
+    }
+
+    .formulaire__button {
+        width: 100%;
+    }
+    .formulaire__button:hover {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .presentation__image,
+    .presentation__description {
+        width: 100%;
+    }
+
 }
