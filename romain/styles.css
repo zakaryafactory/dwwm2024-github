@@ -114,6 +114,11 @@ section.presentation{
     flex-direction: center;
 }
 
+section.ancrage, nav{
+    display: flex;
+    justify-content: space-around;
+}
+
 section.Part2{
     display: flex;
     background-color: antiquewhite;
@@ -171,9 +176,10 @@ h2{
     align-items: center;
 }
 
+/*Interface téléphone*/
+
 @media (max-width: 600px) {
     body {
-        background-color: lightblue; 
         padding: 10px;
     }
 
@@ -200,6 +206,17 @@ h2{
 
     section.presentation {
         flex-direction: column; 
+        text-align: center;
+    }
+
+    section.Part2{
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    section.contact{
+        flex-direction: column; 
+        justify-content: center;
         text-align: center;
     }
 
@@ -230,10 +247,6 @@ h2{
     .project img {
         width: 100px;
         margin-bottom: 10px;
-    }
-
-    form input, form button {
-        width: 100%;
     }
 
     .contact {
