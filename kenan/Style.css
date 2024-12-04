@@ -29,7 +29,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header .links a {
+header .header__formee a {
     text-decoration: none;
     color: rgb(0, 0, 2);
     font-weight: bold;
@@ -41,12 +41,12 @@ header .links a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header .links:hover a {
+header .header__formee:hover a {
         background-color: #000000; 
         color: white; 
 }
 
-header .formateurs a {
+header .header__formateurs a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -58,9 +58,9 @@ header .formateurs a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header .formateurs:hover a {
-    background-color: #000000; 
-        color: white; 
+header .header__formateurs:hover a {
+    background-color: #ffffff; 
+        color: rgb(0, 0, 0); 
 } 
 
 
@@ -166,3 +166,16 @@ ul li {
     box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.40);
     list-style: none;
 }   
+
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(-10deg); 
+    }
+    50% {
+        transform: rotate(10deg); 
+    }
+}
+
+.avatar {
+    animation: rotate 3s ease infinite;
+}
