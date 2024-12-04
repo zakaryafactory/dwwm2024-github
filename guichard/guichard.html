@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+     <nav id="navigation">
+        <ul>
+            <li><a href="#descriptions">presentation</a></li>
+            <li><a href="#experiences">experience</a></li>
+            <li><a href="#coordonnees">coordonnees</a></li>
+            <li><a href="#contacts">contacts</a></li>
+        </ul>
+    
+    
+    
+    
+    
+    </nav>
 <header>
-    <a href=""></a>
+   
     <div class="navigation" w3-include-html="/navigation.html"></div>
 </header>
     
    
-<section class="flex" id="presentation">
+<section class="flex" id="descriptions">
     <div class="images"><img src="/images/avatarGuichard.png" alt="avatar"></div> 
     <div class="description">
        <h1><em>Bouboune guichard</em></h1>
@@ -38,8 +51,9 @@
                 <li> 2024 formation developpeur web</li>
             </ul>
     </div>
-    <div class="gallery contacts">
-        <section class="gallcontact"></section>
+    </section>
+    <div class="gallery" id="gallery">
+        <section class="gallcontact">
             <ul class="gallery">
                 
                     <li><img src="/guichard/guichard avatar.png" alt="guichard"width="100"></li>
@@ -56,7 +70,8 @@
                     
                     
             </ul>
-            <div class="flex" id="contacts">
+        </section>
+            <div class="contacts" id="contacts">
                 
                 <div id="contacts">
                     <h2>CONTACTS</h2>
@@ -65,7 +80,7 @@
                         <li><span>mail:</span> guichard.bouboune.dwwm48@gmail.com</li>
                         <li><span>adresse:</span> somewhereovertherainbow</li>
                     </ul>
-        </section>
+        
                     </div>
                       
                 
@@ -74,7 +89,7 @@
     </div>
 </section>
 
-                <div class="formulaire">  
+                <div class="formulaire" id="coordonnees">  
                     <form action="formulaire">
                         <div class="field">
                             <label for="text">noms</label>
@@ -101,6 +116,15 @@
                             <input type="text" id="mail" name="mail">
                         </div>
                     </form>
+                </div>
+                <div class="reseaux" id="reseaux">
+                    <ul id="sectionCoordonneesSocial">
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-x"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+
+
                 </div>  
        
     <script>
