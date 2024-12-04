@@ -379,8 +379,11 @@ p {
     0% {
         transform: translateX(0);
     }
-    100% {
+    50% {
         transform: translateX(50px);
+    }
+    80% {
+        transform: translateX(100px);
     }
 }
 .bubble-btn {
@@ -409,3 +412,20 @@ p {
       transform: scale(1);
     }
   }
+.mot {
+    font-size: 24px;
+    color: rgb(0, 7, 0); /* Couleur initiale */
+    transition: color 2s; /* Durée de la transition */
+}
+.mot:hover {
+    color: rgb(66, 82, 224); /* Couleur au survol */
+}
+.image-agrandi {
+    overflow: hidden; /* Pour éviter que l'image ne déborde */
+}
+.image-agrandi img {
+    transition: transform 0.3s ease; /* Effet de transition fluide */
+}
+.image-agrandi img:hover {
+    transform: scale(1.2); /* Grandir l'image à 120% */
+}
