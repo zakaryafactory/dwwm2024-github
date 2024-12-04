@@ -231,11 +231,11 @@ html{
 .listeimage li{
     animation: rotation 1s infinite
 }
-.fieldgroup button{
+button{
     transition: background-color 1s ease-out;
     background-color: aliceblue;
 }
-.fieldgroup button:hover{
+button:hover{
     background-color: purple;
 }
 textarea{
