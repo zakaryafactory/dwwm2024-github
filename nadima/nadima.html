@@ -4,35 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-<body>
-    <h2><center>Nadima Mokhtari</center></h2>
-<img src="/images/avatarNadima.png" height="100" width="100">
-<p>hello my name is nadima mokhtrai iam 22 year old iam afghan</p>
-<h2>mon experience</h2>
-<ul>
-    <li>stage à bazarland</li>
-    <li>stage à casino</li>
-    <li>stage à weldom</li>
-</ul>
-<br>
-<input type="date">
-<br>
 
-<form action="/submit" method="post">
-    <section>
+
+<body>
+
+
+
+    <header>
+        <div w3-include-html="/navigation.html"></div>
+    </header>
+
+
+    <section id="presantation">
+        <div class="presantationimage">
+            <img src="/images/avatarNadima.png" height="100" width="100">
+        </div>
+        <div>
+            <h1> Nadima mokhtari</h1>
+            <p>hello my name is nadima mokhtrai iam 22 year old iam afghan</p>
+        </div>
+    </section>
+    
+
+    <section id="point">
+        <section id="experience">       
+            <h2>Mon Experience</h2>
+            <ul class="exp">
+                <li>2023 formation project pro </li>
+                <li> 2022 stage à point vert</li>
+                <li> 2022 stage à bazarland</li>
+                <li>2022 stage à casino</li>
+                <li> 2022 stage à weldom</li>
+            </ul>
+        </section>
+        <section id="galary">
+            <h2> Photo </h2>
+            <ul class="photo">
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+                <li><img src="/images/avatarNadima.png"height="100" alt=""></li>
+            </ul>
+        </section>
+</section>
+
+<section id="coordonnees">
+    <h2> Mes Coordonnées</h2>
     <h2>contact</h2>
-<div>
-    <label for="nom">nom</label>
-    <input type="text" id="nom" name="nom"/>    
-</div>
-<br>
-<div><label for="message">message</label>
-    <textarea name="message" placeholder="message" id="message"></textarea>
-    </div>
-    <br>
-<button>envoyer</button>
-</form>
+        <form class="numero">
+            <div class="nom">
+                 <label for="nom">Nom </label>
+                 <input type="text" id="nom" name="nom"/> 
+            </div>
+            <br>
+            <div class="prenom">
+                <label for="prenom">prenom</label>
+                <input type="text" id="prenom" prenom="prenom"/>
+            </div>
+            <br> 
+            <div class="telephone">
+                <label for="telephone">telephone</label>
+                <input type="text" id="telephone" name="telephone"/> 
+            </div>
+            <br>
+            <div class="messege">
+                <label for="message">message</label>
+                <textarea name="message" placeholder="message" id="message"></textarea>
+            </div>
+        <br>
+        <button>envoyer</button>
+    </form>
+</section>
+
+
+
+<script>
+    w3.includeHTML();
+</script>
+
+
 
 
 </body>
