@@ -1,3 +1,62 @@
+/* --- Animations --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* --- Application des Animations --- */
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, a:hover {
+    animation: pulse 0.5s infinite;
+}
+
+img:hover {
+    animation: bounce 0.8s;
+    cursor: cell;
+}
+
 html{
     scroll-behavior: smooth
 }
@@ -15,7 +74,6 @@ article{
 
 header {
     background-color: paleturquoise;
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     display: flex;
@@ -40,7 +98,6 @@ header li {
     padding: 10px;
     color: black;
     border: 3px solid black;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -80,6 +137,7 @@ ol.gallery li {
     background-color: aliceblue;
     border-radius: 20px;
     border: solid 3px black;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .tete {    
@@ -112,6 +170,11 @@ section.presentation{
     padding: 10px;
     text-align: center;
     flex-direction: center;
+}
+
+section.ancrage, nav{
+    display: flex;
+    justify-content: space-around;
 }
 
 section.Part2{
@@ -171,9 +234,10 @@ h2{
     align-items: center;
 }
 
+/*Interface téléphone*/
+
 @media (max-width: 600px) {
     body {
-        background-color: lightblue; 
         padding: 10px;
     }
 
@@ -200,6 +264,17 @@ h2{
 
     section.presentation {
         flex-direction: column; 
+        text-align: center;
+    }
+
+    section.Part2{
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    section.contact{
+        flex-direction: column; 
+        justify-content: center;
         text-align: center;
     }
 
@@ -232,10 +307,6 @@ h2{
         margin-bottom: 10px;
     }
 
-    form input, form button {
-        width: 100%;
-    }
-
     .contact {
         padding: 10px;
     }
@@ -243,4 +314,67 @@ h2{
     .contact .cadreblanc {
         width: 100%;
     }
+}
+
+/* Interface écran géant :skull: */
+
+@media screen {
+
+section.Part2{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dessus{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+section.photos {
+    display: flex;
+    background-color: antiquewhite;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+section.contact{
+    text-align: center;
+    background-color: lightblue
+}
+
+.encar{
+    background-color: rgb(165, 151, 151);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.Conta{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.pnom{
+    background-color: antiquewhite;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+}
+    
 }

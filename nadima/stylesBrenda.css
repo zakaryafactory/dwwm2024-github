@@ -1,0 +1,274 @@
+h1{
+    color: rgb(19, 18, 19);
+    background-color: rgb(211, 199, 199);
+    font-size: 22px;
+    width: 56%;
+    height: 50px;
+    padding: 15px 5px 12px 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+div p{
+    font-size: 30px;
+
+}
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+    }
+
+h2{
+    font-size:larger;
+}
+section{
+    border: px solid rgb(180, 164, 164) ;
+}
+#presantation{
+    width:50%;
+}
+.photo{
+margin: 0px; padding: 0px;
+display: flex;
+justify-content:space-between;
+flex-wrap: wrap;
+
+}
+ul.photo li:last-child{
+    margin-right: auto;
+}
+ul.photo li{
+    margin: 20px;
+    flex-wrap: wrap;
+}
+p.paragraphe{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#presantation{
+    padding: 1.5rem;
+    display: flex;
+}
+#experience{
+    width: 50%;
+    background-color: rgb(199, 178, 178);
+    border-radius: 100px;
+    margin: 1.2rem;
+
+}
+#experience h2{
+    background-color: rgb(175, 152, 152);
+    border-radius: 50px;
+    padding: 7px;
+    width: 40%;
+    height: 11%;
+    font-size: x-large;
+    text-align: center;
+    margin:  2.2rem;
+}
+.exp{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.exp li{
+    background-color: rgb(184, 124, 146);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 7px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: large;
+    width: 30%;
+}
+#point{
+    display: flex;
+    flex-direction: row;
+}
+#galary{
+    width: 80%;
+    flex-wrap: wrap;
+}
+#galary h2{
+    font-size:xx-large;
+    padding: 50px;
+
+}
+#galary h2{
+    background-color: rgb(184, 176, 176);
+    border-radius: 50px;
+    padding: 2%;
+    width: 15%;
+    height: 10%;
+    text-align: center;
+}
+.photo{
+    margin: 0.5rem;
+    list-style: none; 
+}
+
+#experience{    
+    width: 50%;
+}
+h2{
+    justify-content: center;
+    margin: 20px;
+    height: 10%;
+}
+    
+#coordonnees h2{
+    background-color: rgb(155, 137, 137);
+    border-radius: 60px;
+    padding: 7px;
+    width: 20%;
+    height: 20%;
+    font-size: x-large;
+
+}
+
+.nom label{
+    background-color: rgb(245, 237, 237);
+    border-radius: 50px;
+    padding: 7px;
+    margin:  1.2rem;
+    margin:  1.2rem;
+}
+.prenom label{
+    background-color: rgb(165, 147, 147);
+    border-radius: 50px;
+    padding: 7px; 
+    margin:  1.2rem; 
+}
+.telephone label{
+    background-color: rgb(204, 184, 184);
+    border-radius: 50px;
+    padding: 7px;  
+    margin:  1.2rem;
+}
+.messege label{
+    background-color: white;
+    border-radius: 90px;
+    padding: 7px;
+    margin:  1.2rem;
+}
+.envoyer{
+    margin:  1.2rem;
+}
+
+#formulaire{
+    background-color: rgb(98, 175, 211);
+    border-radius: 20px;
+    width: 50%;
+    font-size: 50;
+}
+#formulaire h2{
+    font-size: xx-large;
+    background-color: aquamarine;
+    border-radius: 50px;
+    width: 10rem;
+    height:50px;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin: 1,2rem;
+    border-radius: 70px;
+    border: rgb(221, 174, 174) 5px solid;
+    background-color: rgb(201, 199, 197);
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:.5rem;
+    padding: 10px;
+    list-style: none;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(231, 236, 238);
+    align-items: center;
+    }
+#contact{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+#coordonnees{
+    background-color: rgb(105, 142, 158);
+    border-radius: 20px;
+    width: 70%;
+    border: 10px;
+    flex-wrap: wrap;
+    font-size: x-large;
+    padding: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+/* Tablettes */
+@media(max-width: 1100px) {
+    body{
+        background-color: rgb(94, 182, 194);
+    }
+    #experience h2{
+        padding: 5%;
+    }
+    #experience{
+        margin: 1.2rem;
+}
+.photo{
+    flex-wrap: wrap;
+}
+nav ul li{
+    flex-wrap: wrap;
+}
+ul.photo li{
+  flex-wrap: wrap;
+}
+#coordonnees h2{
+    width: 35%;
+}
+#contact{
+margin-top: 0.8rem;
+}
+}
+
+/* Téléphones */
+@media (max-width: 767px) {
+    body {
+    background-color: lightblue;
+    }
+    div p{
+        font-size: x-large;
+}  
+#galary h2{
+    padding: 5%;
+    text-align: center;
+    height: 5%;
+    width: 20%;
+}
+#formulaire{
+    width: 60%;
+}
+#experience h2{
+    width: 50%;
+}
+#coordonnees h2{
+width: 50%;
+}
+#presantation{
+    width: 98%;
+}
+}
