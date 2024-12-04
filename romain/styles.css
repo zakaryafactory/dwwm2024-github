@@ -1,56 +1,4 @@
-/* --- Animations --- */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
 /* --- Application des Animations --- */
-
-* {
-    transition: all 0.3s ease-in-out;
-}
-
-button:hover, a:hover {
-    animation: pulse 0.5s infinite;
-}
 
 img:hover {
     animation: bounce 0.8s;
@@ -70,6 +18,7 @@ h1 {
 
 article{
     font-family: 'Courier New', Courier, monospace;
+    justify-content: center;    
 }
 
 header {
@@ -100,7 +49,18 @@ header li {
     border: 3px solid black;
 }
 
+header li:hover {
+    background-color: rgb(221, 218, 154);
+}
+
 body {
+    background-color: rgb(215, 153, 86);
+    border: 3px solid black;
+    transition: background-color 1s ease;
+}
+
+
+body:hover {
     background-color: rgb(205, 173, 113);
     border: 3px solid black;
 }
@@ -137,7 +97,13 @@ ol.gallery li {
     background-color: aliceblue;
     border-radius: 20px;
     border: solid 3px black;
-    animation: fadeIn 1s ease-in-out;
+    transition: background-color 1s ease;
+}
+
+.cadreblanc:hover{
+    background-color: lightgray;
+    border-radius: 20px;
+    border: solid 3px black;
 }
 
 .tete {    
@@ -195,7 +161,6 @@ section.Part2{
 
 section.photos {
     display: flex;
-    background-color: antiquewhite;
     text-align: center;
     justify-content: flex-start;
 }
@@ -237,9 +202,6 @@ h2{
 /*Interface téléphone*/
 
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
 
     h1 {
         color: blueviolet;
@@ -264,6 +226,7 @@ h2{
 
     section.presentation {
         flex-direction: column; 
+        justify-content: center;
         text-align: center;
     }
 
@@ -275,12 +238,9 @@ h2{
     section.contact{
         flex-direction: column; 
         justify-content: center;
-        text-align: center;
     }
 
     .cadreblanc {
-        padding: 15px;
-        margin: 15px auto;
         width: 90%; 
     }
 
@@ -303,7 +263,6 @@ h2{
     }
 
     .project img {
-        width: 100px;
         margin-bottom: 10px;
     }
 
@@ -314,67 +273,4 @@ h2{
     .contact .cadreblanc {
         width: 100%;
     }
-}
-
-/* Interface écran géant :skull: */
-
-@media screen {
-
-section.Part2{
-    display: flex;
-    background-color: antiquewhite;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.dessus{
-    display: flex;
-    background-color: antiquewhite;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-
-section.photos {
-    display: flex;
-    background-color: antiquewhite;
-    text-align: center;
-    justify-content: flex-start;
-}
-
-section.contact{
-    text-align: center;
-    background-color: lightblue
-}
-
-.encar{
-    background-color: rgb(165, 151, 151);
-    padding: 10px;
-    border-radius: 25px;
-    margin: 10px;
-}
-
-.Conta{
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.pnom{
-    background-color: antiquewhite;
-}
-
-h2{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.project{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-    align-items: center;
-}
-    
 }
