@@ -41,7 +41,7 @@ nav ul{
     justify-content: stretch;
     width: 97%;
     margin: 5px;
-    border: 4px solid blue;
+    border: 4px solid rgb(236, 229, 25);
     border-radius: 30px;
 }
 nav ul li{
@@ -51,17 +51,19 @@ nav ul li{
     border-radius: 30px;
 }
 nav  li a{
+    background-color: yellow;
     text-decoration: none;
     font-family: fantasy;
+    transition: background-color 4s ease-out;
     
 }
 nav  li a:hover{
-    border: 1px solid #E0004008;
+    border: 1px solid red;
     border-radius: 30px;
     margin: 5px;
     padding: 5px;
 
-    background-color: rgb(182, 182, 198);
+    background-color: red;
 }
 .flex{
     display: flex;
@@ -83,7 +85,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: red;
+    background-color: rgb(250, 243, 243);
     
 }
 #description {
@@ -94,17 +96,25 @@ p{
 }
 .images img {
     width: 30%;
+    animation: rotation 2s ease infinite;
+    
+}
+
+@keyframes rotation{
+    0%{transform:rotate(45deg)}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg)}
 }
 #descriptions .images{
     box-sizing: border-box;
-    border: 4px solid blue;
+    border: 4px solid rgb(114, 213, 61);
     border-radius: 30px;
     width: 50%;
     height: 50%;
 }
 .description{
     box-sizing: border-box;
-    border: 4px solid blue;
+    border: 4px solid rgb(179, 174, 33);
     background-color: #0040ff08;
     border-radius: 30px;
     margin: 5px;
@@ -123,11 +133,12 @@ p{
 .experiences{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     background-color: #0040ff08;
     margin: 5px;
     padding: 5px;
     width: 100%;
-    border: 4px solid blue;
+    border: 4px solid rgb(241, 12, 12);
     border-radius: 30px;
     
 
@@ -158,17 +169,18 @@ p{
     background-color: rgb(163, 189, 33);
 }
 #contacts{
+    display: flex;
     width: 97%;
+    margin: 5px;
+    padding: 5px;
     border: 4px solid rgb(124, 124, 208);
     border-radius: 30px;
 }
 
-#contacts ul{
-font-family: fantasy;
-    font-size: x-large ;
-    justify-content: center;
+.contacts ul{
     list-style: none;
-    padding: 5px;
+    border: 2px solid ;
+   
    
 }
 
@@ -193,7 +205,7 @@ font-family: fantasy;
 }
 .formulaire{
     display: flex;
-    border: 4px solid blue;
+    border: 4px solid rgb(150, 62, 136);
     border-radius: 30px;
     font-size: x-large;
     width: 98%;
@@ -212,6 +224,35 @@ font-family: fantasy;
 }
 .field label{
     width: 30%;
+}
+.reseaux{
+    display: flex;
+    border: 4px solid rgb(150, 62, 136);
+    border-radius: 30px;
+}
+#sectionCoordoneesSocial{
+    
+}
+
+ul#sectionCoordonneesSocial {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+ul#sectionCoordonneesSocial li {
+    font-size: 2.5rem;
+    list-style: none;
+}
+
+ul#sectionCoordonneesSocial a {
+    color: black;
+}
+
+ul#sectionCoordonneesSocial a:hover {
+    color: turquoise;
 }
 @media screen and (max-width:768px){
     .field label{
