@@ -1,9 +1,8 @@
 
-body {
+html {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #33003350 ;
+background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
 }
-
 
 h3 {
     display: flex;
@@ -102,6 +101,7 @@ h3 {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #e4dfdf;
 }
+
 .pro p {
     display: flex;
     text-justify: distribute;
@@ -174,37 +174,117 @@ h3 {
     text-decoration: underline;
 }
 
-
 #galerie {
-    width: 50%;
-    margin: 0px;
-    padding: 0px 35px 35px 35px;
+    margin: 2.5rem 1rem 1.5rem 1rem;
+    padding: .75rem .75rem 1.75rem .75rem;
+    display: flex;
+    flex-direction: column;
     justify-content: right;
+    border: solid 2px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #e4dfdf;
 }
 
 #galerie h2 {
-    padding: 30px;
-    font-size: 2rem;
     font-weight: bolder;
 }
 
 .photos {
-    margin-left: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    background-color: #e4dfdf;
+    border-radius: 32px;
+    margin-right: 2rem;
+}
+
+.photos li img {
+    display: flex;
+    flex-flow: row-reverse;
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.photos li img:last-child {
+    margin-right: auto;
+}
+
+#divers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+#divers .skills {
+    margin: .75rem 1rem .75rem 1rem;
+    padding: 1.75rem;
+    flex-wrap: wrap;
+    border: solid 2px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #e4dfdf;
+}
+
+#divers .skills h2 {
+    font-weight: bolder;
+}
+
+#divers span{
+    text-decoration: underline;
+    font-weight: bold;
+    color:#2F242C ;
+}
+#divers .autre {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#divers .autre .langues {
+    margin: .75rem 1rem .75rem 1rem;
+    padding: .75rem;
+    max-width: 100%;
+    height: 50%;
+    flex-wrap: wrap;
+    border: solid 2px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #e4dfdf;
+}
+
+#divers .autre .hobbies {
+    margin: .75rem 1rem .75rem 1rem;
+    padding: .75rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    border: solid 2px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #e4dfdf;
 }
 
 #contact {
+    margin: .75rem 1rem .75rem 1rem;
+    padding: .75rem;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    border: solid 2px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #d05eaa;
 }
 
 #formulaire {
-    width: 50%;
-    padding: .4rem .4rem .4rem .4rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;  
+    align-content: space-between; 
+    justify-content:space-between;  
     flex-wrap: wrap;  
 }
 
@@ -214,29 +294,20 @@ h3 {
     font-weight: bolder;
 }
 
+
 #formulaire p {
     padding: 0px 30px 0 30px;
     font-size: 1rem;
-}
-
-#formulaire .form {
-    border-radius: 35px;
-    padding: 1rem 0;
-    background-color: #C179B9;
-    box-shadow: 7px 7px 9px -7px rgba(0, 0, 0, 0.40);
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
+    word-break: break-word;
 }
 
 #formulaire  input {
     align-content: flex-end;
     justify-items: end;
-    border-radius: 40px;
+    border-radius: 36px;
     height: 30px;
-    width: 300px;
+    width: 100%;
     border-color: #C179B9 1px solid;
 }
 
@@ -245,7 +316,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    max-width: 90%;
 }
 
 #formulaire .formButtons {
@@ -253,6 +324,7 @@ h3 {
     width: 30%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .formSaisie label {
@@ -328,7 +400,7 @@ font-size: 14px;
     flex-direction: column;
     max-width: 100%;
 }
-#coordonees{
+#coordonees {
     margin: 1.5rem 1rem 1.5rem 1rem;
     width: 90%;
 }
@@ -343,6 +415,7 @@ font-size: 14px;
 #avatar {
     max-width: 100%;
     margin: auto;
+    order: -1;
 }
 #avatar img {
     max-width: 225px;
@@ -355,6 +428,40 @@ font-size: 14px;
     margin: 1.5rem 1rem 1.5rem 1rem;
     padding: .75rem;
 }
+#galerie {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+    padding: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    border: solid 2px #330033;
+    border-radius: 32px;
+    box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
+    background-color: #e4dfdf;
+}
+#galerie h2 {
+    font-weight: bolder;
+}
+.photos {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    background-color: #e4dfdf;
+    border-radius: 32px;
+    margin-right: 1rem;
+}
+.photos li img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 125px;
+    margin-bottom: 1rem;
+}
+
+#divers .skill {
+}
+
 nav ul{
     padding: 0.5rem 0.5rem;
     margin: 0.5rem;

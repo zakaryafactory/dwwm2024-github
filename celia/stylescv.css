@@ -1,53 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;  
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #b98a5f;
+}
+nav a{
+    background-color: #70a8d6;
+    color: aliceblue;
+    font-size: 19px;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0.5rem
+}
+
+a:hover{
+    color: gold;
+}
+main{
+    background-color: #11110f;
+    padding-top: 5rem;
+}
 body{
-    background-image: url("/celia/fond-technologie.avif");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #c4d61c;
+    padding-top: 0;
+    margin-top: rem;
 }
 
 .moi{
     display:flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c27676;
+    border-radius: 20%;
 }
 
-img{
-    border-radius: 0.5rem 2rem 0.5rem 2rem;
+.moi div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 50%;
 }
 
 h1{
     font-family:Arial, Helvetica, sans-serif;
-    margin: 1.5rem;
-    font-size: 40px;
+    font-size: 5vw;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-color: gray;
 }
 
-.apropos{
-    border-radius: 20%;
+.centre{
+    display: flex;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-family: cursive;
+    font-weight: 100;
+    font-size: small;
+    gap: 0.2rem;
+    background-color: aqua;
+}
+.aproposdemoi{
+    display: flex;
     flex-wrap: wrap;
-    padding: 1rem 0.2rem 2rem 1rem;
+    padding: 1rem 0.5rem;
     border: 1px lightgrey solid;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #d39c9c;
 }
-.gauche{
-    border-radius: 12%;
-    width: 25%;
 
+.aproposdemoi p{
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    background-color: rgb(204, 139, 60);
+
+}
+
+.gauche{
+    width: 35%;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background-color: rgb(228, 228, 171);
 }
 
 .formation{
     align-content: center;
-    padding: 1rem 0.2rem 2rem 0rem;
+    padding: 1rem 0.5rem;
     border-radius: 20%;
+    display: flex;
     flex-wrap: wrap;
+    background-color: #f09494;
     border: 1px lightgrey solid;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
 }
 
 .experience{
@@ -59,45 +111,79 @@ h1{
     border: 1px lightgrey solid;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #b98a5f;
 }
 
 .colonnedroite{
-    width: 75%;
-    border-radius: 10%;
+    width: 73%;
     align-content: space-around;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background-color: rgb(142, 223, 132);
 }
 
-.centre{
+h2{
+    background-color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: .5rem;
     display: flex;
-    justify-content: center;
-    font-family: cursive;
-    font-weight: 100;
-    font-size: small;
-    gap: 5px;
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    flex-wrap: wrap;
 }
 
 h3{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:x-large;
-    font-weight: 400;
-    margin: 10%;
+    background-color: rgb(202, 45, 150);
+    font-family:cursive;
+    font-size: 2vw;
+    font-weight: 200;
+    margin: 1rem;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .coordonnees{
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 20%;
-    border: 1px lightgrey solid;
+    border: 1px rgb(68, 51, 51) solid;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-    margin: 0 0.1rem 0 0;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #ffffff;
+    background-color: #eba0a0;
     margin: 1rem 0.1rem 1rem 0.1rem;
 }
-
-.coordonnees ul{
-    flex-wrap: wrap;
+.coordonnees ul li{
+    background-color: aqua;
+    font-size:larger;
 }
+
+
+/* format tablette a partir de maintenant */
+
+@media (max-width: 1024px){
+    .aproposdemoi p{
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    body{
+        background-color:rgb(176, 144, 209);
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .centre{ 
+        flex-direction: column;
+        margin: 0.2rem;
+    }    
+    .gauche{
+        width: 100%;
+    }
+    .colonnedroite{
+        width: 100%;
+    }
+}
+
 

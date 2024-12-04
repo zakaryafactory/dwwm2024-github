@@ -55,6 +55,7 @@ section {
 
 ol.expo {
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 ol {
@@ -120,13 +121,20 @@ section.Part2{
     align-items: center;
 }
 
+.dessus{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
 section.photos {
     display: flex;
     background-color: antiquewhite;
     text-align: center;
     justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 section.contact{
@@ -136,6 +144,7 @@ section.contact{
 
 .encar{
     background-color: rgb(165, 151, 151);
+    padding: 10px;
     border-radius: 25px;
     margin: 10px;
 }
@@ -153,14 +162,85 @@ h2{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+}
+
 @media (max-width: 600px) {
     body {
-    background-color: lightblue;
+        background-color: lightblue; 
+        padding: 10px;
     }
+
+    h1 {
+        color: blueviolet;
+        font-size: 1.5em; 
+        text-align: center;
     }
-    
-    @media (min-width: 1200px) {
-    body {
-    background-color: lightgreen;
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section.presentation {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .cadreblanc {
+        padding: 15px;
+        margin: 15px auto;
+        width: 90%; 
+    }
+
+    section.photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ol.expo {
+        flex-direction: column;
+    }
+
+    ol.expo li {
+        margin: 5px 0;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+
+    .contact .cadreblanc {
+        width: 100%;
+    }
+}

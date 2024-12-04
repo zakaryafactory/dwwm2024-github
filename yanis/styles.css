@@ -267,7 +267,7 @@ nav ul li {
     background-color: #f1f1d1;
     border-radius: 20px;
     padding: 5px 10px;
-    margin: px 0;
+    margin: 0px 0;
     font-weight: bold;
     box-shadow: 5px 2px 5px black;
     font-size: medium;
@@ -800,7 +800,7 @@ h4 {
     .contact {
         position: absolute;
         left: 0px;
-        top: 1400px;
+        top: 1350px;
     }
     
     /* formulaire */
@@ -908,7 +908,7 @@ h4 {
     
     .saiko {
         position: absolute;
-        top: 1200px;
+        top: 1100px;
         left: 5px;
     }
     
@@ -920,27 +920,32 @@ h4 {
     }
     .navigation {
         background-color: blanchedalmond;
-    }
-    .navigation {
-        color: rgb(0, 0, 0); padding: 0%;
+        color: rgb(0, 0, 0); padding: 5px;
     }
     
     nav ul {
         display: flex;
         background-color: blanchedalmond;
-        border-radius: 20px;
+        border-radius: 10px;
         box-shadow: 5px 2px 5px black;
         justify-content: start;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 10px 0;
+        padding: 0;
     }
     nav ul {
         list-style: none;
+        padding: 0;
     }
     nav ul li {
         background-color: #f1f1d1;
         border-radius: 10px;
         box-shadow: 5px 2px 5px black;
+        margin: 5px 0;
+        padding: 10px 5px;
+        font-size: 13px;
+        text-align: center;
     }
     
     /* texte experience */
