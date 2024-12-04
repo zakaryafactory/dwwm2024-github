@@ -75,7 +75,9 @@ h1{
     color: rgb(12, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    
 }
+
 p{
     font-family: fantasy;
     font-size: large;
@@ -88,6 +90,36 @@ p{
     background-color: rgb(250, 243, 243);
     
 }
+
+.presentation__separator {
+    width: 100%;
+    height: 5px;
+}
+.presentation__separator span {
+    display: block;
+    background-color: rgb(222, 106, 44);
+    width: 10%;
+    height: 100%;
+    animation: moveRightToLeft 5s ease infinite; 
+    transition: transform 1s ease; 
+    
+}
+ 
+@keyframes moveRightToLeft {
+    0% {
+        transform:rotate(50deg);
+    }
+    25% {
+        transform: translateX(450%) ;
+    }  
+    75% {
+        transform: rotate(-10deg);
+    }  
+    100% {
+        transform: translateX(900%) ;
+    }
+ }
+
 #description {
 
     display: flex;
@@ -112,6 +144,7 @@ p{
     width: 50%;
     height: 50%;
 }
+
 .description{
     box-sizing: border-box;
     border: 4px solid rgb(179, 174, 33);
@@ -126,13 +159,11 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
-.expe{
-    box-sizing: border-box;
-    background-color: rgb(247, 228, 228);
-}
+
 .experiences{
     display: flex;
-    justify-content: space-around;
+    box-sizing: border-box;
+    justify-content: space-evenly;
     flex-direction: row;
     background-color: #0040ff08;
     margin: 5px;
@@ -146,10 +177,27 @@ p{
 .experiences h2{
 
     font-size: xx-large;
+    justify-content: space-evenly;
 }
 .experiences ul {
     list-style: none;
     font-size: larger;
+    
+}
+
+.experiences li{
+    background-color: rgb(69, 168, 158);
+    color: black;
+    font-weight: bold;
+    padding: .5rem .8rem;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-bottom: .8rem;
+    margin-left: .5rem;
+    transition: background-color 4s ease-out;
+}
+.experiences:hover{
+    background-color: aliceblue;
 }
 
 .gallery{
