@@ -10,6 +10,7 @@ html{
 .navigation{
     background-color: #0040FF08;
     display: flex;
+    flex-wrap: wrap;
     
     flex-direction: inherit ;
 }
@@ -23,7 +24,7 @@ html{
     text-decoration: none;
  }
 nav ul{
-    
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row-reverse;
     list-style: none;
