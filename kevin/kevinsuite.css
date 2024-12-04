@@ -97,6 +97,22 @@ nav ul {
     box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.53);
     background-color: #d6c8c8;
 }
+.experiences{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.experiences li {
+    background-color: rgb(88, 90, 88);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 7px;
+    list-style: none;
+    justify-content: center;
+}
 #details .experiences li,
 #details .gallery li {
     list-style: none;
@@ -415,10 +431,10 @@ p {
 .mot {
     font-size: 24px;
     color: rgb(0, 7, 0); /* Couleur initiale */
-    transition: color 2s; /* Durée de la transition */
+    transition: color 0.5s; /* Durée de la transition */
 }
 .mot:hover {
-    color: rgb(66, 82, 224); /* Couleur au survol */
+    color: rgb(223, 14, 14); /* Couleur au survol */
 }
 .image-agrandi {
     overflow: hidden; /* Pour éviter que l'image ne déborde */
