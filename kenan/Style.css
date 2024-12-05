@@ -177,5 +177,5 @@ ul li {
 }
 
 .avatar {
-    animation: fade 8s ease infinite;
+    animation: fade 8s ease;
 }

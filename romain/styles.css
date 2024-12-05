@@ -1,7 +1,32 @@
 /* --- Application des Animations --- */
 
-img:hover {
-    animation: bounce 0.8s;
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+img:hover{
+    animation: pulse 1s infinite
+}
+
+img.presentation {
+    animation: rotate 10s infinite;
     cursor: cell;
 }
 
