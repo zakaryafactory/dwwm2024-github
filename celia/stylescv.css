@@ -3,171 +3,363 @@ html{
 }
 
 nav{
+    background-color: #dfcfc1;
+    display: flex;
+    flex-wrap: wrap;
     position: fixed;  
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: auto;
     display: flex;
     justify-content: center;
-    background-color: #b98a5f;
-}
+}   
 nav a{
-    background-color: #70a8d6;
-    color: aliceblue;
-    font-size: 19px;
+    /* background-color: #70a8d6; */
+    color: rgb(65, 147, 219);
+    font-size: 18px;
     list-style: none;
     padding: 0.5rem;
-    margin: 0.5rem
+    margin: 0.5rem;
+    transition: 0.5s;
 }
 
 a:hover{
-    color: gold;
+    color: rgb(198, 77, 223);
 }
+
 main{
-    background-color: #11110f;
-    padding-top: 5rem;
+    /* background-color: #11110f; */
+    padding-top: 4rem;
 }
+
 body{
-    background-color: #c4d61c;
+    /* background-color: #c4d61c; */
     padding-top: 0;
     margin-top: rem;
 }
 
+.avatar{
+    animation: rotation 3s ease infinite;
+}
+@keyframes rotation{
+    0%{
+        transform:rotate(-15deg)
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
 .moi{
+    /* background-color: #ce4747; */
     display:flex;
     flex-direction: row-reverse;
-    background-color: #c27676;
     border-radius: 20%;
 }
 
+
 .moi div{
+    /* background-color: aqua; */
     width: 50%;
     display: flex;
     justify-content: center;
-    background-color: aqua;
     border-radius: 50%;
 }
 
 h1{
+    /* background-color: gray; */
+    color: #b46363;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 5vw;
     font-weight: 400;
     display: flex;
     align-items: center;
-    background-color: gray;
+    /* transition-property: transform;
+    transition-duration: 500ms; */
+    transition: transform 400ms;
+}
+h1:hover{
+    transform: scale(1.15);
+    color: rgb(77, 136, 136);
 }
 
 .centre{
-    display: flex;
-    margin: 0.2rem;
-    padding: 0.2rem;
-    font-family: cursive;
-    font-weight: 100;
-    font-size: small;
-    gap: 0.2rem;
-    background-color: aqua;
-}
-.aproposdemoi{
+    /* background-color: rgb(108, 197, 105); */
     display: flex;
     flex-wrap: wrap;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: small;
+}
+
+.aproposdemoi{
+    /* background-color: #118d1a; */
+    font-size: 25px;
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     padding: 1rem 0.5rem;
     border: 1px lightgrey solid;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #d39c9c;
 }
 
 .aproposdemoi p{
+    /* background-color: rgb(204, 139, 60); */
+    font-size: 18px;
     flex-wrap: wrap;
-    margin: 4rem 0;
-    background-color: rgb(204, 139, 60);
+    margin: 1rem 0.3rem;
+    padding: 1rem;
 
 }
 
-.gauche{
-    width: 35%;
-    margin: 0.2rem;
+.gauche{ 
+    /* background-color: rgb(228, 228, 171); */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 25%;
     padding: 0.2rem;
-    background-color: rgb(228, 228, 171);
+}
+
+.divers{
+    /* background-color: #c4d61c; */
+    align-content: center;
+    padding: 1rem 0.5rem;
+    border-radius: 20%;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+    box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
+}
+
+.divers ul li{
+    font-size: 18px;
 }
 
 .formation{
+    /* background-color: #f09494; */
     align-content: center;
     padding: 1rem 0.5rem;
     border-radius: 20%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #f09494;
+    box-sizing: border-box;
     border: 1px lightgrey solid;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
 }
 
 .experience{
+    /* background-color: #b98a5f; */
     align-content: center;
     border-radius: 20%;
+    display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
     padding: 1rem 0.2rem 2rem 0rem;
     border: 1px lightgrey solid;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #b98a5f;
-}
 
+}
+.formation ul li{
+    /* background-color: #2fa5b4; */
+    font-size: 18px;
+}
 .colonnedroite{
-    width: 73%;
+    /* background-color: rgb(142, 223, 132); */
+    box-sizing: border-box;
+    width: 75%;
     align-content: space-around;
-    margin: 0.2rem;
-    padding: 0.2rem;
-    background-color: rgb(142, 223, 132);
+    /* margin: 0.2rem;
+    padding: 0.2rem; */
+}
+.experience ul li{
+    /* background-color: #664444; */
+    font-size: 20px;
+}
+.experience p{
+    /* background-color: rgb(158, 103, 30); */
+    font-size: 18px;
 }
 
 h2{
-    background-color: aliceblue;
-    font-family:Arial, Helvetica, sans-serif;
+    /* background-color: aliceblue; */
+    color: #7b4092;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
     font-size: 1.5rem;
-    margin: .5rem;
+    margin: 0;
+    font-weight: 100;
     display: flex;
     flex-wrap: wrap;
 }
 
 h3{
-    background-color: rgb(202, 45, 150);
-    font-family:cursive;
-    font-size: 2vw;
+    /* background-color: rgb(202, 45, 150); */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
     font-weight: 200;
-    margin: 1rem;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
-.coordonnees{
+.coordonnees{  
+    background-color: #ecd9d9;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 20%;
+    box-sizing: border-box;
     border: 1px rgb(68, 51, 51) solid;
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.2rem;
     border-radius: 30px;
     box-shadow: 5px -5px 5px -5px rgba(0, 0, 0, 0.53);
-    background-color: #eba0a0;
-    margin: 1rem 0.1rem 1rem 0.1rem;
+    margin: rem 0.1rem;
 }
+
 .coordonnees ul li{
     background-color: aqua;
-    font-size:larger;
+    font-size: 23px;
+    transition: 2s;
+}
+.coordonnees ul li:hover{
+    color: #7b4092;
+    
 }
 
+button{
+    width: 200px;
+    background-color: #23a6da;
+    transition: background-color 2s linear,width 3s ease-in;
+}
+button:hover{
+    width: 300px;
+    background-color: aquamarine;
+}
 
-/* format tablette a partir de maintenant */
+/* format telephone */
+@media screen and (min-width: 1px) and (max-width: 469px){
+    h1{
+        /* background-color:rgb(59, 224, 87); */
+        font-size: 30px;
+    }
+    main{
+        padding-top: 8rem;
+    }
+    .gauche{
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .colonnedroite{
+        width: 100%;
+    }
+    /* footer{ 
+        margin: 0.2rem;
+    } */
 
-@media (max-width: 1024px){
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 22px;
+        padding: 0.5rem;
+        display: flex;
+        align-items: flex-start;
+    } 
+    .coordonnees h3{
+        font-size: 15px;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .coordonnees ul li{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* background-color: #b46363; */
+        font-size: 15px;
+        padding: 0.1rem;
+    }
+    .coordonnees ul{
+        /* background-color: rgb(64, 29, 145); */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .aproposdemoi p{
+        font-size: 15px;
+        margin: 0.1rem;
+    }
+    .formation{
+        font-size:small;
+        padding: 0.1rem;
+    }
+
+    .divers{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }  
+    .centre{ 
+        flex-direction: column;
+        margin: 0.1rem;
+        /* gap: 0.2rem; */
+    }    
+
+}
+
+/* format tab*/
+@media screen and (min-width: 470px) and (max-width: 768px){
+    main{
+        /* background-color: #11110f; */
+        padding-top: 4rem;
+    }
+    h1{
+        /* background-color: #ce4747; */
+    }
+    .divers{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .aproposdemoi p{
         font-size: 1rem;
         margin: 1rem 0;
+        overflow: auto;
+    } 
+    h1{
+        font-size: 2rem;
     }
-    body{
-        background-color:rgb(176, 144, 209);
+    h3{
+        font-size: 2rem;
     }
+    .centre{ 
+        flex-direction: column;
+        margin: 0.2rem;
+    }    
+    .gauche{
+        width: 100%;
+    }
+    .colonnedroite{
+        width: 100%;
+}
+}
+
+/* format tablette */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    h1{
+        /* background-color:rgb(176, 144, 209); */
+    }
+    .aproposdemoi p{
+        font-size: 1rem;
+        margin: 1rem 0;
+        overflow: auto;
+    } 
     h1{
         font-size: 2rem;
     }
@@ -185,5 +377,3 @@ h3{
         width: 100%;
     }
 }
-
-
