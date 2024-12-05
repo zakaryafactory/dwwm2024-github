@@ -56,11 +56,11 @@ p.paragraphe{
     border-radius: 100px;
     width: 50%;
     box-sizing: border-box;
-    background-color: rgb(180, 164, 196);
+    background-color: rgb(197, 180, 183);
 
 }
 #experience h2{
-    background-color: rgb(197, 149, 149);
+    background-color: rgb(165, 140, 140);
     border-radius: 50px;
     padding: 7px;
     width: 40%;
@@ -88,7 +88,8 @@ p.paragraphe{
     justify-content: center;
     flex-wrap: wrap;
     font-size: large;
-    width: 30%;
+    width: 35%;
+    height: 30px;
 }
 #point{
     display: flex;
@@ -101,7 +102,7 @@ p.paragraphe{
     width: 49%;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background-color: rgb(182, 209, 209);
+    background-color: pink;
     border-radius: 100px;
     
 }
@@ -167,6 +168,10 @@ h2{
 .envoyer{
     margin:  1.2rem;
 }
+.envoyer button:hover{
+    background-color: blue;
+    transition: background-color 2s;
+}
 
 #formulaire{
     background-color: rgb(98, 175, 211);
@@ -193,7 +198,7 @@ nav ul {
     border-radius: 70px;
     border: rgb(221, 174, 174) 5px solid;
     background-color: rgb(201, 199, 197);
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 nav ul li{
@@ -259,24 +264,40 @@ nav ul li:hover{
 #galary h2:hover{
     background-color: rgb(230, 19, 19);
 }
+nav ul:hover{
+    border-color: black;
+}
 .moving-image {
-    position: relative;
-    animation: move 1s infinite;
+    animation: rotation 3s ease infinite; 
 }
 
-@keyframes move {
+@keyframes rotation {
     0% {
-        left: 0;
+        transform: rotate(90deg);
     }
     50% {
-        left: 50px;
+        transform: rotate(-90deg);
     }
-    100% {
-        left: 0;
+    
+    100%{
+        transform: rotate(90deg);
     }
 }
-
-
+.photo li{
+    animation: image 2s ease infinite
+}
+@keyframes image {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    }
+}
 
 
 
