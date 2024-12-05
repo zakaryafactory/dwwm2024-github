@@ -1,105 +1,271 @@
-html {
-    background-color: #a5b989;
-    text-transform: uppercase;
+html{
+    background-color: #0040FF08;
+    font-family: fantasy;
+}
+
+.flex {
+    display: flex
+    
+}
+#navigation{
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+
 }
-body{
-    width: 100%;
-}
-h1 {
-    color: rgb(116, 47, 180);
-    background-color: rgb(215, 180, 226);
-    border: 5px solid rgb(206, 66, 66);
-    font-size: large;
-    width: auto; 
-    *
-    height: auto; 
-    padding: 70px 70px 70px 70px; 
-    margin: 50px 50px 70px 50px;
-}
-#cc {
+#navigation li{
     display: flex;
-    width: 95%;
+    justify-content: start;
+}
+#navigation ul{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    flex-direction: inherit ;
+}
+.nav li a:hover{
+   color: rgb(216, 54, 102);
 }
 
-.presentation {
-    display: flex;             
-    align-items: center;       
-    justify-content: flex-start; 
-    padding: 20px;
-}
-
-
-.presentation img {
-    height: 300px;             
-    margin-right: 20px;        
-}
-
-.presentation div {
-    max-width: 60%;            
-}
-
-
-ul.gallery {
-    background-color: rgb(179, 206, 58);
-    margin: 0;
-    padding: 0;
+ .nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+ }
+nav ul{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row-reverse;
     list-style: none;
+    justify-content: stretch;
+    width: 97%;
+    margin: 5px;
+    border: 4px solid rgb(236, 229, 25);
+    border-radius: 30px;
+}
+nav ul li{
+    border: 4px solid #9900A852;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 30px;
+}
+nav  li a{
+    background-color: yellow;
+    text-decoration: none;
+    font-family: fantasy;
+    transition: background-color 4s ease-out;
+    
+}
+nav  li a:hover{
+    border: 1px solid red;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 5px;
+
+    background-color: red;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+h1{
+    color: rgb(12, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+p{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(163, 189, 33);
+}
+.flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-ul.gallery li:last-child {
-    margin-right: auto;
-}
-
-li {
-    margin: 20px;
-}
-
-
-section {
-    width: 95%;
-    border: 5px solid rgb(206, 66, 66);
-    padding: 50px;
-    margin: 50px;
-    text-align: center;
+    background-color: rgb(250, 243, 243);
     
 }
-.experiences{
-    width: 95%;
-    border: 5px solid rgb(206, 66, 66);
-    padding: 50px;
-    margin: 50px;
-    text-align: center;
+#description {
+
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+.images img {
+    width: 30%;
+    animation: rotation 2s ease infinite;
     
 }
-.bubble {
-    width: 100px;
-    border: 5px solid rgb(129, 220, 129);
-    padding: 20px;
-    margin: 10px; 
-    background-color: rgb(53, 192, 53);
-    border-radius: 25px;
-    text-align: left;
-      
+
+@keyframes rotation{
+    0%{transform:rotate(45deg)}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg)}
+}
+#descriptions .images{
+    box-sizing: border-box;
+    border: 4px solid rgb(114, 213, 61);
+    border-radius: 30px;
+    width: 50%;
+    height: 50%;
+}
+.description{
+    box-sizing: border-box;
+    border: 4px solid rgb(179, 174, 33);
+    background-color: #0040ff08;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+   
+}
+.description p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
 }
 .expe{
+    box-sizing: border-box;
+    background-color: rgb(247, 228, 228);
+}
+.experiences{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #0040ff08;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    border: 4px solid rgb(241, 12, 12);
+    border-radius: 30px;
+    
+
+}
+.experiences h2{
+
+    font-size: xx-large;
+}
+.experiences ul {
+    list-style: none;
+    font-size: larger;
+}
+
+.gallery{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    list-style: none;
+    align-items: flex-start;
+    
+   
 }
-input{
-    display: flex;
-    align-content: left;
+.gallery ul{
+    border: 4px solid blue;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(163, 189, 33);
 }
-label{
+#contacts{
     display: flex;
+    width: 97%;
+    margin: 5px;
+    padding: 5px;
+    border: 4px solid rgb(124, 124, 208);
+    border-radius: 30px;
+}
+
+.contacts ul{
+    list-style: none;
+    border: 2px solid ;
+   
+   
+}
+
+.contacts h2{
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+
+#experiences{
+  
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #0040ff08;
+}
+
+.sectionCoordonneesSocial li{
+    list-style: none;
     
 }
-.contact{
-   display: flex;
+.formulaire{
+    display: flex;
+    border: 4px solid rgb(150, 62, 136);
+    border-radius: 30px;
+    font-size: x-large;
+    width: 98%;
+    margin: 5px;
+    padding: 5px;
 }
+.formulaire form{
+    width: 100%;
+}
+.field{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    background-color: chartreuse;
+   
+}
+.field label{
+    width: 30%;
+}
+.reseaux{
+    display: flex;
+    border: 4px solid rgb(150, 62, 136);
+    border-radius: 30px;
+}
+#sectionCoordoneesSocial{
+    
+}
+
+ul#sectionCoordonneesSocial {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+ul#sectionCoordonneesSocial li {
+    font-size: 2.5rem;
+    list-style: none;
+}
+
+ul#sectionCoordonneesSocial a {
+    color: black;
+}
+
+ul#sectionCoordonneesSocial a:hover {
+    color: turquoise;
+}
+@media screen and (max-width:768px){
+    .field label{
+        width: 50%;
+        background-color: rgb(181, 11, 11);
+    }
+
+}
+@media screen and (max-width:460px){
+
+    .field label{
+        width: 100%;
+        background-color: rgb(181, 11, 11);
+    }
+}
+    
