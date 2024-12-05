@@ -1,5 +1,5 @@
 h1{
-    color: rgb(19, 18, 19);
+    color: rgb(15, 15, 15);
     background-color: rgb(211, 199, 199);
     font-size: 22px;
     width: 56%;
@@ -51,14 +51,16 @@ p.paragraphe{
     display: flex;
 }
 #experience{
-    width: 50%;
-    background-color: rgb(199, 178, 178);
+    width: 49%;
+    background-color: rgb(206, 183, 183);
     border-radius: 100px;
-    margin: 1.2rem;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(180, 164, 196);
 
 }
 #experience h2{
-    background-color: rgb(175, 152, 152);
+    background-color: rgb(197, 149, 149);
     border-radius: 50px;
     padding: 7px;
     width: 40%;
@@ -78,7 +80,7 @@ p.paragraphe{
 }
 
 .exp li{
-    background-color: rgb(184, 124, 146);
+    background-color: rgb(168, 70, 106);
     margin: 5px;
     border-radius: 20px;
     padding: 7px;
@@ -91,10 +93,17 @@ p.paragraphe{
 #point{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    justify-content: space-around;
 }
 #galary{
-    width: 80%;
+    width: 49%;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: rgb(182, 209, 209);
+    border-radius: 100px;
+    
 }
 #galary h2{
     font-size:xx-large;
@@ -114,9 +123,6 @@ p.paragraphe{
     list-style: none; 
 }
 
-#experience{    
-    width: 50%;
-}
 h2{
     justify-content: center;
     margin: 20px;
@@ -127,7 +133,7 @@ h2{
     background-color: rgb(155, 137, 137);
     border-radius: 60px;
     padding: 7px;
-    width: 20%;
+    width: 30%;
     height: 20%;
     font-size: x-large;
 
@@ -165,8 +171,9 @@ h2{
 #formulaire{
     background-color: rgb(98, 175, 211);
     border-radius: 20px;
-    width: 50%;
+    width: 49%;
     font-size: 50;
+    box-sizing: border-box;
 }
 #formulaire h2{
     font-size: xx-large;
@@ -186,6 +193,7 @@ nav ul {
     border-radius: 70px;
     border: rgb(221, 174, 174) 5px solid;
     background-color: rgb(201, 199, 197);
+    margin-top: 3rem;
 }
 
 nav ul li{
@@ -199,26 +207,81 @@ nav ul li{
     width: 80px;
     background-color: rgb(231, 236, 238);
     align-items: center;
+    
     }
 #contact{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     
     
 }
 #coordonnees{
-    background-color: rgb(105, 142, 158);
+    background-color: rgb(52, 102, 124);
     border-radius: 20px;
-    width: 70%;
+    width: 49%;
     border: 10px;
     flex-wrap: wrap;
     font-size: x-large;
     padding: 1.2rem;
     margin-left: 0.5rem;
+    box-sizing: border-box;
+}
+.exercice{
+    position: fixed;
+    display: block;
+    width:100%;
+    background-color: rgb(189, 174, 207);
+    max-height: 5%;
+    padding: 10px 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+nav ul li:hover{
+     background-color: rgb(219, 48, 18);
+}
+.exp li:hover{
+     background-color: brown;
+}
+.photo :hover{
+     background-color: blueviolet;
+}
+#experience h2:hover{
+     background-color: rgb(53, 167, 82);
+}
+#formulaire h2:hover{
+    background-color: black;
+ }
+ #coordonnees h2:hover{
+    background-color: blue;
+}
+#galary h2:hover{
+    background-color: rgb(230, 19, 19);
+}
+.moving-image {
+    position: relative;
+    animation: move 1s infinite;
 }
 
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+
+
+
 /* Tablettes */
-@media(max-width: 1100px) {
+@media(max-width: 1024px) {
     body{
         background-color: rgb(94, 182, 194);
     }
@@ -235,7 +298,7 @@ nav ul li{
     flex-wrap: wrap;
 }
 ul.photo li{
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 #coordonnees h2{
     width: 35%;
@@ -243,7 +306,9 @@ ul.photo li{
 #contact{
 margin-top: 0.8rem;
 }
+
 }
+
 
 /* Téléphones */
 @media (max-width: 767px) {
@@ -251,7 +316,7 @@ margin-top: 0.8rem;
     background-color: lightblue;
     }
     div p{
-        font-size: x-large;
+        font-size: larger;
 }  
 #galary h2{
     padding: 5%;
@@ -271,4 +336,8 @@ width: 50%;
 #presantation{
     width: 98%;
 }
+nav ul{
+    flex-wrap: wrap;
+}
+
 }
