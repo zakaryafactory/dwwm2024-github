@@ -65,8 +65,9 @@ nav  li a:hover{
 }
 .flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content:space-around;
     
 }
 h1{
@@ -74,6 +75,7 @@ h1{
     color: rgb(12, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    justify-content: center;
     
 }
 
@@ -82,13 +84,7 @@ p{
     font-size: large;
     color: rgb(6, 7, 1);
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(250, 243, 243);
-    
-}
+
 
 
 .presentation__separator {
@@ -110,13 +106,13 @@ p{
         transform:rotate(50deg);
     }
     25% {
-        transform: translateX(450%) ;
+        transform: translateX(450%) rotate(100deg) ;
     }  
     75% {
-        transform: rotate(-10deg);
+        transform: rotate(10deg);
     }  
     100% {
-        transform: translateX(900%) ;
+        transform: translateX(900%)  rotate(180deg);
     }
  }
 
