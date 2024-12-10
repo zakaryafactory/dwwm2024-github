@@ -1,0 +1,58 @@
+body{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+.darkMode{
+    background-color: black;
+    color: white;
+}
+.darkMode input{
+    background-color: white;
+    color: black;
+}
+.lightMode{
+    background-color: rgb(56, 56, 0);
+    color: black;
+}
+.lightMode input{
+    background-color: white;
+    color: black;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+}
+#maGrille {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+    padding: auto;
+}
+.grille {
+    width: 20%;
+    min-height: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px;
+}
+.purple{
+    background-color: rgb(160, 152, 236);
+    border: 20px;
+}
+.day{
+    background-color: rgb(255, 107, 107);
+    font-size: 20px;
+}

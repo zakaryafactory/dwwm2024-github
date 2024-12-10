@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>darkmode</title>
+    <link rel="stylesheet" href="ilvafairetoutnoir.css">
+    <script src="sombreclair.js"defer></script>
+</head>
+<body class="darkMode">
+    <header>
+        <form><input type="button" name="button1" value="DarkMode:🌙" onClick="DarkMode()"></form>
+        <form><input type="button" name="button1" value="LightMode:☀️" onClick="LightMode()"></form>
+    </header>
+    <h1>Il va faire tout noir !</h1>
+    <input type="number" value="1" id="NumeroJour" onChange="changeCitation(this.value)">
+    <section>
+        <div class="grille" id="maGrille">
+            <!--contenu -->  
+            <!--<div class="cellule">Citation 1</div>-->
+            
+        </div>    
+    </section>
+</body>
+<script>
+    function DarkMode(){
+    document.body.classList.remove("lightMode")
+    document.body.classList.add("darkMode")
+    }
+    function LightMode(){
+    document.body.classList.remove("darkMode")
+    document.body.classList.add("lightMode")
+    }
+</script>
+</html>
