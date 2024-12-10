@@ -7,63 +7,62 @@
     <link rel="stylesheet" href="pastaKenan.css">
 </head>
 <body>
-    <!-- En-tête -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Galerie</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
-        <h1>La Pasta Bella</h1>
-        <img src="pastaKenan.webp" alt="La pasta Bella" width="200">
-        <p>Le goût authentique de l'Italie</p>
+        <h1 class="header__title">La Pasta Bella</h1>
+        <img src="pastaKenan.webp" alt="La Pasta Bella" class="header__img" width="200">
+        <p class="header__subtitle">Le goût authentique de l'Italie</p>
     </header>
 
-    <section id="about">
-        <h2>À propos de nous</h2>
-        <p>Bienvenue chez La Pasta Bella, où nous préparons chaque jour des pâtes fraîches faites maison avec amour. Découvrez des recettes traditionnelles et savoureuses inspirées de la cuisine italienne authentique.</p>
+    <section class="section section--about" id="about">
+        <h2 class="section__title">À propos de nous</h2>
+        <p class="section__text">Bienvenue chez La Pasta Bella, où nous préparons chaque jour des pâtes fraîches faites maison avec amour. Découvrez des recettes traditionnelles et savoureuses inspirées de la cuisine italienne authentique.</p>
     </section>
 
-    <section id="menu">
-        <h2>Notre Menu</h2>
-        <ul>
-            <li><strong>Spaghetti Carbonara</strong> - 12€</li>
-            <li><strong>Tagliatelle Bolognaise</strong> - 11€</li>
-            <li><strong>Raviolis aux épinards et ricotta</strong> - 14€</li>
-            <li><strong>Penne Arrabiata</strong> - 10€</li>
+    <section class="section section--menu" id="menu">
+        <h2 class="section__title">Notre Menu</h2>
+        <ul class="menu__list">
+            <li class="menu__item"><strong class="menu__name">Spaghetti Carbonara</strong> - 12€</li>
+            <li class="menu__item"><strong class="menu__name">Tagliatelle Bolognaise</strong> - 11€</li>
+            <li class="menu__item"><strong class="menu__name">Raviolis aux épinards et ricotta</strong> - 14€</li>
+            <li class="menu__item"><strong class="menu__name">Penne Arrabiata</strong> - 10€</li>
         </ul>
     </section>
 
-    <section id="gallery">
-        <h2>Galerie</h2>
-        <div>
-            <img src="carbonara.jpg" alt="Spaghetti dans une assiette" width="150">
-            <img src="tagiatelle.jpg" alt="Plat de tagliatelles fraîches" width="150">
-            <img src="penne.jpg" alt="Penne avec sauce tomate" width="150" height="120">
+    <section class="section section--gallery" id="gallery">
+        <h2 class="section__title">Galerie</h2>
+        <div class="gallery__grid">
+            <img src="carbonara.jpg" alt="Spaghetti dans une assiette" class="gallery__img">
+            <img src="tagiatelle.jpg" alt="Plat de tagliatelles fraîches" class="gallery__img">
+            <img src="penne.jpg" alt="Penne avec sauce tomate" class="gallery__img">
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <form action="#" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+    <section class="section section--contact" id="contact">
+        <h2 class="section__title">Contactez-nous</h2>
+        <form class="form" action="#" method="post">
+            <label for="name" class="form__label">Nom :</label>
+            <input type="text" id="name" name="name" class="form__input" required>
             
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email" class="form__label">Email :</label>
+            <input type="email" id="email" name="email" class="form__input" required>
             
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="message" class="form__label">Message :</label>
+            <textarea id="message" name="message" class="form__textarea" required></textarea>
             
-            <button type="submit">Envoyer</button>
+            <button type="submit" class="form__button">Envoyer</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 La Pasta Bella. Tous droits réservés.</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 La Pasta Bella. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
