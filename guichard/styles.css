@@ -1,5 +1,5 @@
 html{
-    background-color: #0040FF08;
+    background-color: rgb(246, 243, 239);
     font-family: fantasy;
 }
 
@@ -17,7 +17,7 @@ html{
     justify-content: start;
 }
 #navigation ul{
-    background-color: yellow;
+    background-color: rgb(248, 248, 231);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,7 +25,7 @@ html{
     flex-direction: inherit ;
 }
 .nav li a:hover{
-   color: rgb(216, 54, 102);
+   color: rgb(249, 235, 239);
 }
 
  .nav a{
@@ -36,69 +36,65 @@ html{
 nav ul{
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     list-style: none;
     justify-content: stretch;
     width: 97%;
     margin: 5px;
-    border: 4px solid rgb(236, 229, 25);
+    border: 4px solid rgb(243, 224, 224);
     border-radius: 30px;
 }
 nav ul li{
-    border: 4px solid #9900A852;
+    
+    border: 4px solid rgb(243, 224, 224);
     padding: 5px;
     margin: 10px;
     border-radius: 30px;
 }
 nav  li a{
-    background-color: yellow;
     text-decoration: none;
     font-family: fantasy;
     transition: background-color 4s ease-out;
     
 }
 nav  li a:hover{
-    border: 1px solid red;
     border-radius: 30px;
     margin: 5px;
     padding: 5px;
-
-    background-color: red;
+;
 }
 .flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content:space-around;
     
 }
 h1{
+    flex-direction: row;
     color: rgb(12, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    justify-content: center;
     
 }
 
 p{
     font-family: fantasy;
     font-size: large;
-    color: rgb(163, 189, 33);
+    color: rgb(6, 7, 1);
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(250, 243, 243);
-    
-}
+
+
 
 .presentation__separator {
     width: 100%;
-    height: 5px;
+    height: 10px;
 }
 .presentation__separator span {
-    display: block;
-    background-color: rgb(222, 106, 44);
-    width: 10%;
+    display: flex;
+    background-color: rgb(225, 114, 54);
+    width: 20%;
     height: 100%;
     animation: moveRightToLeft 5s ease infinite; 
     transition: transform 1s ease; 
@@ -110,21 +106,21 @@ p{
         transform:rotate(50deg);
     }
     25% {
-        transform: translateX(450%) ;
+        transform: translateX(450%) rotate(100deg) ;
     }  
     75% {
-        transform: rotate(-10deg);
+        transform: rotate(10deg);
     }  
     100% {
-        transform: translateX(900%) ;
+        transform: translateX(900%)  rotate(180deg);
     }
  }
 
 #description {
 
     display: flex;
-    justify-content: center;
-    background-color: red;
+    flex-direction: row;
+    justify-content: start;
 }
 .images img {
     width: 30%;
@@ -140,27 +136,28 @@ p{
 #descriptions .images{
     box-sizing: border-box;
     display: flex;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
 }
 
 .separator{
     display: flex;
     box-sizing: border-box;
-    justify-content: space-evenly;
-    background-color: #163baa08;
-    border: 1px solid rgb(179, 174, 33);
+    justify-content: flex-start;
+    background-color: rgb(233, 245, 245);
+    border: 4px solid rgb(243, 224, 224);
     border-radius: 30px;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
     width: 100%;
    
 }
+
+
+
 .nom{
 
     display: flex;
-    box-sizing: border-box;
-    justify-content: flex-start;
     margin: 5px;
     padding: 5px;
 }
@@ -174,12 +171,12 @@ p{
     display: flex;
     box-sizing: border-box;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #0040ff08;
     margin: 5px;
     padding: 5px;
     width: 100%;
-    border: 4px solid rgb(241, 12, 12);
+    border: 4px solid rgb(243, 224, 224);
     border-radius: 30px;
     
 
@@ -187,27 +184,32 @@ p{
 .experiences h2{
 
     font-size: xx-large;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .experiences ul {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-start;
     list-style: none;
     font-size: larger;
+
+    
     
 }
 
 .experiences li{
-    background-color: rgb(69, 168, 158);
+    background-color: rgb(243, 224, 224);
     color: black;
-    font-weight: bold;
+    justify-content: start;
+    
     padding: .5rem .8rem;
-    border-radius: 50px;
+    border-radius: 30px;
     font-size: 16px;
-    margin-bottom: .8rem;
-    margin-left: .5rem;
-    transition: background-color 4s ease-out;
+    margin: 5px;
 }
 .experiences:hover{
-    background-color: aliceblue;
+    background-color: rgb(243, 224, 224);
 }
 
 .gallery{
@@ -219,27 +221,39 @@ p{
    
 }
 .gallery ul{
-    border: 4px solid blue;
+    border: 4px solid rgb(243, 224, 224);
     border-radius: 30px;
     margin: 5px;
     padding: 5px;
     width: 100%;
-    background-color: rgb(163, 189, 33);
+    background-color: rgb(243, 224, 224);
 }
-#contacts{
+.contacts{
     display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
     width: 97%;
     margin: 5px;
     padding: 5px;
-    border: 4px solid rgb(124, 124, 208);
+    border: 4px solid rgb(243, 224, 224));
     border-radius: 30px;
 }
 
 .contacts ul{
     list-style: none;
-    border: 2px solid ;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(243, 224, 224) ;
+    border-radius: 30px;
+    background-color: rgb(243, 224, 224);
    
-   
+}
+
+.contacts li{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(243, 224, 224);
+    
 }
 
 .contacts h2{
@@ -254,7 +268,7 @@ p{
     display: flex;
     align-items: flex-start;
     width: 100%;
-    background-color: #0040ff08;
+    background-color: rgb(243, 224, 224);
 }
 
 .sectionCoordonneesSocial li{
@@ -263,7 +277,8 @@ p{
 }
 .formulaire{
     display: flex;
-    border: 4px solid rgb(150, 62, 136);
+    box-sizing: border-box;
+    border: 4px solid rgb(243, 224, 224);
     border-radius: 30px;
     font-size: x-large;
     width: 98%;
@@ -277,57 +292,49 @@ p{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
-    background-color: chartreuse;
+    border-radius: 30px;
+    background-color: rgb(243, 224, 224);
    
 }
 .field label{
     width: 30%;
 }
-.reseaux{
+.rs{
     display: flex;
-    border: 4px solid rgb(150, 62, 136);
-    border-radius: 30px;
-}
-#sectionCoordoneesSocial{
-    
-}
-
-ul#sectionCoordonneesSocial {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    gap: 1rem;
-}
-
-ul#sectionCoordonneesSocial li {
-    font-size: 2.5rem;
     list-style: none;
-}
-
-ul#sectionCoordonneesSocial a {
-    color: black;
-}
-
-ul#sectionCoordonneesSocial a:hover {
-    color: turquoise;
-}
-@media screen and (max-width:768px){
-    .field label{
-        width: 50%;
-        background-color: rgb(181, 11, 11);
-    }
-
-}
-@media screen and (max-width:460px){
-
-    .field label{
-        width: 100%;
-        background-color: rgb(181, 11, 11);
-    }
-}
+    border: 4px solid rgb(243, 224, 224);
+    border-radius: 30px;
     
+}
 
+.reseaux .rs {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+}
+
+.reseaux .rs li {
+    display: inline-block;
+}
+
+
+.reseaux .rs a {
+    display: block; 
+    width: 40px; 
+    height: 40px; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.reseaux .rs a:hover {
+    opacity: 0.7; 
+}
+
+.reseaux .rs a:active {
+    opacity: 0.5; 
+}
 
 
 
