@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Exercices de Sélection d'Éléments</title>
     <style>
-        .highlight { color: red; }
+        .highlight { color: rgb(219, 28, 203); }
         .text-large { font-size: 20px; }
-        #unique-section { background-color: lightblue; padding: 20px; }
+        #unique-section { background-color: rgb(143, 142, 143); padding: 20px; }
     </style>
 </head>
 <body>
@@ -37,5 +37,21 @@
     <footer>
         <p>© 2023 Tous droits réservés</p>
     </footer>
+
+<script>
+    const header = document.getElementById('main-header')
+    header.style.backgroundColor = "grey";
+
+    const html = document.querySelectorAll('.highlight');
+    html.forEach(item => {
+        item.style.backgroundColor = "white";
+    });
+    
+    const menuItems = document.querySelectorAll('nav .menu-item');
+    menuItems.forEach(item => {
+    item.style.border = '1px solid black';
+});
+
+</script>
 </body>
 </html>
