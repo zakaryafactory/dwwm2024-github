@@ -6,7 +6,7 @@
     <style>
         .highlight { color: rgb(219, 28, 203); }
         .text-large { font-size: 20px; }
-        #unique-section { background-color: rgb(143, 142, 143); padding: 20px; }
+        #unique-section { background-color: rgb(146, 126, 146); padding: 20px; }
     </style>
 </head>
 <body>
@@ -39,17 +39,26 @@
     </footer>
 
 <script>
-    const header = document.getElementById('main-header')
-    header.style.backgroundColor = "grey";
+    const span = document.getElementById('#main-article .highlight')
+    span.style.backgroundColor = "grey";
 
-    const html = document.querySelectorAll('.highlight');
-    html.forEach(item => {
+    const allHighlight = document.querySelectorAll('.highlight');
+    allHighlight.forEach(item => {
         item.style.backgroundColor = "white";
+        item.style.fontWeight = "bold";
+        item.style.fontSize = "24px";
     });
     
     const menuItems = document.querySelectorAll('nav .menu-item');
     menuItems.forEach(item => {
     item.style.border = '1px solid black';
+
+    // Evenement sur title principal
+    const mainTitle = document.querySelector('h1')
+    mainTitle.addEventListener('click', () > {
+        mainTitle.style.backgroundcolor = "yellow"
+    })
+    
 });
 
 </script>
