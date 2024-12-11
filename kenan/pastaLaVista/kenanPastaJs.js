@@ -15,4 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleButton.textContent = '☀️ Mode Clair';
         }
     });
+    const reservationForm = document.querySelector(".form");
+    reservationForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Réservation réussie ! Merci.");
+        reservationForm.reset(); 
+    });
 });
