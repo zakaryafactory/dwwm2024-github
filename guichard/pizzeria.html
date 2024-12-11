@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pizzeria.css">
+   
     <title>Pizzeria</title>
 </head>
 <body>
@@ -17,15 +18,10 @@
             </ul>
         </nav>
     <div class="darkmode">
+
         <button onclick="toggleDarkMode()">Dark Mode</button>
 
     </div> 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
-    
     
     </header>
 <main>
@@ -153,7 +149,8 @@
             if (personnes <= 0  || ! Number.isInteger(parseFloat(personnes))) {
             alerte ("le nombre doit etre entier.");
             return false;
- }
+ } }
     </script>
+     <script src="./pastaVista.js"></script>
 </body>
 </html>
