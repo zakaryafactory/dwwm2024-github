@@ -1,5 +1,5 @@
 body{
-    
+    background-image: url('./drapeauitalie.jpg'); 
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
     background-size: cover;
     background-position: center;
@@ -12,27 +12,6 @@ body{
     text-decoration: none;
     
 }
-
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-.darkmode{
-    display: flex;
-    justify-content: end;
-    margin: 10px;
-}
-
-.darkmode button {
-
-    padding: 5px;
-    font-size: medium;
-    color: white;
-    background-color: #0e0505;
-    border: none;
-    border-radius: 4px;
-}
-
 .nav-links {
     display: flex;
     
@@ -57,7 +36,7 @@ body{
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 40px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 .nav-links a:hover {
@@ -227,6 +206,7 @@ footer {
     text-align: center;
 }
 
+
 .social-media a {
     margin: 0 10px;
     color: #333;
@@ -235,5 +215,5 @@ footer {
 }
 
 .social-media a:hover {
-    color: #0077b5;
+    color: #0077b5; /* Example color for hover */
 }
