@@ -53,7 +53,7 @@ body{
 .nav-links a {
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: rgb(14, 8, 8);
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
@@ -61,7 +61,7 @@ body{
     transition: background-color 0.3s ease;
 }
 .nav-links a:hover {
-    color: yellow;
+    color: white;
     background-color: #43f020;
 }
 
