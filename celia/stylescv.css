@@ -322,6 +322,8 @@ button:hover{
     }
     h1{
         /* background-color: #ce4747; */
+        width: 100%;
+        background-color: black;
     }
     .divers{
         display: flex;
@@ -332,8 +334,7 @@ button:hover{
         margin: 1rem 0;
         overflow: auto;
     } 
-    h1{
-        font-size: 2rem;
+   
     }
     h3{
         font-size: 2rem;

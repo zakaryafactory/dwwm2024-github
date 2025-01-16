@@ -1,5 +1,6 @@
+
 h1{
-    color: rgb(15, 15, 15);
+    color: rgb(88, 27, 27);
     background-color: rgb(211, 199, 199);
     font-size: 22px;
     width: 56%;
@@ -27,13 +28,23 @@ section{
 #presantation{
     width:50%;
 }
+
+.moving-image{
+    margin-top: 15px;
+
+}
+
+
 .photo{
 margin: 0px; padding: 0px;
 display: flex;
 justify-content:space-between;
 flex-wrap: wrap;
-
+margin: 0.5rem;
+list-style: none; 
 }
+
+
 ul.photo li:last-child{
     margin-right: auto;
 }
@@ -51,7 +62,6 @@ p.paragraphe{
     display: flex;
 }
 #experience{
-    width: 49%;
     background-color: rgb(206, 183, 183);
     border-radius: 100px;
     width: 50%;
@@ -68,12 +78,13 @@ p.paragraphe{
     font-size: x-large;
     text-align: center;
     margin:  2.2rem;
+    justify-self: center;
 }
 .exp{
-    margin: 0;
+    margin: 5%;
     padding: 0%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
@@ -81,7 +92,7 @@ p.paragraphe{
 
 .exp li{
     background-color: rgb(168, 70, 106);
-    margin: 5px;
+    margin: 10px;
     border-radius: 20px;
     padding: 7px;
     list-style: none;
@@ -106,23 +117,19 @@ p.paragraphe{
     border-radius: 100px;
     
 }
-#galary h2{
-    font-size:xx-large;
-    padding: 50px;
 
-}
 #galary h2{
     background-color: rgb(184, 176, 176);
     border-radius: 50px;
     padding: 2%;
     width: 15%;
-    height: 10%;
     text-align: center;
+    font-size:xx-large;
+    justify-self: center;
+    
 }
-.photo{
-    margin: 0.5rem;
-    list-style: none; 
-}
+
+
 
 h2{
     justify-content: center;
@@ -140,34 +147,45 @@ h2{
 
 }
 
-.nom label{
-    background-color: rgb(245, 237, 237);
-    border-radius: 50px;
-    padding: 7px;
-    margin:  1.2rem;
-    margin:  1.2rem;
+form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; 
 }
-.prenom label{
-    background-color: rgb(165, 147, 147);
-    border-radius: 50px;
-    padding: 7px; 
-    margin:  1.2rem; 
+
+label {
+    margin-bottom: 0.5rem; 
+    font-weight: bold; 
 }
-.telephone label{
-    background-color: rgb(204, 184, 184);
-    border-radius: 50px;
-    padding: 7px;  
-    margin:  1.2rem;
+
+input, textarea {
+    width: 95%; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1rem; 
 }
-.messege label{
-    background-color: white;
-    border-radius: 90px;
-    padding: 7px;
-    margin:  1.2rem;
+
+textarea {
+    resize: none; 
+    height: 100px; 
 }
-.envoyer{
-    margin:  1.2rem;
+
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+
 .envoyer button:hover{
     background-color: blue;
     transition: background-color 2s;
@@ -177,7 +195,7 @@ h2{
     background-color: rgb(98, 175, 211);
     border-radius: 20px;
     width: 49%;
-    font-size: 50;
+    font-size: 15px;
     box-sizing: border-box;
 }
 #formulaire h2{
@@ -302,15 +320,55 @@ nav ul:hover{
 
 
 /* Tablettes */
-@media(max-width: 1024px) {
+@media screen and (min-width: 470px) and (max-width: 768px){
     body{
         background-color: rgb(94, 182, 194);
     }
-    #experience h2{
+    div p{
+        font-size: medium;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+#presantationtext{
+    width: 100%;
+}
+
+    div h1{
+        width: 100%;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    #galary h2{
         padding: 5%;
+        text-align: center;
+        height: 5%;
+        width: 20%;
+
+       
+    }
+    #galary{
+        width: 100%;
+        padding: 10px;
+
+
+    }
+    #experience h2{
+        padding: 5px;
+        background-color: rgb(62, 54, 133);
+        justify-self: center;
+        
+    }
+    .exp li{
+        padding: 10px;
+        font-size: medium;
+        
     }
     #experience{
         margin: 1.2rem;
+        width: 100%;
+
 }
 .photo{
     flex-wrap: wrap;
@@ -321,18 +379,56 @@ nav ul li{
 ul.photo li{
     flex-wrap: wrap;
 }
+
+#coordonnees{
+    width: 100%;
+    margin-top: 0.8rem;
+}
 #coordonnees h2{
-    width: 35%;
+    width: 50%;
+    justify-self: center;
+}
+
+#formulaire{
+    width: 100%;
+    text-align: center;
+}
+#formulaire h2{
+    width: 30%;
+    justify-self: center;
 }
 #contact{
 margin-top: 0.8rem;
+width: 100%;
 }
-
+#nom{
+    width: 50%;
+    margin-left: 42px;
 }
-
+#prenom{
+    width: 50%;
+    margin-left: 20px;
+}
+#telephone{
+    width: 50%;
+    margin-left: 3px;   
+}
+#message{
+    width: 50%;
+    margin-left: 15px;
+}
+label{
+    font-size: medium;
+    margin-left: 10px;
+}
+button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+}
 
 /* Téléphones */
-@media (max-width: 767px) {
+@media screen and (min-width: 1px) and (max-width: 469px){
     body {
     background-color: lightblue;
     }
@@ -347,9 +443,6 @@ margin-top: 0.8rem;
 }
 #formulaire{
     width: 60%;
-}
-#experience h2{
-    width: 50%;
 }
 #coordonnees h2{
 width: 50%;
